@@ -1,65 +1,27 @@
-# Executive Disclosures Explorer
+# Who Trades What
 
-A searchable public database of securities transactions, holdings, and income disclosed by senior U.S. executive-branch officials and President Trump, joined to the federal contracts their agencies award.
+**A searchable database of the stocks, funds, and income that President Trump and his senior appointees disclose — cross-referenced against the federal contracts and agency actions their own departments control.**
 
-**34,845 disclosure line items · 35 officials · transactions on/after 2025-01-20 · snapshot July 2026**
-
----
-
-## Run locally
-
-```bash
-pip install flask gunicorn
-python app.py
-```
-
-Then open <http://localhost:5000> in your browser.
-
-Alternatively:
-
-```bash
-pip install -r requirements.txt
-flask run
-```
-
-The app reads `data/trades.db` (SQLite, read-only). Do not move or rename that file.
+This is built on Flask with SQLite, and deploys on [Render]: [who-trades-what.onrender.com](https://who-trades-what.onrender.com/)
 
 ---
 
-## Deploy to Render
+## What it is
 
-1. Push this repository to GitHub (make sure `data/trades.db` is committed — Render needs the file at deploy time).
-2. On [render.com](https://render.com), click **New → Web Service** and connect your repo.
-3. Set:
-   - **Runtime:** Python 3
-   - **Build command:** `pip install -r requirements.txt`
-   - **Start command:** `gunicorn app:app`
-4. Click **Deploy**.
+Senior executive-branch officials must report what they own, earn, and trade under the Ethics in Government Act of 1978. This project collects those filings and turns them into one searchable, cross-referenced dataset so anyone can ask: *do these officials trade in the industries they regulate, in companies their agencies pay under contract, and do they report it on time?*
 
-> **SQLite note:** Render's free tier uses an ephemeral filesystem. If you need the database to persist across deploys, use Render's **Persistent Disk** (attach it at `/opt/render/project/src/data`) or migrate to a Postgres-backed version. For a read-only snapshot database that ships with the repo, committing `data/trades.db` directly is simplest.
+## What you can explore
 
----
+- **Search** every disclosed trade, holding, and income line by official, security, ticker, or keyword
+- **Potential conflicts** — trades in companies the official's own agency pays under contract, trades near a dated agency action, and a network map of the overlaps
+- **Beat the market?** — market-adjusted returns on each priced trade vs. the S&P 500
+- **Leaderboards** — who discloses most, holds most, and files late
+- **Methodology** — how the data was extracted (OCR + a vision-language model for the President's scanned filings), matched, checked, and its known limits
 
-## Routes
+## Data sources
 
-| Route | Description |
-|---|---|
-| `GET /` | Search + filter + paginated results table |
-| `GET /export` | Stream CSV of all matching rows |
-| `GET /download` | Bulk download page + data dictionary |
-| `GET /download/full.csv` | Full 34,845-row CSV |
-| `GET /official/<id>` | Official profile page |
-| `GET /methodology` | Methodology, sources, limits |
-| `GET /api/count` | JSON row count for given filters (used by methodology page widget) |
+Official filings from the [U.S. Office of Government Ethics](https://extapps2.oge.gov/201/Presiden.nsf) (public domain), enriched with [USASpending.gov](https://www.usaspending.gov) contract awards, [SEC EDGAR](https://www.sec.gov/edgar) tickers, the [Federal Register](https://www.federalregister.gov) for dated agency actions, and daily prices from Yahoo Finance.
 
 ---
 
-## Filter parameters (GET)
-
-`query`, `kind` (transaction/holding), `official`, `agency`, `txn_type`, `flag` (core_contractor / late / tariff_pause / regulates_sector), `amount_min`, `page`.
-
----
-
-## Data source
-
-OGE Form 278-T and 278e filings (public domain, 17 U.S.C. §105), joined to USASpending.gov contract awards. See [Methodology](/methodology) for full details.
+Spot an error? [Open an issue](https://github.com/wongpeiting/who-trades-what/issues) or email pw2635@columbia.edu.
