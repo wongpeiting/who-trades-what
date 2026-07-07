@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=PT+Serif:wght@700&display=swap" rel="stylesheet" />
   <style>
+    /* Pin the root font-size. Pico v2 scales it up on wide viewports (16px -> ~20-21px),
+       which inflates the whole rem-based layout on large monitors. Keep it at 16px everywhere.
+       Uses :root (not html) so it out-specifies Pico's own :root font-size media queries. */
+    :root { font-size: 100%; }
+
     /* Green accent + warm cream. Must match Pico's own light-scheme selector specificity
        (:root:not([data-theme=dark])) or Pico's default blue --pico-primary wins. */
     :root:not([data-theme=dark]), [data-theme=light] {
