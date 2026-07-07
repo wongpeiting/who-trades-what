@@ -39,6 +39,12 @@
     nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; align-items: center; }
     nav ul li a { text-decoration: none; color: #1c3314; }
     nav ul li a:hover, nav ul li a.active { color: #0a1707; font-weight: 600; }
+    /* Mobile: stack brand over links and let the links wrap, so the nav never overflows the viewport. */
+    @media (max-width: 680px) {
+      nav { flex-wrap: wrap; row-gap: 0.35rem; }
+      nav .site-title { font-size: 1.15rem; }
+      nav ul { width: 100%; flex-wrap: wrap; gap: 0.55rem 1rem; font-size: 0.9rem; }
+    }
     .info-tip { position: relative; display: inline-block; cursor: help; color: var(--pico-muted-color); font-weight: 400; }
     .info-tip .info-pop { display: none; position: absolute; right: 0; top: 1.5em; z-index: 60; width: 250px; background: #fff; border: 1px solid var(--pico-muted-border-color); border-radius: 6px; padding: 0.5rem 0.7rem; font-size: 0.78rem; font-weight: 400; color: var(--pico-color); line-height: 1.4; box-shadow: 0 4px 14px rgba(0,0,0,0.15); white-space: normal; text-align: left; }
     .info-tip .info-i { display: inline-flex; align-items: center; justify-content: center; width: 1.15em; height: 1.15em; border: 1.3px solid currentColor; border-radius: 50%; font-size: 0.7em; font-style: italic; font-weight: 700; line-height: 1; vertical-align: middle; }
