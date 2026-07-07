@@ -88,8 +88,10 @@
       that a common term like "Bancorp" or "International" cannot collapse many companies onto one ticker.
     </p>
     <p>
-      About 87% of trades resolve. The rest &mdash; municipal bonds, private funds and other instruments that
-      have no exchange ticker &mdash; carry none, which is why the market-return analysis covers equities only.
+      Before matching, securities were sorted by type, so only stocks and ETFs go to the matcher. Company
+      bonds, municipal bonds and Treasury bills were identified by their attached interest rate, a due date,
+      or words like "senior notes." This keeps a company's bond from being treated as its stock. 86% of
+      trades were matched to a ticker by the end of this process.
     </p>
   </div>
 </details>
@@ -149,15 +151,6 @@
       The vision-model transcription was validated against a hand transcription of a small subset of rows,
       and every transcribed row is tagged <code>extracted_by=vision_model</code>
       so it can be re-audited.
-    </p>
-    <p>
-      The results are benchmarked against an independent transcription by ProPublica, which separately
-      hand-transcribed the President's filings.
-    </p>
-    <p>
-      87% of trades were matched to a ticker. This was done conservatively, with an ambiguous name left
-      blank rather than force-matched to prevent wrong ticker matches from quietly corrupting downstream
-      figures, including executives' market-return and contract analyses.
     </p>
   </div>
 </details>
