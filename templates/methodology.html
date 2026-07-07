@@ -47,14 +47,6 @@
       recognition (OCR) to lift text straight off the page, and a large language model to read the scans and
       garbled tables where OCR returned poor results.
     </p>
-    <figure style="margin:0.6rem 0 1rem; max-width:680px;">
-      <img src="{{ url_for('static', filename='img/ocr_bond_descriptions.png') }}"
-           alt="A slice of a scanned filing showing corporate-bond lines such as 'NETFLIX INC REG S DUE 11/15/2029 05.375%' with issuer, coupon rate and maturity date crammed into one string."
-           style="display:block; max-width:min(100%, 680px); height:auto; border:1px solid #93a883; border-radius:6px;">
-      <figcaption style="font-size:0.8rem; color:var(--pico-muted-color); margin-top:0.05rem; line-height:1.45;">
-<em>Excerpt from one of Donald Trump's 278-T filings.</em>
-      </figcaption>
-    </figure>
     <p>
       <code>natural-pdf</code> handled the bulk of the extraction. It lifts embedded text straight off the page
       where the PDF carries a real text layer, and falls back to OCR (via <code>easyocr</code>) on the scanned
@@ -65,7 +57,18 @@
       every one of the 30,253 transaction dates resolves to a real date.
     </p>
     <p>
-      The President's eight 2026 periodic 278-Ts were the exception. Their scans were too degraded for OCR to
+      The President's eight 2026 periodic 278-Ts were the exception.
+    </p>
+    <figure style="margin:0.6rem 0 1rem; max-width:680px;">
+      <img src="{{ url_for('static', filename='img/ocr_bond_descriptions.png') }}"
+           alt="A slice of a scanned filing showing corporate-bond lines such as 'NETFLIX INC REG S DUE 11/15/2029 05.375%' with issuer, coupon rate and maturity date crammed into one string."
+           style="display:block; max-width:min(100%, 680px); height:auto; border:1px solid #93a883; border-radius:6px;">
+      <figcaption style="font-size:0.8rem; color:var(--pico-muted-color); margin-top:0.05rem; line-height:1.45;">
+<em>Excerpt from one of Donald Trump's 278-T filings.</em>
+      </figcaption>
+    </figure>
+    <p>
+      Their scans were too degraded for OCR to
       recover cleanly, so those pages were handed to a vision-language model instead &mdash; a fan-out that read
       each page range the way a person would and returned structured rows, recovering close to 7,000 trades
       that had otherwise been unreadable. Because a model is a statistical reader, that transcription was
