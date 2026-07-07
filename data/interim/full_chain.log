@@ -1,0 +1,446 @@
+============================================================
+step10_clean.py — SUMMARY
+============================================================
+  Rows in (snapshot)      : 2220
+  Rows kept               : 2148
+  dropped_unparseable     : 0
+  dropped_out_of_term     : 72
+  Amount parse failures   : 0
+  Amount failure rate     : 0.0%
+
+  Output → /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/cleaned.csv
+
+--- 5 sample cleaned rows ---
+{'source_file': 'Arjun-Mody-02.27.2026-278T.pdf', 'row_no': '1', 'raw_description': 'Agilent Technologies, Inc. (A)', 'txn_type': 'sale', 'txn_date': '2026-01-30', 'notified_over_30d': 0, 'amount_min': 1001, 'amount_max': 15000, 'amount_bracket': '$1,001 - $15,000', 'owner': 'unknown', 'asset_type': 'stock'}
+{'source_file': 'Arjun-Mody-02.27.2026-278T.pdf', 'row_no': '2', 'raw_description': 'AIA Group Ltd ADR (AAGIY)', 'txn_type': 'sale', 'txn_date': '2026-01-30', 'notified_over_30d': 0, 'amount_min': 1001, 'amount_max': 15000, 'amount_bracket': '$1,001 - $15,000', 'owner': 'unknown', 'asset_type': 'stock'}
+{'source_file': 'Arjun-Mody-02.27.2026-278T.pdf', 'row_no': '3', 'raw_description': 'Apple, Inc. (AAPL)', 'txn_type': 'sale', 'txn_date': '2026-01-30', 'notified_over_30d': 0, 'amount_min': 1001, 'amount_max': 15000, 'amount_bracket': '$1,001 - $15,000', 'owner': 'unknown', 'asset_type': 'stock'}
+{'source_file': 'Arjun-Mody-02.27.2026-278T.pdf', 'row_no': '4', 'raw_description': 'Apple, Inc. (AAPL)', 'txn_type': 'sale', 'txn_date': '2026-01-30', 'notified_over_30d': 0, 'amount_min': 1001, 'amount_max': 15000, 'amount_bracket': '$1,001 - $15,000', 'owner': 'unknown', 'asset_type': 'stock'}
+{'source_file': 'Arjun-Mody-02.27.2026-278T.pdf', 'row_no': '5', 'raw_description': 'AbbVie, Inc. (ABBV)', 'txn_type': 'sale', 'txn_date': '2026-01-30', 'notified_over_30d': 0, 'amount_min': 1001, 'amount_max': 15000, 'amount_bracket': '$1,001 - $15,000', 'owner': 'unknown', 'asset_type': 'stock'}
+
+--- Quality checks ---
+  owner != 'unknown'      : 0  (should be 0)
+
+  Dirty-amount resolution spot-checks:
+    OK  '$50,001 - Class Shares (VGT) $100,000'             min=50001 max=100000
+    OK  '$100,001 - Class Shares (VTI) $250,000'            min=100001 max=250000
+    OK  '$100,001 - Class Shares (VTI) $250,000'            min=100001 max=250000
+    OK  '$100,001 - Class Shares (VTI) $250,000'            min=100001 max=250000
+
+  txn_type distribution   : {'sale': 1528, 'purchase': 620}
+  asset_type distribution : {'stock': 1723, 'bond': 408, 'option': 17}
+============================================================
+/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+============================================================
+step12_resolve.py — entity resolution
+============================================================
+
+Input: 2,148 rows, 1,130 distinct descriptions
+
+[EDGAR] Using cached /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/sec_tickers.json
+[EDGAR] Index built: 10,415 named companies
+
+Resolving …
+
+Wrote 1,130 rows → /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/securities.csv
+
+──────────────────────────────────────────────────
+Total distinct descriptions : 1130
+  bond_skip                 :  219
+  paren (parenthetical)     :  413
+  fuzzy (EDGAR)             :  254
+  unresolved                :  244
+  ── resolved (paren+fuzzy) :  667  (59.0%)
+  SEC EDGAR cache           : OK – /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/sec_tickers.json
+──────────────────────────────────────────────────
+
+Validation spot-checks:
+  'Apple, Inc. (AAPL)'                                    → ticker='AAPL'   method=paren
+  'AIA Group Ltd ADR (AAGIY)'                             → ticker='AAGIY'  method=paren
+  'AbbVie, Inc. (ABBV)'                                   → ticker='ABBV'   method=paren
+  'Bae Systems PLC (BAESY)'                               → ticker='BAESY'  method=paren
+  'Charter Communications, Inc. (CHTR)'                   → ticker=''       method=bond_skip
+
+8 sample resolved rows (paren + fuzzy):
+               raw_description              resolved_name ticker method
+Agilent Technologies, Inc. (A) Agilent Technologies, Inc.      A  paren
+     AIA Group Ltd ADR (AAGIY)          AIA Group Ltd ADR  AAGIY  paren
+            Apple, Inc. (AAPL)                Apple, Inc.   AAPL  paren
+           AbbVie, Inc. (ABBV)               AbbVie, Inc.   ABBV  paren
+               Ambev SA (ABEV)                   Ambev SA   ABEV  paren
+     Abbott Laboratories (ABT)        Abbott Laboratories    ABT  paren
+           Accenture Plc (ACN)              Accenture Plc    ACN  paren
+    Analog Devices, Inc. (ADI)       Analog Devices, Inc.    ADI  paren
+
+⚠  Possibly junk parentheticals (8 rows) — review:
+               raw_description ticker
+Agilent Technologies, Inc. (A)      A
+       Barrick Mining Corp (B)      B
+                  AT&T Inc (T)      T
+                Visa, Inc. (V)      V
+                 Visa Inc. (V)      V
+        Zillow Group, Inc. (Z)      Z
+     Dominion Energy, Inc. (D)      D
+           Citigroup, Inc. (C)      C
+
+Unresolved descriptions (244):
+  'Compagnie Financiere Richemont SA ADR'
+  'Fomento Economico Mexicano S.A.B. de C.V.'
+  'Lvmh Moet Hennessy Louis Vuitton SE ADR'
+  'MS&AD Insurance Group Holdings Inc ADR'
+  'Vanguard Developed Markets Index Fund ETF'
+  'Vanguard Information Technology Index Fund ETF'
+  'Vanguard Total Stock Market Index Fund ETF'
+  'Vanguard Growth Index Fund ETF Class Shares'
+  'VanguardEmerging Markets Stock Index Fund ETF'
+  'INDIANA ST FIN AUTH REV REF LEASE SER A'
+  'MARYLAND ST TRANSN AUTH TRANSN FACS'
+  'DISTRICT COLUMBIA GO BDS SER A FEB19'
+  'NEW YORK N Y GO BDS SER C OCT20'
+  'UNIV CALIF REGTS MED CTR POOLED REV'
+  'BROWARD CNTY FLA TOURIST DEV TAX REV'
+  'NEW YORK ST DORM AUTH ST PERS INCOME'
+  'FLORIDA ST BRD ED PUB ED FULL FAITH'
+  'UNIVERSITY UTAH UNIV REV GEN BDS SER A'
+  'OHIO ST HWY CAP IMPT GO BDS W JUN20'
+  'HOUSTON TEX UTIL SYS REV COMB FIRST'
+  'TEXAS WTR DEV BRD REV ST REVOLVING FD'
+  'TEXAS A & M UNIV REV FING SYS BDS SER E'
+  'NORTH CAROLINA ST GO REF BDS SER A'
+  'SOUTH DAKOTA CONSERVANCY DIST REV ST'
+  'PRIVATE COLLEGES & UNIVS AUTH GA REV'
+  'NEW YORK ST URBAN DEV CORP REV PERS'
+  'MICHIGAN FIN AUTH REV HOSP REF BDS BHSH'
+  'WASHINGTON ST VARIOUS PURP GO BDS SER'
+  'OHIO ST ADULT CORRECTIONAL CAP FACS B'
+  'LOWER COLO RIV AT TEX TRANS RV REF BDS'
+  'MAINE ST GO BDS SER B JUN19 05.000%JUN01'
+  'NY ST DORM AUTH SLS TAX REV BDS SER C'
+  'FLORIDA ST BRD ED PUB ED CAP OUTLAY REF'
+  'LEWISVILLE TEX INDPT SCH DIST UNLTD TAX'
+  'JPMorgan Liquid Assets Money Market Fund'
+  'JPMorgan Equity Premium Income ETF JPMorgan'
+  'Roche Holdings AG Basel ADR Common Stock'
+  'JPMorgan BetaBuilders Developed Asia ex-Japan'
+  'Schwab Value Advantage Money Fund'
+  'EMX Royalty Corporation Common Shares'
+  'Inspirato Inc, 5000 shares'
+  'SPMD (S&P 400 Mid-Cap ETF)'
+  'Westside LC LLC'
+  'CL Covault LLC'
+  'CL Urban LLC'
+  'Bison Hawksbill LLC'
+  'Bison IV Friends and Family LLC'
+  'Sugar Free Capital'
+  'Schwab Value Advantage Money Fund Investor'
+  'Schwab Fund US Small Cap ETF'
+  'Schwab US Small Cap ETF'
+  'Schwab US Large Cap ETF'
+  'Schwab Fund US Large Cap ETF'
+  'Schwab US TIPS ETF'
+  'LVMH Moët Hennessy - Louis Vuitton, Société'
+  'Fomento Económico Mexicano, S.A.B. de'
+  'Edgewood Growth Fund Institutional Class Shares'
+  'Fuller & Thaler Behavioral Small-Cap Equity Fund'
+  'Vanguard Russell 1000 Growth Index Fund ETF'
+  'Vanguard Mortgage-Backed Securities Index Fund'
+  'Columbia Dividend Income Fund Institutional 2'
+  'Massachusetts Investors Growth Stock Fund Class'
+  'PIMCO Income Fund Institutional Class Shares'
+  'Vanguard Equity Income Fund Admiral Shares'
+  'GQG PartnersEmerging Markets Equity Fund'
+  'BlackRockEmerging Markets Fund, Inc Institutional'
+  'LWO Fund II, LP - Glass Fab Holdings, LLC'
+  'ARLINGTON HEIGHTS ILL -- (--)'
+  'CALHOUN CNTY ALA BRD ED -- (--)'
+  'FLORESVILLE TEX INDPT SCH -- (--)'
+  'NAPA CALIF WTR REV REF -- (--)'
+  'Vanguard High-Yield Tax-Exempt Fund Admiral'
+  'Vanguard Dividend Appreciation Index Fund ETF'
+  'Vanguard High Dividend Yield Index Fund ETF'
+  'BrandywineGLOBAL - HIGH YIELD FUND Class A'
+  'Kimberly Akimbo LLC'
+  'Kiajia, LLC'
+  'Structured Services Investor, LLC'
+  'IShares Russell 1000 Growth'
+  'IShares TR Russell 1000 Value'
+  'IShares TR Russell 2000 VSP'
+  'Strategic Partners Real Estate VII LP'
+  'Strategic Partners IX LP'
+  'Kingfish Investments X, LLC'
+  'MSD EIV Private LLC - Series B'
+  'Double Mako Investments, LLC'
+  'White Tip Investments, LLC'
+  'HealthQuest Tactical Opportunities Fund'
+  'AAG KP LP'
+  'RCP GP Fund II LP'
+  'Dawson Portfolio Finance 5 LP'
+  'SRP Continuation Partners LP'
+  'NFP Continuation Partners LP'
+  'RCG Momentum LP'
+  'Red Cell Partners'
+  'Red Cell Incubation Fund LP'
+  'Kingfish Investments II, LLC'
+  'RMDC, Inc.'
+  'MSD Special Investments Fund II, LP'
+  'MSD Holdings, LP'
+  'Vesper Muse LLC'
+  'Turnbridge Equities Real Estate Fund II'
+  'Valence8 PE 2024 Fund'
+  'HealthQuest Tactical Opportunities LP'
+  'Cotulla Aviation LP'
+  'Cresta Royalty Partners II'
+  'GMF Group Fund II, LLC'
+  'MSD Hospitality Partners LP'
+  'Bear Lake Operations LLC'
+  'MSD EIV Private LLC'
+  'MSD Real Estate Credit Opportunity Fund II'
+  'HealthQuest Tactical Opportunities Fund LP'
+  'RCG Ventures Fund VIII'
+  'Caden Opportunity Fund'
+  'Kingfish Investments V, LLC'
+  'Double Mako Investments LLC'
+  'White Tip Investments LLC'
+  'MSD Special Investments Fund II, L.P.'
+  'Valence8 PE 2025 Fund'
+  'HealthQuest Tactical Opportunities Fund, L.P.'
+  'Cresta SC Fund I-A LP'
+  'Cresta Royalty Partners LP'
+  '26North BDC, Inc.'
+  'Dawson Portfolio Finance LP'
+  'MSD Partners, L.P.'
+  'MSD Special Investments Fund L.P.'
+  'Valence8 Cayman LP'
+  'HealthQuest Tactical Opportunities Fund L.P.'
+  'RCP GP Fund II, LP'
+  'Cresta Operating Partners (Non-Op Fund) LP'
+  'Cresta Royalty Partners II LP'
+  'Carriage House Investments LLP'
+  'RSL Football Holdings LLC'
+  'MSD Special Investments Fund II'
+  'TMG Haynesville Investors, LLC'
+  'TMG VCLR Investor, LLC'
+  'TMG Monument Investors LLC'
+  '26North BDC, Inc'
+  'SRP Continuation Partners, LP'
+  'RCG Momentum, LP'
+  'MSD EIV Private, LLC (JRK Investments III)'
+  'Turnbridge Real Estate Fund II'
+  'MSD Credit Opportunity Fund, L.P.'
+  'MSD EIV Private, LLC'
+  '26North Private Equity Fund I'
+  'Valence8 PE 2023 Fund'
+  'Valence8 PE 2022 Fund'
+  'Arcadia Gameto Investors LP'
+  'Highline Investors LLC'
+  '12 South Investor JV, LLC'
+  'Two Roads Development LLC Loan'
+  'NFP Continuation Partners, LP.'
+  'Caden FLV, LLC'
+  'Caden Long Equity Fund'
+  'Kingfish Investments VI, LLC'
+  '26Nova Co-Invest'
+  'ACG Cakes LP'
+  'Cresta Operating Partners LP'
+  'Two Roads Developments LLC loan'
+  'RM Atlantic Point Marina'
+  'RCP APM Holdings LLC'
+  'Granite Falls Energy LLC'
+  'East Baton Rouge Sewerage Commission, LA,'
+  'Minnetonka Independent School District No. 276,'
+  'Hurst-Euless-Bedford Independent School District,'
+  'Northwest Allen School Building Corporation, IN,'
+  'Colorado Water Resources and Power'
+  'Carrizo Springs Consolidated Independent School'
+  'Lamar Consolidated Independent School District,'
+  'Greene County Reorganized School District No. 3,'
+  'Boone County School District Finance Corporation,'
+  'Custer County School District 0025 (Broken Bow'
+  'Franklin Park School District Number 84, Cook'
+  'Sherwood School District No. 88J (Washington,'
+  'School District No. 1, Denver Public Schools, CO,'
+  'River Trails School District Number 26, Cook'
+  'Spring Branch Independent School District, TX,'
+  'Douglas County School District 0001, Omaha, NE,'
+  'West Lin-Wilsonville School District No. 3Jt,'
+  'Board of Regents, Texas State University System,'
+  'Fern Ridge School District 28J (Lane & Douglas'
+  'Bolivar R-1 School District of Polk County MO,'
+  'Board of Regents of the University of Oklahoma,'
+  'Board of Education of the Princeton City School'
+  'County Board of Education of Jefferson County, AL,'
+  'Tolles Career & Technical Center (Madison,'
+  'Independent School District No. 2888, Clinton-'
+  'Renton School District No. 403 (King County), WA,'
+  'Arizona Board of Regents, Arizona State University,'
+  'Spokane School District No. 81, Spokane County,'
+  'Unified School District No. 383, Riley County, KS,'
+  'Auburn School District No. 408 (King and Pierce'
+  'Pasco School District No. 1, Franklin County, WA,'
+  'State Board of Regents of the State of Utah o/b/o'
+  'Golden State Tobacco Securitization Corporation,'
+  'Hillsboro School District No. 1J (Washington,'
+  'Pecos-Barstow-Toyah Independent School District,'
+  'Alabama State Public School and College Authority,'
+  'State of Kansas Department of Transportation,'
+  'APOLLO GLOBAL MGMT INC'
+  'CHOICE HOTELS INTL INC NEW'
+  'HENRY JACK & ASSOC INC'
+  'IAC INC'
+  'LENNOX INTL INC'
+  'LPL FINL HLDGS INC COM'
+  'MARSH & MCLENNAN COS INC'
+  'PHILIP MORRIS INTL INC'
+  'TJX COS INC NEW'
+  'WABTEC INC'
+  'ZSCALERINC'
+  'iShares Core S&P Total US Stock Market ETF'
+  'Scale AI, Inc. Stock'
+  'Scale AI vested stock options'
+  'Vanguard Real Estate Index Fund ETF Shares'
+  'Global Accountability Corporation'
+  'GE Verona'
+  'Fidelity Advisor Biotechnology Fund Class C'
+  'Key Square Group LP'
+  'Key Square Partners II LP'
+  'Key Square Master Fund SP'
+  'Skye Global Fund'
+  'Roxo Energy Funding IV LLC'
+  'Key Square Partners II LLP'
+  'Totem Macro Global Alpha Select Onshore Fund,'
+  'Castle Hook LP'
+  'Old Farm Partners Master'
+  'Totem Management Seed'
+  'GreenGage Global Holdings'
+  'K-INFRA - Class S Hedge Fund'
+  'BBH LIMITED DURATION FUND CL I'
+  'BBH Wealth Strategies, LLC - CLARKSTON'
+  'Costco Whotesale Corp'
+  'Globant SA'
+  'ULSolutions Inc.'
+  'Unlted Health Group'
+  'FNMA (Fannie Mae)'
+  'S&P 500 Future, closed'
+  'S&P 500 futures option, opened'
+  'S&P 500 future, opened'
+  'ISHARES S&P 500 INDEX FUND - IVV'
+  'polygon'
+  'Quant'
+  'BTC ETF'
+  'Vanguard Extended Market Index Fund ETF'
+Eligible companies (after fund filter, deduped by ticker): 467
+  [ 25/467] fresh=0  cache=25  with_awards=16  errors=0
+  [ 50/467] fresh=1  cache=49  with_awards=32  errors=0
+  [ 75/467] fresh=14  cache=61  with_awards=49  errors=0
+  [100/467] fresh=33  cache=67  with_awards=61  errors=0
+  [125/467] fresh=46  cache=79  with_awards=77  errors=0
+  [150/467] fresh=61  cache=89  with_awards=90  errors=0
+  [175/467] fresh=73  cache=102  with_awards=106  errors=0
+  [200/467] fresh=87  cache=113  with_awards=118  errors=0
+  [225/467] fresh=103  cache=122  with_awards=130  errors=0
+  [250/467] fresh=117  cache=133  with_awards=148  errors=0
+  [275/467] fresh=132  cache=143  with_awards=163  errors=0
+  ERROR [LYV] Live Nation Entertainment, Inc.: The read operation timed out
+  [300/467] fresh=143  cache=156  with_awards=174  errors=1
+  [325/467] fresh=157  cache=167  with_awards=190  errors=1
+  [350/467] fresh=171  cache=178  with_awards=208  errors=1
+  [375/467] fresh=180  cache=194  with_awards=221  errors=1
+  ERROR [SYK] Stryker Corp.: The read operation timed out
+  [400/467] fresh=191  cache=207  with_awards=234  errors=2
+  ERROR [TTC] TORO CO: The read operation timed out
+  ERROR [UBER] Uber Technologies, Inc.: The read operation timed out
+  [425/467] fresh=203  cache=218  with_awards=249  errors=4
+  [450/467] fresh=211  cache=235  with_awards=261  errors=4
+  [467/467] fresh=220  cache=243  with_awards=268  errors=4
+
+============================================================
+SUMMARY
+============================================================
+Companies eligible (input):      467
+Fresh API calls this run:        220
+Loaded from cache:               243
+Errors (API/network):            4
+Rows dropped (name mismatch):    1435
+Companies with >= 1 award:       268
+Total award rows:                2759
+Distinct awarding agencies:      39
+
+Verbatim awarding agency name samples (first 15):
+  'Agency for International Development'
+  'Consumer Product Safety Commission'
+  'Court Services and Offender Supervision Agency'
+  'Department of Agriculture'
+  'Department of Commerce'
+  'Department of Defense'
+  'Department of Education'
+  'Department of Energy'
+  'Department of Health and Human Services'
+  'Department of Homeland Security'
+  'Department of Housing and Urban Development'
+  'Department of Justice'
+  'Department of Labor'
+  'Department of State'
+  'Department of Transportation'
+
+5 sample award rows:
+  [A]  'AGILENT TECHNOLOGIES, INC.'  |  'Department of Defense'  |  $      6541594.0  |  2005-06-06
+  [A]  'AGILENT TECHNOLOGIES INC'  |  'Department of Defense'  |  $     4924396.62  |  2014-09-30
+  [A]  'AGILENT TECHNOLOGIES, INC.'  |  'Department of Defense'  |  $     4094677.03  |  2011-04-22
+  [A]  'AGILENT TECHNOLOGIES, INC.'  |  'Department of Defense'  |  $      3748984.9  |  2008-10-30
+  [A]  'AGILENT TECHNOLOGIES, INC.'  |  'Department of Defense'  |  $     3537892.07  |  2009-12-21
+
+Key contractor check:
+  AAPL    in securities  →  AWARDS FOUND
+  BA      in securities  →  AWARDS FOUND
+  BAH     in securities  →  AWARDS FOUND
+  HON     in securities  →  AWARDS FOUND
+  LMT     in securities  →  AWARDS FOUND
+  MSFT    in securities  →  AWARDS FOUND
+  PLTR    in securities  →  AWARDS FOUND
+  RTX     not in securities (filtered or absent)
+
+Outputs written:
+  /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/contract_awards.csv
+  /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/ticker_awarding_agencies.csv
+  /Users/wongpeiting/Desktop/CU/python-work/shares/data/interim/usaspending_cache/   (474 cached files)
+Deleted existing /Users/wongpeiting/Desktop/CU/python-work/shares/data/trades.db
+Schema created.
+
+agency_remit:      27 rows
+contract_awards: 2421 rows  (338 duplicate award_ids dropped)
+securities:      1130 rows
+officials:         34 rows
+filings:           85 rows  (85 mapped to official, 0 unmapped)
+Traceback (most recent call last):
+  File "/Users/wongpeiting/Desktop/CU/python-work/shares/step15_load.py", line 319, in <module>
+    pd.DataFrame(txn_rows).to_sql('transactions', conn, if_exists='append', index=False)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/pandas/core/generic.py", line 3052, in to_sql
+    return sql.to_sql(
+           ~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<8 lines>...
+        method=method,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/pandas/io/sql.py", line 841, in to_sql
+    return pandas_sql.to_sql(
+           ~~~~~~~~~~~~~~~~~^
+        frame,
+        ^^^^^^
+    ...<9 lines>...
+        **engine_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/pandas/io/sql.py", line 2880, in to_sql
+    return table.insert(chunksize, method)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/pandas/io/sql.py", line 1122, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/pandas/io/sql.py", line 2571, in _execute_insert
+    conn.executemany(self.insert_statement(num_rows=1), data_list)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OverflowError: Python int too large to convert to SQLite INTEGER

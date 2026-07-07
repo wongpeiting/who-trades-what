@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}{{ official['full_name'] }} — Who Trades What{% endblock %}
+
+{% block content %}
+<p><a href="/">← Back to search</a></p>
+
+<div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem;">
+  {% set nm = official['full_name'].replace(',', ' ').split() %}
+  <span class="avatar" style="width:64px; height:64px; font-size:1.1rem; flex:0 0 auto;">{% if official['photo_url'] %}<img src="{{ official['photo_url'] }}" alt="" loading="lazy">{% else %}{{ ((nm[1][0] ~ nm[0][0])|upper) if nm|length > 1 else (nm[0][0]|upper) }}{% endif %}</span>
+  <div>
+    <h1 style="margin:0; line-height:1.1;">{{ official['full_name'] }}</h1>
+    <p class="subheading" style="margin:0.2rem 0 0;">{{ official['title'] }}</p>
+  </div>
+</div>
+
+{% if official['prior_office'] %}
+<dl class="official-meta">
+  <div>
+    <dt>Prior office</dt>
+    <dd>{{ official['prior_office'] }}</dd>
+  </div>
+</dl>
+{% endif %}
+
+<div class="stat-strip" style="margin-top:1.5rem;">
+  <div class="stat">
+    <div class="num">{{ "{:,}".format(txn_count) }}</div>
+    <div class="lbl">transactions</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ "{:,}".format(holding_count) }}</div>
+    <div class="lbl">holdings</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ "{:,}".format(late_count) }}</div>
+    <div class="lbl">late disclosures (&gt;45 days)</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ "{:,}".format(contractor_count) }}</div>
+    <div class="lbl">agency-contractor trades</div>
+  </div>
+</div>
+
+<form method="get" action="/official/{{ official['official_id'] }}" style="display:flex; gap:0.6rem; align-items:flex-end; flex-wrap:wrap; margin:1.4rem 0 0.6rem;">
+  <div style="flex:1 1 260px;">
+    <label for="oq" style="font-size:0.8rem; font-weight:600;">Search within {{ official['full_name'].split(',')[0] }}'s disclosures</label>
+    <input type="search" id="oq" name="q" value="{{ q }}" placeholder="e.g. Nvidia, bond, dividend, NVDA" style="margin-bottom:0;">
+  </div>
+  <select name="kind" onchange="this.form.submit()" style="margin-bottom:0; width:auto; min-width:130px;">
+    <option value="">All types</option>
+    <option value="transaction" {% if kind=='transaction' %}selected{% endif %}>Transactions</option>
+    <option value="holding" {% if kind=='holding' %}selected{% endif %}>Holdings</option>
+  </select>
+  <button type="submit" style="width:auto; padding:0.55rem 1.1rem; margin-bottom:0;">Search</button>
+  {% if q or kind %}<a href="/official/{{ official['official_id'] }}" role="button" class="outline secondary" style="width:auto; padding:0.55rem 1rem; margin-bottom:0;">Clear</a>{% endif %}
+</form>
+
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;">
+  <p style="margin:0; font-size:0.9rem; color:var(--pico-muted-color);">
+    {% if total %}Showing {{ showing_from }}–{{ showing_to }} of <strong>{{ "{:,}".format(total) }}</strong> rows{% if q %} matching "{{ q }}"{% endif %}.{% else %}No rows{% if q %} match "{{ q }}"{% endif %}.{% endif %}
+  </p>
+  <a href="/export?official={{ official['full_name'] | urlencode }}" role="button" class="outline" style="font-size:0.85rem; padding:0.3em 0.9em; margin:0;">Export this official's rows (CSV)</a>
+</div>
+
+{% if items %}
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Kind</th>
+      <th>Security</th>
+      <th>Ticker</th>
+      <th>Type</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Flags</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row, badges in items %}
+    <tr>
+      <td>{{ row['item_kind'] or '—' }}</td>
+      <td class="truncate" title="{{ row['raw_description'] }}">{{ row['raw_description'] or '—' }}</td>
+      <td>{{ row['ticker'] or '—' }}</td>
+      <td>{{ row['txn_type'] or '—' }}</td>
+      <td style="white-space:nowrap;">{{ row['txn_date'] or '—' }}</td>
+      <td style="white-space:nowrap; font-size:0.82rem;">{{ row['value_bracket'] or '—' }}</td>
+      <td style="white-space:nowrap;">
+        {% for badge_class, badge_label in badges %}
+          <span class="badge badge-{{ badge_class }}">{{ badge_label }}</span>
+        {% endfor %}
+      </td>
+      <td style="white-space:nowrap;">
+        {% set su = row['source_url'] %}
+        {% set sf = row['source_file'] %}
+        {% if su and su.startswith('http') and ' ' not in su %}
+          <a href="{{ su }}" target="_blank" rel="noopener" title="View source filing on OGE (PDF)" style="font-size:0.78rem; text-decoration:none;">source (PDF)</a>
+        {% elif sf and sf.startswith('http') and ' ' not in sf %}
+          <a href="{{ sf }}" target="_blank" rel="noopener" title="View source filing on OGE (PDF)" style="font-size:0.78rem; text-decoration:none;">source (PDF)</a>
+        {% elif sf %}
+          <a href="/source/{{ sf | urlencode }}" target="_blank" rel="noopener" title="View source filing (PDF)" style="font-size:0.78rem; text-decoration:none;">source (PDF)</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% if total_pages > 1 %}
+<div class="pagination">
+  {% set base = '/official/' ~ official['official_id'] ~ '?q=' ~ (q | urlencode) ~ '&kind=' ~ kind %}
+  {% if page > 1 %}<a href="{{ base }}&page={{ page - 1 }}" role="button" class="outline">← Prev</a>
+  {% else %}<button disabled class="outline">← Prev</button>{% endif %}
+  <span style="font-size:0.9rem; color:var(--pico-muted-color);">Page {{ page }} of {{ total_pages }}</span>
+  {% if page < total_pages %}<a href="{{ base }}&page={{ page + 1 }}" role="button" class="outline">Next →</a>
+  {% else %}<button disabled class="outline">Next →</button>{% endif %}
+</div>
+{% endif %}
+{% else %}
+<p style="color:var(--pico-muted-color);">No rows{% if q %} match "{{ q }}"{% endif %} for this official.</p>
+{% endif %}
+{% endblock %}

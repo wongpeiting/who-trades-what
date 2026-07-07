@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+{% block title %}Search — Who Trades What{% endblock %}
+
+{% block content %}
+{% set is_filtered = query or kind or official or agency or txn_type or flag or amount_min %}
+{% if not is_filtered %}
+<h1 style="margin:2.25rem 0 0.5rem; letter-spacing:-0.03em; line-height:1.08; font-size:clamp(2.1rem, 4.8vw, 3rem);">The money trail&nbsp; 🪙 &nbsp;through Trump's cabinet</h1>
+<p style="font-size:1.15rem; color:var(--pico-color); margin:0 0 1.2rem; line-height:1.55;">Explore the personal finances of the President and his lieutenants, as disclosed in the filings they must make by law.</p>
+
+<details style="border:1px solid #93a883; border-radius:8px; margin:0 0 1.25rem; font-size:0.92rem; overflow:hidden;">
+  <summary style="cursor:pointer; font-weight:700; background:#aec2a0; color:#1c3314; padding:0.6rem 1rem;">What am I looking at?</summary>
+  <div style="padding:0.6rem 1rem 0.7rem;">
+    <p style="margin:0.3rem 0;">Self-enrichment has been a persistent question of Trump's presidency, and the law gives the public a way to check it. The Ethics in Government Act of 1978 requires the President and senior executive-branch officials to disclose what they own, earn and trade. This database collects those filings for {{ officials_list|length }} of them — the President and 35 of his senior appointees — in one searchable place.</p>
+    <p style="margin:0.5rem 0 0.2rem;">They file two forms:</p>
+    <ul style="margin:0.2rem 0;">
+      <li><b>OGE 278e</b> — an annual report of everything held and earned.</li>
+      <li><b>OGE 278-T</b> — a report of each stock trade over $1,000, due within 45 days (required since the 2012 STOCK Act).</li>
+    </ul>
+    <p style="margin:0.6rem 0 0.2rem;">Every row is one of two kinds:</p>
+    <ul style="margin:0.2rem 0;">
+      <li><b>Transaction</b> — a purchase or sale of a security, with the trade date.</li>
+      <li><b>Holding</b> — an asset the filer owns, with its value range and any income it earned.</li>
+    </ul>
+    <p style="margin:0.4rem 0 0.2rem;">To each line we added the security's ticker, the federal contracts the official's own agency awards and flags for conflicts and late disclosures (<span class="badge badge-contractor">agency contractor</span> the official traded a company their own agency pays $100 million or more in federal contracts; <span class="badge badge-late">late</span> filed more than 45 days after the trade, past the statutory limit; <span class="badge badge-tariff">pre&ndash;tariff-pause</span> one of Trump's 327 trades on April 8, 2025, the day before he paused his tariffs).</p>
+    <p style="margin:0.4rem 0 0.2rem;">The data covers transactions dated on or after Jan. 20, 2025 (the start of the term), captured in a snapshot on July 5, 2026.</p>
+  </div>
+</details>
+
+<h2 style="font-size:1rem; margin:1.5rem 0 0.7rem; letter-spacing:-0.01em; font-style:italic;">Hot topics</h2>
+<div class="find-grid">
+  <a class="find-card" href="/?flag=tariff_pause">
+    <div class="fc-title">Traded just before the tariff pause</div>
+    <div class="fc-hook">The President's accounts bought 327 stocks on April 8, 2025 — the day before he paused his own tariffs — and reported them 447 days after the trade.</div>
+  </a>
+  <a class="find-card" href="/?flag=regulates_sector">
+    <div class="fc-title">Traded in an industry they regulate</div>
+    <div class="fc-hook">Energy Secretary Chris Wright, who founded Liberty Energy, and Interior Secretary Doug Burgum traded oil, gas and pipeline stocks in sectors their own departments oversee.</div>
+  </a>
+  <a class="find-card" href="/timing">
+    <div class="fc-title">Did the timing pay off?</div>
+    <div class="fc-hook">Across more than 10,000 priced trades, 46.9% beat the S&amp;P 500 over the next 90 days, with a handful of large outliers.</div>
+  </a>
+  <a class="find-card" href="/conflicts">
+    <div class="fc-title">Traded next to an official action</div>
+    <div class="fc-hook">Over 3,000 trades fall within a week of a dated action by the trader's own agency.</div>
+  </a>
+  <a class="find-card" href="/?query=World+Liberty">
+    <div class="fc-title">Trump's crypto income</div>
+    <div class="fc-hook">World Liberty Financial token sales and wallet income total roughly $592 million in exact figures on the President's annual filing, alongside his $TRUMP meme-coin royalties.</div>
+  </a>
+</div>
+{% if stats %}
+<p style="font-size:0.85rem; color:var(--pico-muted-color); margin:0.25rem 0 1.6rem; line-height:1.5;">
+  <b>See also...</b> <a href="/?flag=late">{{ "{:,}".format(stats['late']) }} trades were filed late</a>, past the 45-day deadline, and <a href="/?flag=core_contractor">{{ stats['core'] }} were in companies holding federal contracts worth $100 million or more from the trader's own agency</a>.
+</p>
+{% endif %}
+
+{% else %}
+{# ── filtered / search view: a header that names the subset, so readers aren't lost ── #}
+{% set ns = namespace(title='', desc='') %}
+{% if flag == 'late' %}{% set ns.title = 'Late disclosures' %}{% set ns.desc = 'Trades reported more than 45 days after the trade — past the statutory deadline.' %}
+{% elif flag == 'core_contractor' %}{% set ns.title = 'Agency-contractor trades' %}{% set ns.desc = 'Trades in companies holding $100M or more in federal contracts from the trader’s own agency.' %}
+{% elif flag == 'tariff_pause' %}{% set ns.title = 'Pre–tariff-pause trades' %}{% set ns.desc = 'The President’s 327 stock purchases on April 8, 2025 — the day before he paused his own tariffs.' %}
+{% elif flag == 'regulates_sector' %}{% set ns.title = 'Traded in an industry they regulate' %}{% set ns.desc = 'Appointed officials trading in an industry their own agency oversees.' %}
+{% elif flag == 'near_action' %}{% set ns.title = 'Traded near an agency action' %}{% set ns.desc = 'Trades within seven days of a dated action by the official’s own agency.' %}
+{% endif %}
+{% if query %}{% set ns.title = 'Results for “' ~ query ~ '”' %}{% endif %}
+{% if official and not query %}{% set ns.title = official %}{% if not ns.desc %}{% set ns.desc = 'Every disclosed trade, holding, and income line for this official.' %}{% endif %}{% endif %}
+{% if not ns.title %}{% set ns.title = 'Filtered results' %}{% endif %}
+<p style="margin:0 0 0.3rem; font-size:0.9rem;"><a href="/" style="text-decoration:none;">&larr; All disclosures</a></p>
+<h1 style="margin-bottom:0.3rem; letter-spacing:-0.02em; line-height:1.15;">{{ ns.title }}</h1>
+{% if ns.desc %}<p class="subheading" style="margin-top:0;">{{ ns.desc }}</p>{% endif %}
+{% endif %}
+
+{# ── Search bar ── #}
+<form method="get" action="/">
+  <div style="display:flex; gap:0.6rem; align-items:flex-end; flex-wrap:wrap; margin-bottom:0.75rem;">
+    <div style="flex:2 1 240px; min-width:180px;">
+      <label for="q" style="font-size:0.8rem; font-weight:600;">Search — officials, securities, tickers, income</label>
+      <input type="search" id="q" name="query" value="{{ query }}" placeholder="e.g. Lockheed, Melania, NVDA…" style="margin-bottom:0;" />
+    </div>
+    <button type="submit" style="width:auto; padding:0.55rem 1.1rem; margin-bottom:0;">Search</button>
+    <div style="flex:1 1 200px;">
+      <label for="q-official" style="font-size:0.8rem; font-weight:600;">Jump to an official's page</label>
+      <select id="q-official" onchange="if(this.value)window.location='/official/'+this.value;" style="margin-bottom:0;">
+        <option value="">— pick an official —</option>
+        {% for o in officials_list %}
+        <option value="{{ o['official_id'] }}">{{ o['official_name'] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div style="flex:1 1 180px;">
+      <label for="q-flag" style="font-size:0.8rem; font-weight:600;">Conflict flag</label>
+      <select id="q-flag" name="flag" onchange="this.form.submit()" style="margin-bottom:0;">
+        <option value="">— any flag —</option>
+        <option value="core_contractor" {% if flag=='core_contractor' %}selected{% endif %}>Agency contractor (≥$100M)</option>
+        <option value="late" {% if flag=='late' %}selected{% endif %}>Late disclosure (&gt;45 days)</option>
+        <option value="tariff_pause" {% if flag=='tariff_pause' %}selected{% endif %}>Pre–tariff-pause (Apr 8)</option>
+        <option value="regulates_sector" {% if flag=='regulates_sector' %}selected{% endif %}>Industry they regulate</option>
+        <option value="near_action" {% if flag=='near_action' %}selected{% endif %}>Traded near an agency action</option>
+      </select>
+    </div>
+    {% if query or kind or official or agency or txn_type or flag or amount_min %}
+    <a href="/" role="button" class="outline secondary" style="width:auto; padding:0.55rem 1rem; margin-bottom:0;">Clear</a>
+    {% endif %}
+  </div>
+
+  {# ── Filter bar ── #}
+  <div class="filter-bar">
+    <details {% if kind or official or agency or txn_type or flag or amount_min %}open{% endif %}>
+      <summary>Advanced filters</summary>
+      <div class="filter-grid">
+        <div>
+          <label for="f-kind">Type</label>
+          <select id="f-kind" name="kind">
+            <option value="">All types</option>
+            <option value="transaction" {% if kind=='transaction' %}selected{% endif %}>Transaction</option>
+            <option value="holding" {% if kind=='holding' %}selected{% endif %}>Holding</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-agency">Agency</label>
+          <select id="f-agency" name="agency">
+            <option value="">All agencies</option>
+            {% for a in agencies_list %}
+            <option value="{{ a }}" {% if agency==a %}selected{% endif %}>{{ a }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="f-txn-type">Transaction type</label>
+          <select id="f-txn-type" name="txn_type">
+            <option value="">All</option>
+            {% for t in txn_types_list %}
+            <option value="{{ t }}" {% if txn_type==t %}selected{% endif %}>{{ t }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="f-amount">Value min ($)</label>
+          <input type="number" id="f-amount" name="amount_min" value="{{ amount_min }}" placeholder="e.g. 15001" style="margin-bottom:0;" />
+        </div>
+      </div>
+      <div style="margin-top:0.75rem;">
+        <button type="submit">Apply filters</button>
+      </div>
+    </details>
+  </div>
+</form>
+
+{# ── Example searches (only on empty landing) ── #}
+{% if not query and not kind and not official and not agency and not txn_type and not flag and not amount_min %}
+<div class="example-searches" style="align-items:baseline;">
+  <span style="font-size:0.9rem; color:var(--pico-muted-color);">Try:</span>
+  <a href="/?query=Melania">Melania</a>
+  <a href="/?query=Bessent">Bessent</a>
+  <a href="/?query=Lockheed">Lockheed</a>
+  <a href="/?query=Lutnick">Lutnick</a>
+  <a href="/?query=Palantir">Palantir</a>
+  <a href="/?query=Coinbase">Coinbase</a>
+  <a href="/?query=Nvidia">Nvidia</a>
+  <a href="/?query=Tesla">Tesla</a>
+  <a href="/?query=Isaacman">Isaacman</a>
+</div>
+{% endif %}
+
+{# ── Results ── #}
+{% if total is defined %}
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+  <p style="margin:0; font-size:0.9rem; color:var(--pico-muted-color);">
+    {% if total == 0 %}
+      No results found.
+    {% else %}
+      Showing {{ showing_from }}–{{ showing_to }} of <strong>{{ "{:,}".format(total) }}</strong> rows
+      {% if query %} for <em>"{{ query }}"</em>{% endif %}
+      <span style="opacity:0.7;"> (most recent first)</span>
+    {% endif %}
+  </p>
+  {% if total > 0 %}
+  <a href="/export?{{ request.query_string.decode().replace('&page='+request.args.get('page','1'), '').replace('page='+request.args.get('page','1')+'&', '').replace('page='+request.args.get('page','1'), '') }}" role="button" class="outline" style="font-size:0.85rem; padding:0.3em 0.9em;">
+    Export CSV (all {{ "{:,}".format(total) }} rows)
+  </a>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if rows %}
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Official</th>
+      <th>Title</th>
+      <th>Kind</th>
+      <th>Asset / Security</th>
+      <th>Action</th>
+      <th>Date</th>
+      <th>Value</th>
+      <th>Flags</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row, badges in rows %}
+    <tr>
+      <td style="white-space:nowrap;">
+        <span style="display:inline-flex; align-items:center; gap:0.45rem;">
+          {% set ph = photos.get(row['official_id']) %}
+          {% set nm = row['official_name'].replace(',', ' ').split() %}
+          <span class="avatar" style="width:26px; height:26px; font-size:0.58rem;">{% if ph %}<img src="{{ ph }}" alt="" loading="lazy">{% else %}{{ ((nm[1][0] ~ nm[0][0])|upper) if nm|length > 1 else (nm[0][0]|upper) }}{% endif %}</span>
+          <a href="/official/{{ row['official_id'] }}">{{ row['official_name'] }}</a>
+        </span>
+      </td>
+      <td style="font-size:0.8rem; color:var(--pico-muted-color); max-width:190px; white-space:normal; line-height:1.3;">{{ row['title'] }}</td>
+      <td>{{ row['item_kind'] or '—' }}</td>
+      <td class="truncate" title="{{ row['raw_description'] }}">{{ row['raw_description'] or '—' }}</td>
+      <td style="font-size:0.85rem; white-space:nowrap;">{% if row['item_kind'] == 'transaction' %}{{ row['txn_type'] or '—' }}{% else %}held{% if row['owner'] and row['owner'] != 'unknown' %} ({{ row['owner'] }}){% endif %}{% endif %}</td>
+      <td style="font-size:0.85rem; white-space:nowrap;">{{ row['txn_date'] or '—' }}</td>
+      <td style="font-size:0.82rem; max-width:200px;">
+        {% set vb = row['value_bracket'] %}
+        {% set inc = row['income_amount'] %}
+        {% if vb and vb not in ('None (or less than $1,001)', '') and 'ascertainable' not in vb|lower %}{{ vb }}
+        {% elif inc and inc not in ('None (or less than $201)', '') %}<b>{{ inc }}</b>{% if row['income_type'] %} <small style="color:var(--pico-muted-color);">{{ row['income_type'] }}</small>{% endif %}
+        {% elif vb and vb not in ('None (or less than $1,001)', '') %}<span style="color:var(--pico-muted-color);">{{ vb }}</span>
+        {% else %}—{% endif %}
+      </td>
+      <td style="white-space:nowrap;">
+        {% for badge_class, badge_label in badges %}
+          <span class="badge badge-{{ badge_class }}">{{ badge_label }}</span>
+        {% endfor %}
+      </td>
+      <td style="white-space:nowrap;">
+        {% set su = row['source_url'] %}
+        {% set sf = row['source_file'] %}
+        {% if su and su.startswith('http') and ' ' not in su %}
+          <a href="{{ su }}" target="_blank" rel="noopener" title="View the source filing on OGE (PDF)" style="white-space:nowrap; font-size:0.78rem; text-decoration:none;">view</a>
+        {% elif sf and sf.startswith('http') and ' ' not in sf %}
+          <a href="{{ sf }}" target="_blank" rel="noopener" title="View the source filing on OGE (PDF)" style="white-space:nowrap; font-size:0.78rem; text-decoration:none;">view</a>
+        {% elif sf %}
+          <a href="/source/{{ sf | urlencode }}" target="_blank" rel="noopener" title="View the source filing (PDF)" style="white-space:nowrap; font-size:0.78rem; text-decoration:none;">view</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{# ── Pagination ── #}
+{% if total_pages > 1 %}
+<div class="pagination">
+  {% set base_url = '/?query=' ~ query ~ '&kind=' ~ kind ~ '&official=' ~ official ~ '&agency=' ~ agency ~ '&txn_type=' ~ txn_type ~ '&flag=' ~ flag ~ '&amount_min=' ~ amount_min %}
+  {% if page > 1 %}
+    <a href="{{ base_url }}&page={{ page - 1 }}" role="button" class="outline">← Prev</a>
+  {% else %}
+    <button disabled class="outline">← Prev</button>
+  {% endif %}
+  <span style="font-size:0.9rem; color:var(--pico-muted-color);">Page {{ page }} of {{ total_pages }}</span>
+  {% if page < total_pages %}
+    <a href="{{ base_url }}&page={{ page + 1 }}" role="button" class="outline">Next →</a>
+  {% else %}
+    <button disabled class="outline">Next →</button>
+  {% endif %}
+</div>
+{% endif %}
+
+{% elif total == 0 %}
+<p style="color:var(--pico-muted-color);">Try broadening your search or removing some filters.</p>
+{% endif %}
+{% endblock %}

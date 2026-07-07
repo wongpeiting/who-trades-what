@@ -1,0 +1,1107 @@
+raw_description,resolved_name,ticker,issuer_name,sector,method
+"Agilent Technologies, Inc. (A)","Agilent Technologies, Inc.",A,"Agilent Technologies, Inc.",medical devices,paren
+AIA Group Ltd ADR (AAGIY),AIA Group Ltd ADR,AAGIY,AIA Group Ltd ADR,,paren
+"Apple, Inc. (AAPL)","Apple, Inc.",AAPL,"Apple, Inc.",technology,paren
+"AbbVie, Inc. (ABBV)","AbbVie, Inc.",ABBV,"AbbVie, Inc.",pharmaceuticals,paren
+Ambev SA (ABEV),Ambev SA,ABEV,Ambev SA,,paren
+Abbott Laboratories (ABT),Abbott Laboratories,ABT,Abbott Laboratories,medical devices,paren
+Accenture Plc (ACN),Accenture Plc,ACN,Accenture Plc,technology,paren
+"Analog Devices, Inc. (ADI)","Analog Devices, Inc.",ADI,"Analog Devices, Inc.",semiconductors,paren
+"Autodesk, Inc. (ADSK)","Autodesk, Inc.",ADSK,"Autodesk, Inc.",technology,paren
+"American Electric Power Co., Inc. (AEP)","American Electric Power Co., Inc.",AEP,"American Electric Power Co., Inc.",utilities,paren
+"American International Group, Inc. (AIG)","American International Group, Inc.",AIG,"American International Group, Inc.",financial services,paren
+Alkami Technology Inc. Common Stock (ALKT),Alkami Technology Inc. Common Stock,ALKT,Alkami Technology Inc. Common Stock,,paren
+Allstate Corp (ALL),Allstate Corp,ALL,Allstate Corp,financial services,paren
+"Applied Materials, Inc. (AMAT)","Applied Materials, Inc.",AMAT,"Applied Materials, Inc.",semiconductors,paren
+"Advanced Micro Devices, Inc. (AMD)","Advanced Micro Devices, Inc.",AMD,"Advanced Micro Devices, Inc.",semiconductors,paren
+"AMETEK, Inc. (AME)","AMETEK, Inc.",AME,"AMETEK, Inc.",industrials,paren
+"Amazon.com, Inc. (AMZN)","Amazon.com, Inc.",AMZN,"Amazon.com, Inc.",technology,paren
+Aon Plc (AON),Aon Plc,AON,Aon Plc,,paren
+Atmos Energy Corp. (ATO),Atmos Energy Corp.,ATO,Atmos Energy Corp.,utilities,paren
+"Broadcom, Inc. (AVGO)","Broadcom, Inc.",AVGO,"Broadcom, Inc.",semiconductors,paren
+"American Water Works Co., Inc. (AWK)","American Water Works Co., Inc.",AWK,"American Water Works Co., Inc.",utilities,paren
+American Express Co. (AXP),American Express Co.,AXP,American Express Co.,financial services,paren
+Barrick Mining Corp (B),Barrick Mining Corp,B,Barrick Mining Corp,mining,paren
+Boeing Co (BA),Boeing Co,BA,Boeing Co,aerospace,paren
+Bae Systems PLC (BAESY),Bae Systems PLC,BAESY,Bae Systems PLC,defense,paren
+Booz Allen Hamilton Holding Corp. (BAH),Booz Allen Hamilton Holding Corp.,BAH,Booz Allen Hamilton Holding Corp.,defense,paren
+"Becton, Dickinson and Company (BDX)","Becton, Dickinson and Company",BDX,"Becton, Dickinson and Company",medical devices,paren
+State Street SPDR Bloomberg 1-3 Month T-Bill ETF,STATE STREET CORP,STT-PG,STATE STREET CORP,,fuzzy
+Bio-Rad Laboratories Inc Class A (BIO),Bio-Rad Laboratories Inc Class A,BIO,Bio-Rad Laboratories Inc Class A,,paren
+The Bank of New York Mellon Corporation (BK),The Bank of New York Mellon Corporation,BK,The Bank of New York Mellon Corporation,banks,paren
+"Broadridge Financial Solutions, Inc. (BR)","Broadridge Financial Solutions, Inc.",BR,"Broadridge Financial Solutions, Inc.",financial services,paren
+Berkshire Hathaway Inc. (BRKB),Berkshire Hathaway Inc.,BRKB,Berkshire Hathaway Inc.,,paren
+British American Tobacco Industries p.l.c. Common,British American Tobacco p.l.c.,BTAFF,British American Tobacco p.l.c.,,fuzzy
+Anheuser-Busch Inbev SA Sponsored ADR,Anheuser-Busch InBev SA/NV,BUDFF,Anheuser-Busch InBev SA/NV,food,fuzzy
+"Casey's General Stores, Inc. (CASY)","Casey's General Stores, Inc.",CASY,"Casey's General Stores, Inc.",,paren
+Cameco Corporation Common Stock (CCJ),Cameco Corporation Common Stock,CCJ,Cameco Corporation Common Stock,mining,paren
+CDW Corp. (CDW),CDW Corp.,CDW,CDW Corp.,technology,paren
+Compagnie Financiere Richemont SA ADR,,,,,unresolved
+The Carlyle Group Inc. Common Stock (CG),The Carlyle Group Inc. Common Stock,CG,The Carlyle Group Inc. Common Stock,financial services,paren
+"C.H. Robinson Worldwide, Inc. (CHRW)","C.H. Robinson Worldwide, Inc.",CHRW,"C.H. Robinson Worldwide, Inc.",industrials,paren
+"Charter Communications, Inc. (CHTR)",,,,,bond_skip
+Cincinnati Financial Corp. (CINF),Cincinnati Financial Corp.,CINF,Cincinnati Financial Corp.,financial services,paren
+Colgate-Palmolive Co. (CL),Colgate-Palmolive Co.,CL,Colgate-Palmolive Co.,food,paren
+Comcast Corp. (CMCSA),Comcast Corp.,CMCSA,Comcast Corp.,telecommunications,paren
+"CME Group, Inc. (CME)","CME Group, Inc.",CME,"CME Group, Inc.",financial services,paren
+"Cummins, Inc. (CMI)","Cummins, Inc.",CMI,"Cummins, Inc.",industrials,paren
+"CenterPoint Energy, Inc. (CNP)","CenterPoint Energy, Inc.",CNP,"CenterPoint Energy, Inc.",utilities,paren
+ConocoPhillips (COP),ConocoPhillips,COP,ConocoPhillips,energy,paren
+"Copart, Inc. (CPRT)","Copart, Inc.",CPRT,"Copart, Inc.",industrials,paren
+"salesforce.com, inc. (CRM)","salesforce.com, inc.",CRM,"salesforce.com, inc.",technology,paren
+"CoStar Group, Inc. (CSGP)","CoStar Group, Inc.",CSGP,"CoStar Group, Inc.",real estate,paren
+"Carlisle Cos., Inc. (CSL)","Carlisle Cos., Inc.",CSL,"Carlisle Cos., Inc.",industrials,paren
+Cintas Corp. (CTAS),Cintas Corp.,CTAS,Cintas Corp.,,paren
+Chevron Corp. (CVX),Chevron Corp.,CVX,Chevron Corp.,energy,paren
+Danone SA ADR (DANOY),Danone SA ADR,DANOY,Danone SA ADR,food,paren
+Dollar General Corp. (DG),Dollar General Corp.,DG,Dollar General Corp.,,paren
+Danaher Corp. (DHR),Danaher Corp.,DHR,Danaher Corp.,medical devices,paren
+SPDR Dow Jones Industrial Average ETF Trust,DOW INC.,DOW,DOW INC.,chemicals,fuzzy
+The Walt Disney Co. (DIS),The Walt Disney Co.,DIS,The Walt Disney Co.,,paren
+Doximity Inc. Class A Common Stock (DOCS),Doximity Inc. Class A Common Stock,DOCS,Doximity Inc. Class A Common Stock,medical devices,paren
+Dynatrace Inc. Common Stock (DT),Dynatrace Inc. Common Stock,DT,Dynatrace Inc. Common Stock,technology,paren
+DTE Energy Co. (DTE),DTE Energy Co.,DTE,DTE Energy Co.,utilities,paren
+Duke Energy Corp. (DUK),Duke Energy Corp.,DUK,Duke Energy Corp.,utilities,paren
+"eBay, Inc. (EBAY)","eBay, Inc.",EBAY,"eBay, Inc.",,paren
+"Equifax, Inc. (EFX)","Equifax, Inc.",EFX,"Equifax, Inc.",financial services,paren
+Elevance Health Inc. Common Stock (ELV),Elevance Health Inc. Common Stock,ELV,Elevance Health Inc. Common Stock,health insurance,paren
+Enbridge Inc Common Stock (ENB),Enbridge Inc Common Stock,ENB,Enbridge Inc Common Stock,energy,paren
+"The Ensign Group, Inc. (ENSG)","The Ensign Group, Inc.",ENSG,"The Ensign Group, Inc.",medical devices,paren
+Equity Residential (EQR),Equity Residential,EQR,Equity Residential,real estate,paren
+"Evercore, Inc. (EVR)","Evercore, Inc.",EVR,"Evercore, Inc.",financial services,paren
+Exelon Corp. (EXC),Exelon Corp.,EXC,Exelon Corp.,utilities,paren
+"Expeditors International of Washington, Inc. (EXPD)","Expeditors International of Washington, Inc.",EXPD,"Expeditors International of Washington, Inc.",industrials,paren
+Fanuc Corp ADR (FANUY),Fanuc Corp ADR,FANUY,Fanuc Corp ADR,semiconductors,paren
+Fastenal Co. (FAST),Fastenal Co.,FAST,Fastenal Co.,industrials,paren
+Fair Isaac Corp. (FICO),Fair Isaac Corp.,FICO,Fair Isaac Corp.,financial services,paren
+"Five Below, Inc. (FIVE)","Five Below, Inc.",FIVE,"Five Below, Inc.",,paren
+Fomento Economico Mexicano S.A.B. de C.V.,,,,,unresolved
+"Floor & Decor Holdings, Inc. (FND)","Floor & Decor Holdings, Inc.",FND,"Floor & Decor Holdings, Inc.",construction,paren
+Franco-Nevada Corporation (FNV),Franco-Nevada Corporation,FNV,Franco-Nevada Corporation,mining,paren
+Freshpet Inc. (FRPT),Freshpet Inc.,FRPT,Freshpet Inc.,food,paren
+"GoDaddy, Inc. (GDDY)","GoDaddy, Inc.",GDDY,"GoDaddy, Inc.",technology,paren
+SPDR Gold Shares (GLD),SPDR Gold Shares,GLD,SPDR Gold Shares,mining,paren
+Globant S.A. Common Shares (GLOB),Globant S.A. Common Shares,GLOB,Globant S.A. Common Shares,technology,paren
+"Alphabet, Inc. (GOOG)","Alphabet, Inc.",GOOG,"Alphabet, Inc.",technology,paren
+"Guidewire Software, Inc. (GWRE)","Guidewire Software, Inc.",GWRE,"Guidewire Software, Inc.",technology,paren
+"HCA Healthcare, Inc. (HCA)","HCA Healthcare, Inc.",HCA,"HCA Healthcare, Inc.",health insurance,paren
+HEICO Corp. (HEI),HEICO Corp.,HEI,HEICO Corp.,aerospace,paren
+Heineken NV ADR (HEINY),Heineken NV ADR,HEINY,Heineken NV ADR,food,paren
+Haleon plc American Depositary Shares (Each,Haleon plc,HLNCF,Haleon plc,pharmaceuticals,fuzzy
+"Honeywell International, Inc. (HON)","Honeywell International, Inc.",HON,"Honeywell International, Inc.",industrials,paren
+"Intercontinental Exchange, Inc. (ICE)","Intercontinental Exchange, Inc.",ICE,"Intercontinental Exchange, Inc.",financial services,paren
+"IDEXX Laboratories, Inc. (IDXX)","IDEXX Laboratories, Inc.",IDXX,"IDEXX Laboratories, Inc.",medical devices,paren
+"International Flavors & Fragrances, Inc. (IFF)","International Flavors & Fragrances, Inc.",IFF,"International Flavors & Fragrances, Inc.",chemicals,paren
+Imperial Oil Limited Common Stock (IMO),Imperial Oil Limited Common Stock,IMO,Imperial Oil Limited Common Stock,energy,paren
+"Intuit, Inc. (INTU)","Intuit, Inc.",INTU,"Intuit, Inc.",technology,paren
+"Gartner, Inc. (IT)","Gartner, Inc.",IT,"Gartner, Inc.",technology,paren
+iShares Core S&P US Growth ETF (IUSG),iShares Core S&P US Growth ETF,IUSG,iShares Core S&P US Growth ETF,,paren
+iShares Core S&P US Value ETF (IUSV),iShares Core S&P US Value ETF,IUSV,iShares Core S&P US Value ETF,,paren
+iShares Russell 2000 ETF (IWM),iShares Russell 2000 ETF,IWM,iShares Russell 2000 ETF,,paren
+Jardine Matheson Holdings Ltd ADR (JMHLY),Jardine Matheson Holdings Ltd ADR,JMHLY,Jardine Matheson Holdings Ltd ADR,,paren
+Johnson & Johnson (JNJ),Johnson & Johnson,JNJ,Johnson & Johnson,pharmaceuticals,paren
+JPMorgan Chase & Co. (JPM),JPMorgan Chase & Co.,JPM,JPMorgan Chase & Co.,banks,paren
+"Kinsale Capital Group, Inc. (KNSL)","Kinsale Capital Group, Inc.",KNSL,"Kinsale Capital Group, Inc.",financial services,paren
+The Coca-Cola Co. (KO),The Coca-Cola Co.,KO,The Coca-Cola Co.,food,paren
+The Kroger Co. (KR),The Kroger Co.,KR,The Kroger Co.,food,paren
+Quaker Chemical Corp. (KWR),Quaker Chemical Corp.,KWR,Quaker Chemical Corp.,chemicals,paren
+"Lincoln Electric Holdings, Inc. (LECO)","Lincoln Electric Holdings, Inc.",LECO,"Lincoln Electric Holdings, Inc.",industrials,paren
+Eli Lilly & Co. (LLY),Eli Lilly & Co.,LLY,Eli Lilly & Co.,pharmaceuticals,paren
+"Grand Canyon Education, Inc. (LOPE)","Grand Canyon Education, Inc.",LOPE,"Grand Canyon Education, Inc.",,paren
+Lam Research Corp. (LRCX),Lam Research Corp.,LRCX,Lam Research Corp.,semiconductors,paren
+Lvmh Moet Hennessy Louis Vuitton SE ADR,,,,,unresolved
+Lloyds Banking Group Plc American Depositary,Lloyds Banking Group plc,LLOBF,Lloyds Banking Group plc,banks,fuzzy
+"Mastercard, Inc. (MA)","Mastercard, Inc.",MA,"Mastercard, Inc.",,paren
+Medtronic Plc (MDT),Medtronic Plc,MDT,Medtronic Plc,medical devices,paren
+"Medpace Holdings, Inc. (MEDP)","Medpace Holdings, Inc.",MEDP,"Medpace Holdings, Inc.",biotech,paren
+Meta Platforms Inc. Class A Common Stock,"Meta Platforms, Inc.",META,"Meta Platforms, Inc.",technology,fuzzy
+Mitsubishi Electric Corp ADR (MIELY),Mitsubishi Electric Corp ADR,MIELY,Mitsubishi Electric Corp ADR,utilities,paren
+Merck KGaA ADR (MKKGY),Merck KGaA ADR,MKKGY,Merck KGaA ADR,pharmaceuticals,paren
+Markel Corp. (MKL),Markel Corp.,MKL,Markel Corp.,financial services,paren
+"Mueller Industries, Inc. (MLI)","Mueller Industries, Inc.",MLI,"Mueller Industries, Inc.",industrials,paren
+"Martin Marietta Materials, Inc. (MLM)","Martin Marietta Materials, Inc.",MLM,"Martin Marietta Materials, Inc.",construction,paren
+"Altria Group, Inc. (MO)","Altria Group, Inc.",MO,"Altria Group, Inc.",food,paren
+Modine Manufacturing Co. (MOD),Modine Manufacturing Co.,MOD,Modine Manufacturing Co.,industrials,paren
+Morgan Stanley (MS),Morgan Stanley,MS,Morgan Stanley,banks,paren
+MS&AD Insurance Group Holdings Inc ADR,,,,,unresolved
+Microsoft Corp. (MSFT),Microsoft Corp.,MSFT,Microsoft Corp.,technology,paren
+"Motorola Solutions, Inc. (MSI)","Motorola Solutions, Inc.",MSI,"Motorola Solutions, Inc.",technology,paren
+"NextEra Energy, Inc. (NEE)","NextEra Energy, Inc.",NEE,"NextEra Energy, Inc.",utilities,paren
+Newmont Corp. (NEM),Newmont Corp.,NEM,Newmont Corp.,mining,paren
+"National Oilwell Varco, Inc. (NOV)","National Oilwell Varco, Inc.",NOV,"National Oilwell Varco, Inc.",energy,paren
+"ServiceNow, Inc. (NOW)","ServiceNow, Inc.",NOW,"ServiceNow, Inc.",technology,paren
+Nestle SA ADR (NSRGY),Nestle SA ADR,NSRGY,Nestle SA ADR,food,paren
+Nutrien Ltd. Common Shares (NTR),Nutrien Ltd. Common Shares,NTR,Nutrien Ltd. Common Shares,chemicals,paren
+NVIDIA Corp. (NVDA),NVIDIA Corp.,NVDA,NVIDIA Corp.,semiconductors,paren
+Novartis AG Common Stock (NVS),Novartis AG Common Stock,NVS,Novartis AG Common Stock,pharmaceuticals,paren
+"ONEOK, Inc. (OKE)","ONEOK, Inc.",OKE,"ONEOK, Inc.",energy,paren
+Oracle Corp. (ORCL),Oracle Corp.,ORCL,Oracle Corp.,technology,paren
+Old Republic International Corp. (ORI),Old Republic International Corp.,ORI,Old Republic International Corp.,financial services,paren
+"O'Reilly Automotive, Inc. (ORLY)","O'Reilly Automotive, Inc.",ORLY,"O'Reilly Automotive, Inc.",,paren
+Otis Worldwide Corporation Common Stock (OTIS),Otis Worldwide Corporation Common Stock,OTIS,Otis Worldwide Corporation Common Stock,industrials,paren
+"PDF Solutions, Inc. (PDFS)","PDF Solutions, Inc.",PDFS,"PDF Solutions, Inc.",semiconductors,paren
+"Public Service Enterprise Group, Inc. (PEG)","Public Service Enterprise Group, Inc.",PEG,"Public Service Enterprise Group, Inc.",utilities,paren
+"PepsiCo, Inc. (PEP)","PepsiCo, Inc.",PEP,"PepsiCo, Inc.",food,paren
+Progressive Corp. (PGR),Progressive Corp.,PGR,Progressive Corp.,financial services,paren
+"Philip Morris International, Inc. (PM)","Philip Morris International, Inc.",PM,"Philip Morris International, Inc.",food,paren
+"PPG Industries, Inc. (PPG)","PPG Industries, Inc.",PPG,"PPG Industries, Inc.",chemicals,paren
+PPL Corp. (PPL),PPL Corp.,PPL,PPL Corp.,utilities,paren
+Prosus NV ADR (PROSY),Prosus NV ADR,PROSY,Prosus NV ADR,technology,paren
+Privia Health Group Inc. Common Stock (PRVA),Privia Health Group Inc. Common Stock,PRVA,Privia Health Group Inc. Common Stock,medical devices,paren
+"Pure Storage, Inc. (PSTG)","Pure Storage, Inc.",PSTG,"Pure Storage, Inc.",technology,paren
+Power Corporation of Canada (PWCDF),Power Corporation of Canada,PWCDF,Power Corporation of Canada,,paren
+"Invesco QQQ Trust, Series 1 (QQQ)","Invesco QQQ Trust, Series 1",QQQ,"Invesco QQQ Trust, Series 1",,paren
+RB Global Inc (RBA),RB Global Inc,RBA,RB Global Inc,financial services,paren
+RenaissanceRe Holdings Ltd. (RNR),RenaissanceRe Holdings Ltd.,RNR,RenaissanceRe Holdings Ltd.,financial services,paren
+"Rollins, Inc. (ROL)","Rollins, Inc.",ROL,"Rollins, Inc.",industrials,paren
+"Ross Stores, Inc. (ROST)","Ross Stores, Inc.",ROST,"Ross Stores, Inc.",,paren
+Regal Rexnord Corporation Common Stock (RRX),Regal Rexnord Corporation Common Stock,RRX,Regal Rexnord Corporation Common Stock,industrials,paren
+Rush Street Interactive Inc. Class A Common Stock,"Rush Street Interactive, Inc.",RSI,"Rush Street Interactive, Inc.",,fuzzy
+SAP SE ADS (SAP),SAP SE ADS,SAP,SAP SE ADS,technology,paren
+Starbucks Corp. (SBUX),Starbucks Corp.,SBUX,Starbucks Corp.,food,paren
+Shell PLC (SHEL),Shell PLC,SHEL,Shell PLC,energy,paren
+The Sherwin-Williams Co. (SHW),The Sherwin-Williams Co.,SHW,The Sherwin-Williams Co.,chemicals,paren
+SLB Ltd (SLB),SLB Ltd,SLB,SLB Ltd,energy,paren
+SMC Corp ADR (SMCAY),SMC Corp ADR,SMCAY,SMC Corp ADR,technology,paren
+Shimano Inc ADR (SMNNY),Shimano Inc ADR,SMNNY,Shimano Inc ADR,industrials,paren
+Sompo Holdings Inc ADR (SMPNY),Sompo Holdings Inc ADR,SMPNY,Sompo Holdings Inc ADR,financial services,paren
+Snowflake Inc. Class A Common Stock (SNOW),Snowflake Inc. Class A Common Stock,SNOW,Snowflake Inc. Class A Common Stock,technology,paren
+SECOM Co Ltd ADR (SOMLY),SECOM Co Ltd ADR,SOMLY,SECOM Co Ltd ADR,,paren
+"S&P Global, Inc. (SPGI)","S&P Global, Inc.",SPGI,"S&P Global, Inc.",financial services,paren
+SPDR S&P 500 ETF Trust (SPY),SPDR S&P 500 ETF Trust,SPY,SPDR S&P 500 ETF Trust,,paren
+STERIS Plc (STE),STERIS Plc,STE,STERIS Plc,medical devices,paren
+AT&T Inc (T),AT&T Inc,T,AT&T Inc,telecommunications,paren
+TE Connectivity Ltd. (TEL),TE Connectivity Ltd.,TEL,TE Connectivity Ltd.,,paren
+"The TJX Cos., Inc. (TJX)","The TJX Cos., Inc.",TJX,"The TJX Cos., Inc.",,paren
+"Thermo Fisher Scientific, Inc. (TMO)","Thermo Fisher Scientific, Inc.",TMO,"Thermo Fisher Scientific, Inc.",medical devices,paren
+"Trimble, Inc. (TRMB)","Trimble, Inc.",TRMB,"Trimble, Inc.",technology,paren
+TransUnion (TRU),TransUnion,TRU,TransUnion,financial services,paren
+"Tesla, Inc. (TSLA)","Tesla, Inc.",TSLA,"Tesla, Inc.",autos,paren
+Taiwan Semiconductor Manufacturing Company,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,TSMWF,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,semiconductors,fuzzy
+Treasury Trust Fund Institutional Shares (TTTXX),,,,,bond_skip
+Twist Bioscience Corp. (TWST),Twist Bioscience Corp.,TWST,Twist Bioscience Corp.,biotech,paren
+Texas Instruments Incorporated (TXN),Texas Instruments Incorporated,TXN,Texas Instruments Incorporated,semiconductors,paren
+"Tyler Technologies, Inc. (TYL)","Tyler Technologies, Inc.",TYL,"Tyler Technologies, Inc.",technology,paren
+"Universal Health Services, Inc. (UHS)","Universal Health Services, Inc.",UHS,"Universal Health Services, Inc.",health insurance,paren
+Unilever PLC Common Stock (UL),Unilever PLC Common Stock,UL,Unilever PLC Common Stock,food,paren
+"UnitedHealth Group, Inc. (UNH)","UnitedHealth Group, Inc.",UNH,"UnitedHealth Group, Inc.",health insurance,paren
+UOL Group Ltd ADR (UOLGY),UOL Group Ltd ADR,UOLGY,UOL Group Ltd ADR,,paren
+"Visa, Inc. (V)","Visa, Inc.",V,"Visa, Inc.",,paren
+Vanguard Developed Markets Index Fund ETF,,,,,unresolved
+"Veeva Systems, Inc. (VEEV)","Veeva Systems, Inc.",VEEV,"Veeva Systems, Inc.",technology,paren
+Vanguard Information Technology Index Fund ETF,,,,,unresolved
+"Verisk Analytics, Inc. (VRSK)","Verisk Analytics, Inc.",VRSK,"Verisk Analytics, Inc.",technology,paren
+"Vertex Pharmaceuticals, Inc. (VRTX)","Vertex Pharmaceuticals, Inc.",VRTX,"Vertex Pharmaceuticals, Inc.",biotech,paren
+Vanguard Total Stock Market Index Fund ETF,,,,,unresolved
+Vanguard Value Index Fund ETF Shares (VTV),Vanguard Value Index Fund ETF Shares,VTV,Vanguard Value Index Fund ETF Shares,,paren
+Vanguard Growth Index Fund ETF Class Shares,,,,,unresolved
+Vanguard Total International Stock Index Fund ETF,mF International Ltd,MFI,mF International Ltd,,fuzzy
+"Verizon Communications, Inc. (VZ)",,,,,bond_skip
+"Workday, Inc. (WDAY)","Workday, Inc.",WDAY,"Workday, Inc.",technology,paren
+Wells Fargo & Co. (WFC),Wells Fargo & Co.,WFC,Wells Fargo & Co.,banks,paren
+"Workiva, Inc. (WK)","Workiva, Inc.",WK,"Workiva, Inc.",financial services,paren
+Wal - Mart de Mexico SPN ADR (WMMVY),Wal - Mart de Mexico SPN ADR,WMMVY,Wal - Mart de Mexico SPN ADR,,paren
+"Walmart, Inc. (WMT)","Walmart, Inc.",WMT,"Walmart, Inc.",food,paren
+Wheaton Precious Metals Corp Common Shares,Wheaton Precious Metals Corp.,WPM,Wheaton Precious Metals Corp.,mining,fuzzy
+"West Pharmaceutical Services, Inc. (WST)","West Pharmaceutical Services, Inc.",WST,"West Pharmaceutical Services, Inc.",medical devices,paren
+White Mountains Insurance Group Ltd. (WTM),White Mountains Insurance Group Ltd.,WTM,White Mountains Insurance Group Ltd.,financial services,paren
+Willis Towers Watson Public Limited Company,WILLIS TOWERS WATSON PLC,WTW,WILLIS TOWERS WATSON PLC,financial services,fuzzy
+Weyerhaeuser Co. (WY),Weyerhaeuser Co.,WY,Weyerhaeuser Co.,real estate,paren
+"Xcel Energy, Inc. (XEL)","Xcel Energy, Inc.",XEL,"Xcel Energy, Inc.",utilities,paren
+Exxon Mobil Corp. (XOM),Exxon Mobil Corp.,XOM,Exxon Mobil Corp.,energy,paren
+Alphabet Inc Class A (GOOGL),Alphabet Inc Class A,GOOGL,Alphabet Inc Class A,technology,paren
+VanguardEmerging Markets Stock Index Fund ETF,,,,,unresolved
+Reckitt Benckiser Group (RBGLY),Reckitt Benckiser Group,RBGLY,Reckitt Benckiser Group,,paren
+INDIANA ST FIN AUTH REV REF LEASE SER A,,,,,bond_skip
+MARYLAND ST TRANSN AUTH TRANSN FACS,,,,,bond_skip
+DISTRICT COLUMBIA GO BDS SER A FEB19,,,,,bond_skip
+NEW YORK N Y GO BDS SER C OCT20,,,,,bond_skip
+UNIV CALIF REGTS MED CTR POOLED REV,,,,,unresolved
+BROWARD CNTY FLA TOURIST DEV TAX REV,,,,,bond_skip
+NEW YORK ST DORM AUTH ST PERS INCOME,,,,,bond_skip
+FLORIDA ST BRD ED PUB ED FULL FAITH,,,,,unresolved
+UNIVERSITY UTAH UNIV REV GEN BDS SER A,,,,,bond_skip
+OHIO ST HWY CAP IMPT GO BDS W JUN20,,,,,bond_skip
+HOUSTON TEX UTIL SYS REV COMB FIRST,,,,,bond_skip
+PIMA CNTY ARIZ SWR REV SYS OBLIGS SER B,,,,,bond_skip
+TEXAS WTR DEV BRD REV ST REVOLVING FD,,,,,bond_skip
+TEXAS A & M UNIV REV FING SYS BDS SER E,,,,,bond_skip
+NORTH CAROLINA ST GO REF BDS SER A,,,,,bond_skip
+SOUTH DAKOTA CONSERVANCY DIST REV ST,,,,,bond_skip
+PRIVATE COLLEGES & UNIVS AUTH GA REV,,,,,bond_skip
+NEW YORK ST URBAN DEV CORP REV PERS,,,,,bond_skip
+MICHIGAN FIN AUTH REV HOSP REF BDS BHSH,,,,,bond_skip
+CENTRAL PUGET SOUND WA RTA REV IMPT,,,,,bond_skip
+WASHINGTON ST VARIOUS PURP GO BDS SER,,,,,bond_skip
+OHIO ST ADULT CORRECTIONAL CAP FACS B,,,,,unresolved
+LOWER COLO RIV AT TEX TRANS RV REF BDS,,,,,bond_skip
+MAINE ST GO BDS SER B JUN19 05.000%JUN01,,,,,bond_skip
+NY ST DORM AUTH SLS TAX REV BDS SER C,,,,,bond_skip
+FLORIDA ST BRD ED PUB ED CAP OUTLAY REF,,,,,unresolved
+LEWISVILLE TEX INDPT SCH DIST UNLTD TAX,,,,,bond_skip
+Republic Airways Holdings Inc,REPUBLIC AIRWAYS HOLDINGS INC.,RJET,REPUBLIC AIRWAYS HOLDINGS INC.,airlines,fuzzy
+Republic Airways Holdings Inc. (RJET),Republic Airways Holdings Inc.,RJET,Republic Airways Holdings Inc.,airlines,paren
+"Regeneron Pharmaceuticals, Inc. (REGN)","Regeneron Pharmaceuticals, Inc.",REGN,"Regeneron Pharmaceuticals, Inc.",biotech,paren
+"e.l.f. Beauty, Inc. (ELF)","e.l.f. Beauty, Inc.",ELF,"e.l.f. Beauty, Inc.",,paren
+"Alaska Air Group, Inc. (ALK)","Alaska Air Group, Inc.",ALK,"Alaska Air Group, Inc.",airlines,paren
+Amazon Com Inc Com,AMAZON COM INC,AMZN,AMAZON COM INC,technology,fuzzy
+JPMorgan Liquid Assets Money Market Fund,,,,,unresolved
+JPMorgan Equity Premium Income ETF JPMorgan,,,,,unresolved
+JPMorgan Nasdaq Equity Premium Income ETF,"NASDAQ, INC.",NDAQ,"NASDAQ, INC.",financial services,fuzzy
+"WESCO International, Inc. (WCC)","WESCO International, Inc.",WCC,"WESCO International, Inc.",industrials,paren
+Wynn Resorts Ltd. (WYNN),Wynn Resorts Ltd.,WYNN,Wynn Resorts Ltd.,,paren
+Waste Connections Inc. Common Shares (WCN),Waste Connections Inc. Common Shares,WCN,Waste Connections Inc. Common Shares,utilities,paren
+Union Pacific Corp. (UNP),Union Pacific Corp.,UNP,Union Pacific Corp.,industrials,paren
+Cigna Corp. (CI),Cigna Corp.,CI,Cigna Corp.,health insurance,paren
+Schlumberger NV (SLB),Schlumberger NV,SLB,Schlumberger NV,energy,paren
+Roche Holdings AG Basel ADR Common Stock,,,,,unresolved
+Procter & Gamble Co (PG),Procter & Gamble Co,PG,Procter & Gamble Co,food,paren
+Jazz Pharmaceuticals Plc (JAZZ),Jazz Pharmaceuticals Plc,JAZZ,Jazz Pharmaceuticals Plc,pharmaceuticals,paren
+"lululemon athletica, Inc. (LULU)","lululemon athletica, Inc.",LULU,"lululemon athletica, Inc.",,paren
+"Inspire Medical Systems, Inc. (INSP)","Inspire Medical Systems, Inc.",INSP,"Inspire Medical Systems, Inc.",medical devices,paren
+Infineon Technologies AG (IFNNY),Infineon Technologies AG,IFNNY,Infineon Technologies AG,technology,paren
+Entergy Corp. (ETR),Entergy Corp.,ETR,Entergy Corp.,utilities,paren
+"Fortinet, Inc. (FTNT)","Fortinet, Inc.",FTNT,"Fortinet, Inc.",technology,paren
+ASML Holding N.V. New York Registry Shares,ASML HOLDING NV,ASMLF,ASML HOLDING NV,semiconductors,fuzzy
+"Adobe, Inc. (ADBE)","Adobe, Inc.",ADBE,"Adobe, Inc.",technology,paren
+iShares Global Healthcare ETF (IXJ),iShares Global Healthcare ETF,IXJ,iShares Global Healthcare ETF,health insurance,paren
+iShares MSCIPacific ex Japan ETF (EPP),iShares MSCIPacific ex Japan ETF,EPP,iShares MSCIPacific ex Japan ETF,,paren
+iShares Core MSCIPacific ETF (IPAC),iShares Core MSCIPacific ETF,IPAC,iShares Core MSCIPacific ETF,,paren
+Abercrombie & Fitch Co. (ANF),Abercrombie & Fitch Co.,ANF,Abercrombie & Fitch Co.,,paren
+iShares MSCI EAFE Growth ETF (EFG),iShares MSCI EAFE Growth ETF,EFG,iShares MSCI EAFE Growth ETF,,paren
+iShares MSCI EAFE ETF (EFA),iShares MSCI EAFE ETF,EFA,iShares MSCI EAFE ETF,,paren
+iShares Core MSCI International Developed,MSCI Inc.,MSCI,MSCI Inc.,financial services,fuzzy
+Consumer Staples Select Sector SPDR Fund (XLP),Consumer Staples Select Sector SPDR Fund,XLP,Consumer Staples Select Sector SPDR Fund,,paren
+Utilities Select Sector SPDR Fund (XLU),Utilities Select Sector SPDR Fund,XLU,Utilities Select Sector SPDR Fund,utilities,paren
+Health Care Select Sector SPDR Fund (XLV),Health Care Select Sector SPDR Fund,XLV,Health Care Select Sector SPDR Fund,,paren
+iShares MSCI Canada ETF (EWC),iShares MSCI Canada ETF,EWC,iShares MSCI Canada ETF,,paren
+Communication Services Select Sector SPDR Fund,,,,,bond_skip
+Energy Select Sector SPDR Fund (XLE),Energy Select Sector SPDR Fund,XLE,Energy Select Sector SPDR Fund,energy,paren
+"Alphabet, Inc. Class C (GOOG)","Alphabet, Inc. Class C",GOOG,"Alphabet, Inc. Class C",technology,paren
+Eaton Corp. Plc (ETN),Eaton Corp. Plc,ETN,Eaton Corp. Plc,industrials,paren
+CrowdStrike Holdings Inc. Class A Common Stock,"CrowdStrike Holdings, Inc.",CRWD,"CrowdStrike Holdings, Inc.",technology,fuzzy
+Franklin FTSE Canada ETF (FLCA),Franklin FTSE Canada ETF,FLCA,Franklin FTSE Canada ETF,,paren
+Marvell Technology Group Ltd. (MRVL),Marvell Technology Group Ltd.,MRVL,Marvell Technology Group Ltd.,semiconductors,paren
+Valero Energy Corp. (VLO),Valero Energy Corp.,VLO,Valero Energy Corp.,energy,paren
+iShares MSCI Japan ETF (EWJ),iShares MSCI Japan ETF,EWJ,iShares MSCI Japan ETF,,paren
+Financial Select Sector SPDR Fund (XLF),Financial Select Sector SPDR Fund,XLF,Financial Select Sector SPDR Fund,,paren
+JPMorgan BetaBuilders Developed Asia ex-Japan,,,,,unresolved
+JPMorgan BetaBuilders Japan ETF (BBJP),JPMorgan BetaBuilders Japan ETF,BBJP,JPMorgan BetaBuilders Japan ETF,,paren
+JPMorgan BetaBuilders Canada ETF (BBCA),JPMorgan BetaBuilders Canada ETF,BBCA,JPMorgan BetaBuilders Canada ETF,,paren
+"GS Three, LLC",,,,,unresolved
+Westside Link LLC,,,,,unresolved
+Liberty Energy Inc. (LBRT),Liberty Energy Inc.,LBRT,Liberty Energy Inc.,energy,paren
+Liberty Energy Inc Class A,Liberty Energy Inc.,LBRT,Liberty Energy Inc.,energy,fuzzy
+Schwab Value Advantage Money Fund,,,,,unresolved
+EMX Royalty Corporation Common Shares,,,,,unresolved
+Baytex Energy Corp,BAYTEX ENERGY CORP.,BTE,BAYTEX ENERGY CORP.,energy,fuzzy
+Blue Owl Capital Inc. Class A Common Stock,BLUE OWL CAPITAL INC.,OWL,BLUE OWL CAPITAL INC.,financial services,fuzzy
+Chord Energy Corporation Common Stock (CHRD),Chord Energy Corporation Common Stock,CHRD,Chord Energy Corporation Common Stock,energy,paren
+"Comstock Resources, Inc. (CRK)","Comstock Resources, Inc.",CRK,"Comstock Resources, Inc.",energy,paren
+Crescent Energy Company Class A Common Stock,Crescent Energy Co,CRGY,Crescent Energy Co,energy,fuzzy
+Energy Transfer LP Common Units (ET),Energy Transfer LP Common Units,ET,Energy Transfer LP Common Units,energy,paren
+Enterprise Products Partners L.P. Common Stock,ENTERPRISE PRODUCTS PARTNERS L.P.,EPDU,ENTERPRISE PRODUCTS PARTNERS L.P.,energy,fuzzy
+EQT Corp. (EQT),EQT Corp.,EQT,EQT Corp.,energy,paren
+Expand Energy Corp,EXPAND ENERGY Corp,EXE,EXPAND ENERGY Corp,energy,fuzzy
+"Freeport-McMoRan, Inc. (FCX)","Freeport-McMoRan, Inc.",FCX,"Freeport-McMoRan, Inc.",mining,paren
+"Inspirato Inc, 5000 shares",,,,,unresolved
+Nordic American Tankers Ltd. (NAT),Nordic American Tankers Ltd.,NAT,Nordic American Tankers Ltd.,industrials,paren
+Ovintiv Inc. (DE) (OVV),Ovintiv Inc. (DE),OVV,Ovintiv Inc. (DE),energy,paren
+Plains All American Pipeline L.P. Common Units,PLAINS ALL AMERICAN PIPELINE LP,PAAPU,PLAINS ALL AMERICAN PIPELINE LP,energy,fuzzy
+Goldman Sachs Dynamic Municipal Income Fund,,,,,bond_skip
+Goldman Sachs High Yield Municipal Fund Class P,,,,,bond_skip
+SPDR Portfolio S&P 400 Mid Cap ETF (SPMD),SPDR Portfolio S&P 400 Mid Cap ETF,SPMD,SPDR Portfolio S&P 400 Mid Cap ETF,,paren
+Dodge & Cox International Stock Fund (DODFX),Dodge & Cox International Stock Fund,DODFX,Dodge & Cox International Stock Fund,,paren
+SPMD (S&P 400 Mid-Cap ETF),,,,,unresolved
+GAJPX (Goldman Sachs Dynamic Municipal,,,,,bond_skip
+GGLPX (Goldman Sachs High Yield Municipal,,,,,bond_skip
+SPY (S&P 500 SPDR ETF),SPDR S&P 500 ETF TRUST,SPY,SPDR S&P 500 ETF TRUST,,fuzzy
+DODFX (Dodge & Cox International Stock Fund),mF International Ltd,MFI,mF International Ltd,,fuzzy
+Westside LC LLC,,,,,unresolved
+CL Covault LLC,,,,,unresolved
+CL Urban LLC,,,,,unresolved
+Bison Hawksbill LLC,,,,,unresolved
+Bison IV Friends and Family LLC,,,,,unresolved
+Sugar Free Capital,,,,,unresolved
+Next Frontier Fund IV LP,"Frontier Group Holdings, Inc.",ULCC,"Frontier Group Holdings, Inc.",airlines,fuzzy
+Schwab Value Advantage Money Fund Investor,,,,,unresolved
+Schwab Fund US Small Cap ETF,,,,,unresolved
+Schwab US Small Cap ETF,,,,,unresolved
+Schwab US Large Cap ETF,,,,,unresolved
+Schwab Fund US Large Cap ETF,,,,,unresolved
+Charles Schwab US Reit ETF,SCHWAB CHARLES CORP,SCHW-PJ,SCHWAB CHARLES CORP,financial services,fuzzy
+Schwab Fund International ETF,mF International Ltd,MFI,mF International Ltd,,fuzzy
+Vanguard Muni Bond ETF,,,,,bond_skip
+Schwab US TIPS ETF,,,,,unresolved
+Schwab International Equity ETF,mF International Ltd,MFI,mF International Ltd,,fuzzy
+Schwab Municipal Bond Fund,,,,,bond_skip
+"REOFF XXVII, LLC",,,,,unresolved
+"REOFF XXV, LLC",,,,,unresolved
+Danone S.A. (DANOY),Danone S.A.,DANOY,Danone S.A.,food,paren
+Municipal Total Return Managed Accounts Portfolio,,,,,bond_skip
+Nestlé S.A. (NSRGY),Nestlé S.A.,NSRGY,Nestlé S.A.,food,paren
+WELLS FARGO & CO 4.75% SER-Z,WELLS FARGO & COMPANY/MN,WFC-PZ,WELLS FARGO & COMPANY/MN,banks,fuzzy
+UNITED STATES TREASURY BILL,,,,,bond_skip
+Royalty Pharma plc Class A Ordinary Shares,Royalty Pharma plc,RPRX,Royalty Pharma plc,pharmaceuticals,fuzzy
+AGNC Investment Corp. Depositary Shares Each,AGNC Investment Corp.,AGNCZ,AGNC Investment Corp.,financial services,fuzzy
+Mitsubishi Electric Corporation (MIELY),Mitsubishi Electric Corporation,MIELY,Mitsubishi Electric Corporation,utilities,paren
+The Berkeley Group Holdings plc (BKGFY),The Berkeley Group Holdings plc,BKGFY,The Berkeley Group Holdings plc,real estate,paren
+Shimano Inc. (SMNNY),Shimano Inc.,SMNNY,Shimano Inc.,industrials,paren
+Shell plc (SHEL),Shell plc,SHEL,Shell plc,energy,paren
+WELLS FARGO CO DEP PFD 4.7 C-A,WELLS FARGO & COMPANY/MN,WFC-PZ,WELLS FARGO & COMPANY/MN,banks,fuzzy
+"Sompo Holdings, Inc. (SMPNY)","Sompo Holdings, Inc.",SMPNY,"Sompo Holdings, Inc.",financial services,paren
+Athene Holding Ltd. (ATH),Athene Holding Ltd.,ATH,Athene Holding Ltd.,financial services,paren
+Merck KGaA (MKKGY),Merck KGaA,MKKGY,Merck KGaA,pharmaceuticals,paren
+SMC Corporation (SMCAY),SMC Corporation,SMCAY,SMC Corporation,technology,paren
+"Equitable Holdings, Inc. (EQH)","Equitable Holdings, Inc.",EQH,"Equitable Holdings, Inc.",financial services,paren
+Suzuki Motor Corporation (SZKMY),Suzuki Motor Corporation,SZKMY,Suzuki Motor Corporation,autos,paren
+Blackstone Inc. (BX),Blackstone Inc.,BX,Blackstone Inc.,financial services,paren
+Legrand SA (LGRDY),Legrand SA,LGRDY,Legrand SA,industrials,paren
+Nutrien Ltd. (NTR),Nutrien Ltd.,NTR,Nutrien Ltd.,chemicals,paren
+Enbridge Inc. (EBBGF),Enbridge Inc.,EBBGF,Enbridge Inc.,energy,paren
+Westwood Salient MLP & Engy Infras Inst (SMLPX),Westwood Salient MLP & Engy Infras Inst,SMLPX,Westwood Salient MLP & Engy Infras Inst,energy,paren
+"Diamondback Energy, Inc. (FANG)","Diamondback Energy, Inc.",FANG,"Diamondback Energy, Inc.",energy,paren
+Ambev S.A. (ABEV),Ambev S.A.,ABEV,Ambev S.A.,,paren
+Reckitt Benckiser Group plc (RBGLY),Reckitt Benckiser Group plc,RBGLY,Reckitt Benckiser Group plc,,paren
+Heineken N.V. (HEINY),Heineken N.V.,HEINY,Heineken N.V.,food,paren
+Fuchs SE (FUPBY),Fuchs SE,FUPBY,Fuchs SE,,paren
+Brenntag SE (BNTGY),Brenntag SE,BNTGY,Brenntag SE,chemicals,paren
+Compagnie Financière Richemont SA (CFRUY),Compagnie Financière Richemont SA,CFRUY,Compagnie Financière Richemont SA,,paren
+Svenska Handelsbanken AB (publ) (SVNLY),Svenska Handelsbanken AB (publ),SVNLY,Svenska Handelsbanken AB (publ),banks,paren
+Fanuc Corporation (FANUY),Fanuc Corporation,FANUY,Fanuc Corporation,semiconductors,paren
+Bangkok Bank Public Company Limited (BKKLY),Bangkok Bank Public Company Limited,BKKLY,Bangkok Bank Public Company Limited,banks,paren
+Mastercard Incorporated (MA),Mastercard Incorporated,MA,Mastercard Incorporated,,paren
+UOL Group Limited (UOLGY),UOL Group Limited,UOLGY,UOL Group Limited,,paren
+AIA Group Limited (AAGIY),AIA Group Limited,AAGIY,AIA Group Limited,,paren
+Prosus N.V. (PROSY),Prosus N.V.,PROSY,Prosus N.V.,technology,paren
+Itaú Unibanco Holding S.A. (ITUB),Itaú Unibanco Holding S.A.,ITUB,Itaú Unibanco Holding S.A.,banks,paren
+Nihon Kohden Corporation (NHNKY),Nihon Kohden Corporation,NHNKY,Nihon Kohden Corporation,medical devices,paren
+Wheaton Precious Metals Corp. (WPM),Wheaton Precious Metals Corp.,WPM,Wheaton Precious Metals Corp.,mining,paren
+Willis Towers Watson Public Limited,WILLIS TOWERS WATSON PLC,WTW,WILLIS TOWERS WATSON PLC,financial services,fuzzy
+Sanofi (SNY),Sanofi,SNY,Sanofi,pharmaceuticals,paren
+SGS SA (SGSOY),SGS SA,SGSOY,SGS SA,technology,paren
+adidas AG (ADDYY),adidas AG,ADDYY,adidas AG,,paren
+"MS&AD Insurance Group Holdings, Inc. (MSADY)","MS&AD Insurance Group Holdings, Inc.",MSADY,"MS&AD Insurance Group Holdings, Inc.",financial services,paren
+Lloyds Banking Group plc (LYG),Lloyds Banking Group plc,LYG,Lloyds Banking Group plc,banks,paren
+"LVMH Moët Hennessy - Louis Vuitton, Société",,,,,unresolved
+Jardine Matheson Holdings Limited (JMHLY),Jardine Matheson Holdings Limited,JMHLY,Jardine Matheson Holdings Limited,,paren
+Hongkong Land Holdings Limited (HNGKY),Hongkong Land Holdings Limited,HNGKY,Hongkong Land Holdings Limited,,paren
+Komatsu Ltd. (KMTUY),Komatsu Ltd.,KMTUY,Komatsu Ltd.,industrials,paren
+British American Tobacco p.l.c. (BTI),British American Tobacco p.l.c.,BTI,British American Tobacco p.l.c.,,paren
+Henkel AG & Co. KGaA (HENKY),Henkel AG & Co. KGaA,HENKY,Henkel AG & Co. KGaA,food,paren
+Unilever PLC (UL),Unilever PLC,UL,Unilever PLC,food,paren
+BAE Systems plc (BAESY),BAE Systems plc,BAESY,BAE Systems plc,defense,paren
+Compañía Cervecerías Unidas S.A. (CCU),Compañía Cervecerías Unidas S.A.,CCU,Compañía Cervecerías Unidas S.A.,,paren
+Barrick Gold Corporation Common Stock (BC),Barrick Gold Corporation Common Stock,BC,Barrick Gold Corporation Common Stock,mining,paren
+Westinghouse Air Brake Technologies,WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP,WAB,WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP,industrials,fuzzy
+Orkla ASA (ORKLY),Orkla ASA,ORKLY,Orkla ASA,,paren
+"SECOM CO., LTD. (SOMLY)","SECOM CO., LTD.",SOMLY,"SECOM CO., LTD.",,paren
+"Fomento Económico Mexicano, S.A.B. de",,,,,unresolved
+Philip Morris International Inc. (PM),Philip Morris International Inc.,PM,Philip Morris International Inc.,food,paren
+Imperial Oil Limited (IMO),Imperial Oil Limited,IMO,Imperial Oil Limited,energy,paren
+Visa Inc. (V),Visa Inc.,V,Visa Inc.,,paren
+Union Pacific Corporation (UNP),Union Pacific Corporation,UNP,Union Pacific Corporation,industrials,paren
+Bunge Global SA (BG),Bunge Global SA,BG,Bunge Global SA,agriculture,paren
+GOLDMAN SACHS GROUP INC/THE FXD TO,GOLDMAN SACHS GROUP INC,GS-PD,GOLDMAN SACHS GROUP INC,banks,fuzzy
+BANK OF AMERICA CORP FXD TO 032026 VAR,BANK OF AMERICA CORP /DE/,BML-PJ,BANK OF AMERICA CORP /DE/,banks,fuzzy
+WELLS FARGO & COM 4.25% SER-DD,WELLS FARGO & COMPANY/MN,WFC-PZ,WELLS FARGO & COMPANY/MN,banks,fuzzy
+JPMORGAN CHASE & CO FXD TO 112022 VAR,JPMORGAN CHASE & CO,JPM-PM,JPMORGAN CHASE & CO,banks,fuzzy
+ALLY FINANCIAL INC FXD TO 052026 VAR,Ally Financial Inc.,ALLY,Ally Financial Inc.,banks,fuzzy
+BUILDERS FIRSTSOURCE INC REGS,"Builders FirstSource, Inc.",BLDR,"Builders FirstSource, Inc.",construction,fuzzy
+"Arthur Ventures V, LP",,,,,unresolved
+"Arthur Ventures Growth IV, LP",,,,,unresolved
+"Arthur Ventures V, LP - Zizzle Health",,,,,unresolved
+"Arthur Ventures V, LP - Senior Sign",SENIOR PLC,SNIRF,SENIOR PLC,,fuzzy
+"Arthur Ventures Growth IV, LP - Giving Data",,,,,unresolved
+"Arthur Ventures Growth IV, LP - Office Puzzle",,,,,unresolved
+"Arthur Ventures Growth IV, LP - CertifID, Inc.",,,,,unresolved
+"Arthur Ventures IV, LP",,,,,unresolved
+"Arthur Ventures III, LP - PureSpectrum (market",,,,,unresolved
+"Arthur Ventures Growth IV, LP - PureSpectrum",,,,,unresolved
+"Arthur Ventures Growth III, LP - PureSpectrum",,,,,unresolved
+"Arthur Ventures V, LP - Opterrix (Risk intelligence",,,,,unresolved
+"Arthur Ventures V, LP - Aqua (Turnkey alternative",,,,,unresolved
+"Arthur Ventures V, LP - Streamline (platform",,,,,unresolved
+"Arthur Ventures V, LP - Payroll Integrations",,,,,unresolved
+"Arthur Ventures V, LP - Circadian Risk (Security",,,,,unresolved
+"Arthur Ventures IV, LP - Gridbase (formerly",,,,,unresolved
+"Netflix, Inc. (NFLX)","Netflix, Inc.",NFLX,"Netflix, Inc.",,paren
+"First Solar, Inc. (FSLR)","First Solar, Inc.",FSLR,"First Solar, Inc.",energy,paren
+Stryker Corp. (SYK),Stryker Corp.,SYK,Stryker Corp.,medical devices,paren
+"Arthur Ventures Growth III, LP - Threatlocker",,,,,unresolved
+"Arthur Ventures Growth I, LP - Protenus",,,,,unresolved
+iShares Russell Mid-Cap Growth ETF (IWP),iShares Russell Mid-Cap Growth ETF,IWP,iShares Russell Mid-Cap Growth ETF,,paren
+SPDR Portfolio S&P 500 Growth ETF (SPYG),SPDR Portfolio S&P 500 Growth ETF,SPYG,SPDR Portfolio S&P 500 Growth ETF,,paren
+"Arthur Ventures GP I, LLC - Protenus, Inc.",,,,,unresolved
+"Arthur Ventures I, LP - Protenus, Inc",,,,,unresolved
+Edgewood Growth Fund Institutional Class Shares,,,,,unresolved
+Fuller & Thaler Behavioral Small-Cap Equity Fund,,,,,unresolved
+PIMCO Investment Grade Credit Bond Fund Class,,,,,bond_skip
+iShares Broad USD High Yield Corporate Bond,,,,,bond_skip
+Vanguard Russell 1000 Growth Index Fund ETF,,,,,unresolved
+iShares US Treasury Bond ETF (GOVT),,,,,bond_skip
+Oakmark International Fund Institutional Class,mF International Ltd,MFI,mF International Ltd,,fuzzy
+Schwab US Small-Cap ETF (SCHA),Schwab US Small-Cap ETF,SCHA,Schwab US Small-Cap ETF,,paren
+Vanguard Mortgage-Backed Securities Index Fund,,,,,unresolved
+Columbia Dividend Income Fund Institutional 2,,,,,unresolved
+Massachusetts Investors Growth Stock Fund Class,,,,,unresolved
+PIMCO Income Fund Institutional Class Shares,,,,,unresolved
+Vanguard Intermediate-Term Bond Index Fund,,,,,bond_skip
+Vanguard Equity Income Fund Admiral Shares,,,,,unresolved
+Vanguard Total International Bond Index Fund ETF,,,,,bond_skip
+Causeway International Value Fund Institutional,mF International Ltd,MFI,mF International Ltd,,fuzzy
+GQG PartnersEmerging Markets Equity Fund,,,,,unresolved
+iShares Russell 1000 Growth ETF (IWF),iShares Russell 1000 Growth ETF,IWF,iShares Russell 1000 Growth ETF,,paren
+Janus Henderson Overseas Fund Class I Shares,Janus Henderson Group Ltc.,JHG,Janus Henderson Group Ltc.,financial services,fuzzy
+"BlackRockEmerging Markets Fund, Inc Institutional",,,,,unresolved
+BlackRock Equity Dividend Fund Institutional,"BlackRock, Inc.",BLK,"BlackRock, Inc.",financial services,fuzzy
+MFS Value Fund Class I Shares (MEIIX),MFS Value Fund Class I Shares,MEIIX,MFS Value Fund Class I Shares,,paren
+"Arthur Ventures I, LP - Protenus",,,,,unresolved
+Atlassian Corporation Plc Class A Ordinary Shares,Atlassian Corp,TEAM,Atlassian Corp,technology,fuzzy
+"Arthur Ventures III, LP - Threatlocker",,,,,unresolved
+"LWO Fund II, LP - Glass Fab Holdings, LLC",,,,,unresolved
+ARLINGTON HEIGHTS ILL -- (--),,,,,unresolved
+CALHOUN CNTY ALA BRD ED -- (--),,,,,bond_skip
+FLORESVILLE TEX INDPT SCH -- (--),,,,,unresolved
+"Kinder Morgan, Inc. (KMI)","Kinder Morgan, Inc.",KMI,"Kinder Morgan, Inc.",energy,paren
+NAPA CALIF WTR REV REF -- (--),,,,,bond_skip
+Otter Tail Corp. (OTTR),Otter Tail Corp.,OTTR,Otter Tail Corp.,utilities,paren
+Targa Resources Corp. (TRGP),Targa Resources Corp.,TRGP,Targa Resources Corp.,energy,paren
+VanEck Vectors Gold Miners ETF (GDX),VanEck Vectors Gold Miners ETF,GDX,VanEck Vectors Gold Miners ETF,mining,paren
+FedFund Institutional Shares (TFDXX),FedFund Institutional Shares,TFDXX,FedFund Institutional Shares,,paren
+Goldman Sachs GQG Partners International,GOLDMAN SACHS GROUP INC,GS-PD,GOLDMAN SACHS GROUP INC,banks,fuzzy
+Janus Henderson Enterprise Fund Class I Shares,Janus Henderson Group Ltc.,JHG,Janus Henderson Group Ltc.,financial services,fuzzy
+"T Rowe Price Mid-Cap Value Fund, Inc Class I",PRICE T ROWE GROUP INC,TROW,PRICE T ROWE GROUP INC,financial services,fuzzy
+Vanguard High-Yield Tax-Exempt Fund Admiral,,,,,unresolved
+"Lamb Weston Holdings, Inc. (LW)","Lamb Weston Holdings, Inc.",LW,"Lamb Weston Holdings, Inc.",food,paren
+"Arthur Ventures II, LP - Jane Software, Inc.",,,,technology,unresolved
+"Arthur Ventures III, LP - GivingData Holdings, Inc.",,,,,unresolved
+Costco Wholesale Corp. (COST),Costco Wholesale Corp.,COST,Costco Wholesale Corp.,food,paren
+Schwab Treasury Obligations Money Fund Investor,,,,,bond_skip
+Bitmine Immersion Technologies (BMNR),Bitmine Immersion Technologies,BMNR,Bitmine Immersion Technologies,,paren
+"Alphabet, Inc. (GOOGL)","Alphabet, Inc.",GOOGL,"Alphabet, Inc.",technology,paren
+"Zillow Group, Inc. (Z)","Zillow Group, Inc.",Z,"Zillow Group, Inc.",real estate,paren
+Vanguard Dividend Appreciation Index Fund ETF,,,,,unresolved
+Vanguard High Dividend Yield Index Fund ETF,,,,,unresolved
+"Humana, Inc. (HUM)","Humana, Inc.",HUM,"Humana, Inc.",health insurance,paren
+Fiserv,FISERV INC,FISV,FISERV INC,financial services,fuzzy
+Fiserv Option contract sale,FISERV INC,FISV,FISERV INC,financial services,fuzzy
+iShares National Muni Bond ETF (MUB),,,,,bond_skip
+iShares 1-3 Year Treasury Bond ETF (SHY),,,,,bond_skip
+Vanguard Tax-Exempt Bond Index Fund ETF,,,,,bond_skip
+Allspring Short-Term Hi Inc A (SSTHX),Allspring Short-Term Hi Inc A,SSTHX,Allspring Short-Term Hi Inc A,,paren
+Invesco New Jersey Municipal A (ONJAX),,,,,bond_skip
+PIMCO Income Fund Class A Shares (PONAX),PIMCO Income Fund Class A Shares,PONAX,PIMCO Income Fund Class A Shares,,paren
+Nuveen NJ Municipal Bond A (NNJAX),,,,,bond_skip
+Franklin NJ Tax Free Income A (FNJQX),Franklin NJ Tax Free Income A,FNJQX,Franklin NJ Tax Free Income A,,paren
+BrandywineGLOBAL High Yield A (BGHAX),BrandywineGLOBAL High Yield A,BGHAX,BrandywineGLOBAL High Yield A,,paren
+iShares Fallen Angels USD Bond ETF (FALN),,,,,bond_skip
+iShares 0-5 Year High Yield Corporate Bond ETF,,,,,bond_skip
+Janus Henderson AAA CLO ETF Janus Henderson,Janus Henderson Group Ltc.,JHG,Janus Henderson Group Ltc.,financial services,fuzzy
+Nuveen Short Duration Hi Yld Muni Bd A (NVHAX),,,,,bond_skip
+PGIM Ultra Short Bond ETF (PULS),,,,,bond_skip
+BrandywineGLOBAL - HIGH YIELD FUND Class A,,,,,unresolved
+"Fiserv, Inc. (FISV)","Fiserv, Inc.",FISV,"Fiserv, Inc.",financial services,paren
+anguard Tax-Exempt Bond Index Fund ETF Shares,,,,,bond_skip
+Janus Henderson AAA CLO ETF (JAAA),Janus Henderson AAA CLO ETF,JAAA,Janus Henderson AAA CLO ETF,,paren
+"The Travelers Companies, Inc. (TRV)","The Travelers Companies, Inc.",TRV,"The Travelers Companies, Inc.",financial services,paren
+"Newmark Group, Inc. (NMRK)","Newmark Group, Inc.",NMRK,"Newmark Group, Inc.",real estate,paren
+"BGC Group, Inc. (BGC)","BGC Group, Inc.",BGC,"BGC Group, Inc.",financial services,paren
+"Nasdaq, Inc. (NDAQ)","Nasdaq, Inc.",NDAQ,"Nasdaq, Inc.",financial services,paren
+Kimberly Akimbo LLC,,,,,unresolved
+"Kiajia, LLC",,,,,unresolved
+"Structured Services Investor, LLC",,,,,unresolved
+GE Healthcare Technologies Inc. (GEHC),GE Healthcare Technologies Inc.,GEHC,GE Healthcare Technologies Inc.,medical devices,paren
+GE Vernova LLC (GEV),GE Vernova LLC,GEV,GE Vernova LLC,utilities,paren
+GE Aerospace (GE),GE Aerospace,GE,GE Aerospace,aerospace,paren
+"Cantor Fitzgerald, L.P","Cantor Fitzgerald Income Trust, Inc.",CFTR-PA,"Cantor Fitzgerald Income Trust, Inc.",,fuzzy
+"CF Group Management, Inc.",,,,,unresolved
+"BGC Group, Inc. (BGC) Class B","BGC Group, Inc.",BGC,"BGC Group, Inc.",financial services,fuzzy
+"Tangible Benefits, LLC",,,,,unresolved
+"KBCR Management Partners, LLC",Artisan Partners Asset Management Inc.,APAM,Artisan Partners Asset Management Inc.,,fuzzy
+"LFA, LLC",,,,,unresolved
+Shares in Retirement Accounts (BGC),Shares in Retirement Accounts,BGC,Shares in Retirement Accounts,financial services,paren
+Shares in Retirement Accounts (NMRK),Shares in Retirement Accounts,NMRK,Shares in Retirement Accounts,real estate,paren
+Shift4 Payments Inc. Class A Common Stock,"Shift4 Payments, Inc.",FOUR-PA,"Shift4 Payments, Inc.",financial services,fuzzy
+LyondellBasell Industries NV,LyondellBasell Industries N.V.,LYB,LyondellBasell Industries N.V.,chemicals,fuzzy
+Energy Transfer LP,Energy Transfer LP,ET-PI,Energy Transfer LP,energy,fuzzy
+MPLX LP,MPLX LP,MPLXP,MPLX LP,energy,fuzzy
+Alliancebernstein Holding LP,ALLIANCEBERNSTEIN HOLDING L.P.,AB,ALLIANCEBERNSTEIN HOLDING L.P.,financial services,fuzzy
+Enterprise Product Partners LP,ENTERPRISE PRODUCTS PARTNERS L.P.,EPDU,ENTERPRISE PRODUCTS PARTNERS L.P.,energy,fuzzy
+Ares Capital Corporation,ARES CAPITAL CORP,ARCC,ARES CAPITAL CORP,financial services,fuzzy
+Dow Inc.,DOW INC.,DOW,DOW INC.,chemicals,fuzzy
+Blue Owl Capital Corporation,BLUE OWL CAPITAL INC.,OWL,BLUE OWL CAPITAL INC.,financial services,fuzzy
+IShares Russell 1000 Growth,,,,,unresolved
+IShares TR Core MSCI EAF,MSCI Inc.,MSCI,MSCI Inc.,financial services,fuzzy
+IShares TR Russell 1000 Value,,,,,unresolved
+IShares TR Russell 2000 VSP,,,,,unresolved
+State Street SPDR S&P 500,STATE STREET CORP,STT-PG,STATE STREET CORP,,fuzzy
+Blackstone Secured Lending Fund,Blackstone Inc.,BX,Blackstone Inc.,financial services,fuzzy
+Rio Tinto,RIO TINTO LTD,RTNTF,RIO TINTO LTD,mining,fuzzy
+FS KKR Capital Corp,KKR & Co. Inc.,KKRS,KKR & Co. Inc.,financial services,fuzzy
+United Parcel Service,UNITED PARCEL SERVICE INC,UPS,UNITED PARCEL SERVICE INC,industrials,fuzzy
+Strategic Partners Real Estate VII LP,,,,real estate,unresolved
+Strategic Partners IX LP,,,,,unresolved
+Shift4 Payments Inc. Common stock Class B &,"Shift4 Payments, Inc.",FOUR-PA,"Shift4 Payments, Inc.",financial services,fuzzy
+"Kingfish Investments X, LLC",,,,,unresolved
+"MSD Capital, LP","MDB Capital Holdings, LLC",MDBH,"MDB Capital Holdings, LLC",,fuzzy
+MSD EIV Private LLC - Series B,,,,,unresolved
+"Double Mako Investments, LLC",,,,,unresolved
+"White Tip Investments, LLC",,,,,unresolved
+HealthQuest Tactical Opportunities Fund,,,,,unresolved
+AAG KP LP,,,,,unresolved
+RCP GP Fund II LP,,,,,unresolved
+Dawson Portfolio Finance 5 LP,,,,,unresolved
+SRP Continuation Partners LP,,,,,unresolved
+NFP Continuation Partners LP,,,,,unresolved
+RCG Momentum LP,,,,,unresolved
+Red Cell Partners,,,,,unresolved
+Red Cell Incubation Fund LP,,,,,unresolved
+"Kingfish Investments II, LLC",,,,,unresolved
+"RMDC, Inc.",,,,,unresolved
+"MSD Special Investments Fund II, LP",,,,,unresolved
+"MSD Holdings, LP",,,,,unresolved
+Vesper Muse LLC,,,,,unresolved
+Turnbridge Equities Real Estate Fund II,,,,real estate,unresolved
+Valence8 PE 2024 Fund,,,,,unresolved
+HealthQuest Tactical Opportunities LP,,,,,unresolved
+Cotulla Aviation LP,,,,airlines,unresolved
+Cresta Royalty Partners II,,,,,unresolved
+MSD Investment Corp. (BDC),MSD Investment Corp.,BDC,MSD Investment Corp.,financial services,paren
+"GMF Group Fund II, LLC",,,,,unresolved
+MSD Hospitality Partners LP,,,,,unresolved
+Bear Lake Operations LLC,,,,,unresolved
+MSD EIV Private LLC,,,,,unresolved
+MSD Real Estate Credit Opportunity Fund II,,,,real estate,unresolved
+HealthQuest Tactical Opportunities Fund LP,,,,,unresolved
+RCG Ventures Fund VIII,,,,,unresolved
+Caden Opportunity Fund,,,,,unresolved
+"Kingfish Investments V, LLC",,,,,unresolved
+Double Mako Investments LLC,,,,,unresolved
+White Tip Investments LLC,,,,,unresolved
+"MSD Special Investments Fund II, L.P.",,,,,unresolved
+Valence8 PE 2025 Fund,,,,,unresolved
+"HealthQuest Tactical Opportunities Fund, L.P.",,,,,unresolved
+Cresta SC Fund I-A LP,,,,,unresolved
+Cresta Royalty Partners LP,,,,,unresolved
+"26North BDC, Inc.",,,,,unresolved
+Dawson Portfolio Finance LP,,,,,unresolved
+"MSD Partners, L.P.",,,,,unresolved
+MSD Special Investments Fund L.P.,,,,,unresolved
+Valence8 Cayman LP,,,,,unresolved
+HealthQuest Tactical Opportunities Fund L.P.,,,,,unresolved
+"RCP GP Fund II, LP",,,,,unresolved
+Cresta Operating Partners (Non-Op Fund) LP,,,,,unresolved
+Cresta Royalty Partners II LP,,,,,unresolved
+Carriage House Investments LLP,,,,,unresolved
+Turnbridge Real Estate Fund II,,,,real estate,unresolved
+26North Private Equity Fund I,,,,,unresolved
+"Red Cell Incubation Fund, LP",,,,,unresolved
+"RCG Ventures Fund VIII, LP",,,,,unresolved
+TMG Monument Investors LCL,,,,,unresolved
+"MSD EIV Private, LLC",,,,,unresolved
+MSD Special Investments Fund II,,,,,unresolved
+"MSD Credit Opportunity Fund, L.P.",,,,,unresolved
+RSL Football Holdings LLC,,,,,unresolved
+"TMG Haynesville Investors, LLC",,,,,unresolved
+"TMG VCLR Investor, LLC",,,,,unresolved
+TMG Monument Investors LLC,,,,,unresolved
+"26North BDC, Inc",,,,,unresolved
+"SRP Continuation Partners, LP",,,,,unresolved
+"RCG Momentum, LP",,,,,unresolved
+"MSD EIV Private, LLC (JRK Investments III)",,,,,unresolved
+Valence8 PE 2023 Fund,,,,,unresolved
+Valence8 PE 2022 Fund,,,,,unresolved
+Arcadia Gameto Investors LP,,,,,unresolved
+Highline Investors LLC,,,,,unresolved
+"12 South Investor JV, LLC",,,,,unresolved
+Two Roads Development LLC Loan,,,,,unresolved
+"NFP Continuation Partners, LP.",,,,,unresolved
+"Caden FLV, LLC",,,,,unresolved
+Caden Long Equity Fund,,,,,unresolved
+"Kingfish Investments VI, LLC",,,,,unresolved
+26Nova Co-Invest,,,,,unresolved
+ACG Cakes LP,,,,,unresolved
+Cresta Operating Partners LP,,,,,unresolved
+Two Roads Developments LLC loan,,,,,unresolved
+RM Atlantic Point Marina,,,,,unresolved
+RCP APM Holdings LLC,,,,,unresolved
+"NextEra Energy, Inc. (NEE) (option strike price",NEXTERA ENERGY INC,NEE-PS,NEXTERA ENERGY INC,utilities,fuzzy
+NextEra Energy Stock ESOP Units; Vested balance,NEXTERA ENERGY INC,NEE-PS,NEXTERA ENERGY INC,utilities,fuzzy
+Vanguard Target Retirement 2045 Fund Investor,TARGET CORP,TGT,TARGET CORP,food,fuzzy
+XPLR Infrastructure LP (XIFR - Formerly NextEra,"XPLR Infrastructure, LP",XIFR,"XPLR Infrastructure, LP",energy,fuzzy
+Fidelity 500 Index Fund (FXAIX),Fidelity 500 Index Fund,FXAIX,Fidelity 500 Index Fund,,paren
+Vanguard 500 Index Fund Admiral Shares (VFIAX),Vanguard 500 Index Fund Admiral Shares,VFIAX,Vanguard 500 Index Fund Admiral Shares,,paren
+Amgen Inc. (AMGN),Amgen Inc.,AMGN,Amgen Inc.,biotech,paren
+"Automatic Data Processing, Inc. (ADP)","Automatic Data Processing, Inc.",ADP,"Automatic Data Processing, Inc.",technology,paren
+Avita Medical Inc. Common Stock (RCEL),Avita Medical Inc. Common Stock,RCEL,Avita Medical Inc. Common Stock,biotech,paren
+Bank of America Corp. (BAC),Bank of America Corp.,BAC,Bank of America Corp.,banks,paren
+Broadcom Limited Shares (AVGO),Broadcom Limited Shares,AVGO,Broadcom Limited Shares,semiconductors,paren
+Fifth Third Bancorp (FITB),Fifth Third Bancorp,FITB,Fifth Third Bancorp,banks,paren
+General Dynamics Corp. (GD),General Dynamics Corp.,GD,General Dynamics Corp.,defense,paren
+"The Home Depot, Inc. (HD)","The Home Depot, Inc.",HD,"The Home Depot, Inc.",construction,paren
+Johnson Controls International Plc (JCI),Johnson Controls International Plc,JCI,Johnson Controls International Plc,industrials,paren
+JPMorgan Chase & Co. (JPM,JPMORGAN CHASE & CO,JPM-PM,JPMORGAN CHASE & CO,banks,fuzzy
+KLA Corp. (KLAC),KLA Corp.,KLAC,KLA Corp.,semiconductors,paren
+"L3Harris Technologies, Inc. (LHX)","L3Harris Technologies, Inc.",LHX,"L3Harris Technologies, Inc.",defense,paren
+Linde Plc (LIN),Linde Plc,LIN,Linde Plc,chemicals,paren
+Lockheed Martin Corp. (LMT),Lockheed Martin Corp.,LMT,Lockheed Martin Corp.,defense,paren
+"Lowe's Cos., Inc. (LOW)","Lowe's Cos., Inc.",LOW,"Lowe's Cos., Inc.",construction,paren
+McDonald's Corp. (MCD),McDonald's Corp.,MCD,McDonald's Corp.,food,paren
+Procter & Gamble Co. (PG),Procter & Gamble Co.,PG,Procter & Gamble Co.,food,paren
+Tractor Supply Co. (TSCO),Tractor Supply Co.,TSCO,Tractor Supply Co.,food,paren
+"Watsco, Inc. (WSO)","Watsco, Inc.",WSO,"Watsco, Inc.",construction,paren
+"The Williams Cos., Inc. (WMB)","The Williams Cos., Inc.",WMB,"The Williams Cos., Inc.",energy,paren
+Granite Falls Energy LLC,,,,,unresolved
+NeuroSense Therapeutics Ltd. Ordinary Shares,NeuroSense Therapeutics Ltd.,NRSNW,NeuroSense Therapeutics Ltd.,biotech,fuzzy
+Datavault (DVLT),Datavault,DVLT,Datavault,,paren
+Ares Management Corp. (ARES),Ares Management Corp.,ARES,Ares Management Corp.,financial services,paren
+"City and County of Denver, CO bond (Cusip",,,,,bond_skip
+"East Baton Rouge Sewerage Commission, LA,",,,,,unresolved
+"Minnetonka Independent School District No. 276,",,,,,unresolved
+"Pharr-San Jan-Alamo Independent School District,",ALAMO GROUP INC,ALG,ALAMO GROUP INC,industrials,fuzzy
+"New York State Dormitory Authority, bond (Cusip",,,,,bond_skip
+"Garland Independent School District, TX, bond",,,,,bond_skip
+"Frisco Independent School District, TX, bond (Cusip",,,,,bond_skip
+"Hurst-Euless-Bedford Independent School District,",,,,,unresolved
+"Ohio Turnpike and Infrastructure Commission, bond",,,,,bond_skip
+"Hutto Independent School District, TX, bond (Cusip",,,,,bond_skip
+"State of New Hampshire, bond (Cusip 64468FBS5)",,,,,bond_skip
+"Northwest Allen School Building Corporation, IN,",,,,,unresolved
+"Galena Park Independent School District, TX, bond",,,,,bond_skip
+"Oklahoma Water Resources Board, bond (Cusip",,,,,bond_skip
+"Humble Independent School District, TX, bond,",,,,,bond_skip
+"Lower Colorado River Authority, bond (Cusip",,,,,bond_skip
+Colorado Water Resources and Power,,,,,unresolved
+Carrizo Springs Consolidated Independent School,,,,,unresolved
+"Angleton Independent School District, TX, bond",,,,,bond_skip
+"New York City Transitional Finance Authority, bond",,,,,bond_skip
+"Lamar Consolidated Independent School District,",,,,,unresolved
+"State of Connecticut, bond (Cusip 207758V59)",,,,,bond_skip
+"State of Connecticut, bond (Cusip 20774Y3C9)",,,,,bond_skip
+"Greene County Reorganized School District No. 3,",,,,,unresolved
+"Boone County School District Finance Corporation,",,,,,unresolved
+Custer County School District 0025 (Broken Bow,,,,,unresolved
+"Durand Area Schools, MI, bond (Cusip 266381JU7)",,,,,bond_skip
+"Austin Community College District, TX, bond (Cusip",,,,,bond_skip
+"Houston Independent School District, TX, bond",,,,,bond_skip
+"Franklin Park School District Number 84, Cook",,,,,unresolved
+"Sherwood School District No. 88J (Washington,",,,,,unresolved
+"State of Oregon, bond (Cusip 68609BZE0)",,,,,bond_skip
+"School District No. 1, Denver Public Schools, CO,",,,,,unresolved
+"River Trails School District Number 26, Cook",,,,,unresolved
+Community College District N0. 525 (Counties of,,,,,bond_skip
+"Spring Branch Independent School District, TX,",,,,,unresolved
+"Douglas County School District 0001, Omaha, NE,",,,,,unresolved
+"West Lin-Wilsonville School District No. 3Jt,",,,,,unresolved
+"Board of Regents, Texas State University System,",,,,,unresolved
+"Lebanon R-111 School District, MO, bond (Cusip",,,,,bond_skip
+"Warren Woods Public Schools, MI, bond (Cusip",,,,,bond_skip
+"North Canton City School District, OH, bond (Csuip",,,,,bond_skip
+Fern Ridge School District 28J (Lane & Douglas,,,,,unresolved
+"Bolivar R-1 School District of Polk County MO,",,,,,unresolved
+"Ellsworth Community School District, WI, bond",,,,,bond_skip
+Municipal Building Authority of Ogden City School,,,,,bond_skip
+"Board of Regents of the University of Oklahoma,",,,,,unresolved
+Board of Education of the Princeton City School,,,,,unresolved
+"County Board of Education of Jefferson County, AL,",,,,,unresolved
+"Tolles Career & Technical Center (Madison,",,,,,unresolved
+Community Unit School District No. 60 (Lake,,,,,bond_skip
+"The school Board of Marion County, FL, bond",,,,,bond_skip
+"Louisiana State Bond Commission, bond (Cusip",,,,,bond_skip
+"County of Wake, NC GO, bond (Cusip 930863T88)",,,,,bond_skip
+"Independent School District No. 2888, Clinton-",,,,,unresolved
+"Triborough Bridge and Tunnel Authority, NY, bond",,,,,bond_skip
+"City of Charlotte, NC, bond (Cusip 161045SX8)",,,,,bond_skip
+"Renton School District No. 403 (King County), WA,",,,,,unresolved
+"City of Fort Lauderdale, FL, bond (Cusip",,,,,bond_skip
+"Ohio Public Facilities Commission, bond (Common",,,,,bond_skip
+"University of Connecticut, bond (Cusip 914233U74)",,,,,bond_skip
+"State of Washington, bond (Cusip 93974EEN2)",,,,,bond_skip
+"The Commonwealth of Massachusetts, bond (Cusip",,,,,bond_skip
+"Massachusetts Port Authority, bond (Cusip",,,,,bond_skip
+"Arizona Board of Regents, Arizona State University,",,,,,unresolved
+"City and County of Denver, CO, bond (Cusip",,,,,bond_skip
+"State of Hawaii, bond (Cusip 419792WQ5)",,,,,bond_skip
+"State of Hawaii, bond (Cusip 419792WV4)",,,,,bond_skip
+"Leander Independent School District, TX, bond",,,,,bond_skip
+"Truckee Meadows Water Authority, NV, bond",,,,,bond_skip
+"State of Wisconsin, bond (Cusip 97709TCH7)",,,,,bond_skip
+"Spokane School District No. 81, Spokane County,",,,,,unresolved
+"Energy Northwest, WA, bond (Cusip 29270C3P8)",,,,,bond_skip
+"The Regents of the University of California, bond",,,,,bond_skip
+"City of Des Moines, IA, bond (Cusip 25009XUN3)",,,,,bond_skip
+"Cotulla Independent School District, TX, bond",,,,,bond_skip
+"State of Washington, bond (Cusip 93974D6R4)",,,,,bond_skip
+"New York City Municipal Water Finance Authority,",,,,,bond_skip
+"University of Connecticut, bond (Cusip 914233K91)",,,,,bond_skip
+"North Clackamas School District No. 12, OR, bond",,,,,bond_skip
+"State of Tennessee, bond (Cusip 880541XN2)",,,,,bond_skip
+"Utah Transit Authority, UT, bond (Cusip",,,,,bond_skip
+"Unified School District No. 383, Riley County, KS,",,,,,unresolved
+"District of Columbia (Washington, D.C.), bond",,,,,bond_skip
+"State of Maryland, bond (Cusip 574193NN4)",,,,,bond_skip
+"State of Washington, bond (Cusip 93974D2M9)",,,,,bond_skip
+"Arlington County, VA, bond (Cusip 041431RY5)",,,,,bond_skip
+"State of Connecticut, bond (Cusip 20772KGD5)",,,,,bond_skip
+Auburn School District No. 408 (King and Pierce,,,,,unresolved
+"State of Washington, bond (Cusip 93974DYF9)",,,,,bond_skip
+"The Regents of the University of Colorado, bond",,,,,bond_skip
+"Skagit County, WA, bond (Cusip 830201MD8)",,,,,bond_skip
+"State of Florida, State Board of Education, bond",,,,,bond_skip
+"Pierce County, WA, bond (Cusip 720356D43)",,,,,bond_skip
+"Jefferson County School District No, R-1, CO, bond",,,,,bond_skip
+"Pasco School District No. 1, Franklin County, WA,",,,,,unresolved
+"The School Board of Palm Beach County, FL, bond",,,,,bond_skip
+"State of Connecticut, bond (Cusip 207758XG3)",,,,,bond_skip
+State Board of Regents of the State of Utah o/b/o,,,,,unresolved
+"State of Washington, bond (Cusip 93974EDJ2)",,,,,bond_skip
+"Golden State Tobacco Securitization Corporation,",,,,,unresolved
+"Intermountain Power Agency, UT, bond (Cusip",,,,,bond_skip
+"Hillsboro School District No. 1J (Washington,",,,,,unresolved
+"State of New Mexico, bond (Cusip 6473104Q11)",,,,,bond_skip
+"City of San Antonio, TX, bond (Cusip 79625GAG8)",,,,,bond_skip
+"Weld County School District No.6, CO, bond (Cusip",,,,,bond_skip
+"State of Vermont GO, bond (Cusip 9242585P7)",,,,,bond_skip
+"State of Maryland, bond (Cusip 574193QF8)",,,,,bond_skip
+"Downtown Savannah Authority, GA, bond (Cusip",,,,,bond_skip
+"Pecos-Barstow-Toyah Independent School District,",,,,,unresolved
+"Alabama State Public School and College Authority,",,,,,bond_skip
+"State of Colorado, Education Loan Program, bond",,,,,bond_skip
+Maryland St Dept Transit bond (Cusip 574204H89),,,,,bond_skip
+"State of Oregon, bond (Cusip 68609BSQ1)",,,,,bond_skip
+"State of Kansas Department of Transportation,",,,,,unresolved
+Trump Media & Tech Group Corp (DJT),Trump Media & Tech Group Corp,DJT,Trump Media & Tech Group Corp,,paren
+ADVANCED MICRO DEVICES,ADVANCED MICRO DEVICES INC,AMD,ADVANCED MICRO DEVICES INC,semiconductors,fuzzy
+AES CORP,AES CORP,AES,AES CORP,utilities,fuzzy
+ALLSTATE CORP,ALLSTATE CORP,ALL-PB,ALLSTATE CORP,financial services,fuzzy
+ALPHABET INC CL A,Alphabet Inc.,GOOGN,Alphabet Inc.,technology,fuzzy
+AMAZON.COM INC,AMAZON COM INC,AMZN,AMAZON COM INC,technology,fuzzy
+AMERIPRISE FINANCIAL INC,AMERIPRISE FINANCIAL INC,AMP,AMERIPRISE FINANCIAL INC,financial services,fuzzy
+APA CORP,APA Corp,APA,APA Corp,energy,fuzzy
+APOLLO GLOBAL MGMT INC,,,,,unresolved
+APPLE INC,Apple Inc.,AAPL,Apple Inc.,technology,fuzzy
+AZENTA INC,"Azenta, Inc.",AZTA,"Azenta, Inc.",semiconductors,fuzzy
+BENTLEY SYSTEMS INC CL B,BENTLEY SYSTEMS INC,BSY,BENTLEY SYSTEMS INC,technology,fuzzy
+BERKLEY W R CORP,BERKLEY W R CORP,WRB-PH,BERKLEY W R CORP,financial services,fuzzy
+BERKSHIRE HATHAWAY INC,BERKSHIRE HATHAWAY INC,BRK-A,BERKSHIRE HATHAWAY INC,,fuzzy
+BIO RAD LABORATORIES INC,"BIO-RAD LABORATORIES, INC.",BIO-B,"BIO-RAD LABORATORIES, INC.",,fuzzy
+BLACKROCK INC,"BlackRock, Inc.",BLK,"BlackRock, Inc.",financial services,fuzzy
+BOSTON SCIENTIFIC CORP,BOSTON SCIENTIFIC CORP,BSX,BOSTON SCIENTIFIC CORP,medical devices,fuzzy
+BRIGHT HORIZONS FAMILY,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,,fuzzy
+SOLUTIONSINC,"TIC Solutions, Inc.",TICAW,"TIC Solutions, Inc.",,fuzzy
+BRISTOL MYERS SQUIBB CO,BRISTOL MYERS SQUIBB CO,CELG-RI,BRISTOL MYERS SQUIBB CO,pharmaceuticals,fuzzy
+BROADCOM INC,Broadcom Inc.,AVGO,Broadcom Inc.,semiconductors,fuzzy
+BROADRIDGE FINANCIAL,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",BR,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",financial services,fuzzy
+SOLUTIONS INC,"Motorola Solutions, Inc.",MSI,"Motorola Solutions, Inc.",technology,fuzzy
+BRUNSWICK CORP,BRUNSWICK CORP,BC-PC,BRUNSWICK CORP,industrials,fuzzy
+CF INDUSTRIES HOLDINGS INC,"CF Industries Holdings, Inc.",CF,"CF Industries Holdings, Inc.",chemicals,fuzzy
+CHARLES RIVER LABORATORIES,"CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",CRL,"CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",biotech,fuzzy
+CHEMED CORP NEW,CHEMED CORP,CHE,CHEMED CORP,medical devices,fuzzy
+CHIPOTLE MEXICAN GRILL INC,CHIPOTLE MEXICAN GRILL INC,CMG,CHIPOTLE MEXICAN GRILL INC,food,fuzzy
+CHOICE HOTELS INTL INC NEW,,,,,unresolved
+DEVON ENERGY CORP NEW,DEVON ENERGY CORP/DE,DVN,DEVON ENERGY CORP/DE,energy,fuzzy
+DOMINO'S PIZZA INC,DOMINOS PIZZA INC,DPZ,DOMINOS PIZZA INC,food,fuzzy
+DYNATRACE INC,"Dynatrace, Inc.",DT,"Dynatrace, Inc.",technology,fuzzy
+EQUIFAX INC,EQUIFAX INC,EFX,EQUIFAX INC,financial services,fuzzy
+EXPAND ENERGY CORP,EXPAND ENERGY Corp,EXE,EXPAND ENERGY Corp,energy,fuzzy
+EXPONENT INC,EXPONENT INC,EXPO,EXPONENT INC,,fuzzy
+EXXON MOBIL CORP,EXXON MOBIL CORP,XOM,EXXON MOBIL CORP,energy,fuzzy
+FAIR ISAAC CORP,FAIR ISAAC CORP,FICO,FAIR ISAAC CORP,financial services,fuzzy
+FIRST CITIZENS BANCSHS INC,"CITIZENS, INC.",CIA,"CITIZENS, INC.",financial services,fuzzy
+FIRST HORIZON CORP,FIRST HORIZON CORP,FHN-PF,FIRST HORIZON CORP,banks,fuzzy
+GRACO INC,GRACO INC,GGG,GRACO INC,industrials,fuzzy
+HAYWARD HLDGS INC,"Hayward Holdings, Inc.",HAYW,"Hayward Holdings, Inc.",industrials,fuzzy
+HEICO CORP NEW CL A,HEICO CORP,HEI-A,HEICO CORP,aerospace,fuzzy
+HENRY JACK & ASSOC INC,,,,,unresolved
+HOULIHAN LOKEY INC,"HOULIHAN LOKEY, INC.",HLI,"HOULIHAN LOKEY, INC.",financial services,fuzzy
+HUBSPOT INC,HUBSPOT INC,HUBS,HUBSPOT INC,technology,fuzzy
+IAC INC,,,,,unresolved
+INGERSOLL RAND INC,Ingersoll Rand Inc.,IR,Ingersoll Rand Inc.,industrials,fuzzy
+KEYSIGHT TECHNOLOGIES INC,"Keysight Technologies, Inc.",KEYS,"Keysight Technologies, Inc.",technology,fuzzy
+LAS VEGAS SANDS CORP,LAS VEGAS SANDS CORP,LVS,LAS VEGAS SANDS CORP,,fuzzy
+LENNOX INTL INC,,,,,unresolved
+LIBERTY MEDIA GROUP,Liberty Media Corp,FWONB,Liberty Media Corp,,fuzzy
+LILLY ELI & CO,ELI LILLY & Co,LLY,ELI LILLY & Co,pharmaceuticals,fuzzy
+LIVE NATION ENTERTAINMENT,"Live Nation Entertainment, Inc.",LYV,"Live Nation Entertainment, Inc.",,fuzzy
+LPL FINL HLDGS INC COM,,,,,unresolved
+LYFT INC CL A,"Lyft, Inc.",LYFT,"Lyft, Inc.",,fuzzy
+MARSH & MCLENNAN COS INC,,,,,unresolved
+MARVELL TECHNOLOGY INC,"Marvell Technology, Inc.",MRVL,"Marvell Technology, Inc.",semiconductors,fuzzy
+MASTERCARD INC CL A,Mastercard Inc,MA,Mastercard Inc,,fuzzy
+META PLATFORMS INC CL A,"Meta Platforms, Inc.",META,"Meta Platforms, Inc.",technology,fuzzy
+MICRON TECHNOLOGY INC,MICRON TECHNOLOGY INC,MU,MICRON TECHNOLOGY INC,semiconductors,fuzzy
+MICROSOFT CORP,MICROSOFT CORP,MSFT,MICROSOFT CORP,technology,fuzzy
+NEXTERA ENERGY INC COM,NEXTERA ENERGY INC,NEE-PS,NEXTERA ENERGY INC,utilities,fuzzy
+NIKE INC CL B,"NIKE, Inc.",NKE,"NIKE, Inc.",,fuzzy
+NORDSON CORP,NORDSON CORP,NDSN,NORDSON CORP,medical devices,fuzzy
+NORTHROP GRUMMAN CORP,NORTHROP GRUMMAN CORP /DE/,NOC,NORTHROP GRUMMAN CORP /DE/,defense,fuzzy
+NVIDIA CORP,NVIDIA CORP,NVDA,NVIDIA CORP,semiconductors,fuzzy
+ORACLE CORP,ORACLE CORP,ORCL-PD,ORACLE CORP,technology,fuzzy
+PARKER HANNIFIN CORP,Parker-Hannifin Corp,PH,Parker-Hannifin Corp,industrials,fuzzy
+PHILIP MORRIS INTL INC,,,,,unresolved
+POOL CORP,POOL CORP,POOL,POOL CORP,construction,fuzzy
+PROLOGIS INC COM,"Prologis, Inc.",PLDGP,"Prologis, Inc.",real estate,fuzzy
+REGAL REXNORD CORP,REGAL REXNORD CORP,RRX,REGAL REXNORD CORP,industrials,fuzzy
+ROLLINS INC,ROLLINS INC,ROL,ROLLINS INC,industrials,fuzzy
+SAIA INC,SAIA INC,SAIA,SAIA INC,industrials,fuzzy
+SCHWAB CHARLES CORP NEW,SCHWAB CHARLES CORP,SCHW-PJ,SCHWAB CHARLES CORP,financial services,fuzzy
+T-MOBILE US INC COM,"T-Mobile US, Inc.",TMUSL,"T-Mobile US, Inc.",telecommunications,fuzzy
+TAKE-TWO INTERACTIVE SOFTWARE,TAKE TWO INTERACTIVE SOFTWARE INC,TTWO,TAKE TWO INTERACTIVE SOFTWARE INC,technology,fuzzy
+TELEDYNE TECHNOLOGIES INC,TELEDYNE TECHNOLOGIES INC,TDY,TELEDYNE TECHNOLOGIES INC,defense,fuzzy
+TESLA INC,"Tesla, Inc.",TSLA,"Tesla, Inc.",autos,fuzzy
+THE COOPER COMPANIES INC,"COOPER COMPANIES, INC.",COO,"COOPER COMPANIES, INC.",medical devices,fuzzy
+THERMO FISHER SCIENTIFIC INC,THERMO FISHER SCIENTIFIC INC.,TMO,THERMO FISHER SCIENTIFIC INC.,medical devices,fuzzy
+TJX COS INC NEW,,,,,unresolved
+TRANSDIGM GROUP INC,TransDigm Group INC,TDG,TransDigm Group INC,aerospace,fuzzy
+UNITEDHEALTH GROUP INC,UNITEDHEALTH GROUP INC,UNH,UNITEDHEALTH GROUP INC,health insurance,fuzzy
+UNIVERSAL DISPLAY CORP,UNIVERSAL DISPLAY CORP PA,OLED,UNIVERSAL DISPLAY CORP PA,semiconductors,fuzzy
+VULCAN MATERIALS CO NEW,Vulcan Materials CO,VMC,Vulcan Materials CO,construction,fuzzy
+WABTEC INC,,,,,unresolved
+WALMART INC,Walmart Inc.,WMT,Walmart Inc.,food,fuzzy
+WALT DISNEY CO,Walt Disney Co,DIS,Walt Disney Co,,fuzzy
+WELLS FARGO & CO NEW,WELLS FARGO & COMPANY/MN,WFC-PZ,WELLS FARGO & COMPANY/MN,banks,fuzzy
+WEST PHARMACEUTICAL,WEST PHARMACEUTICAL SERVICES INC,WST,WEST PHARMACEUTICAL SERVICES INC,medical devices,fuzzy
+SERVICES INC,"QUANTA SERVICES, INC.",PWR,"QUANTA SERVICES, INC.",construction,fuzzy
+WILLIAMS COS INC (DEL),WILLIAMS COS INC,DEL,WILLIAMS COS INC,,paren
+ZEBRA TECHNOLOGIES CORP,ZEBRA TECHNOLOGIES CORP,ZBRA,ZEBRA TECHNOLOGIES CORP,,fuzzy
+ALLEGION PLC,Allegion plc,ALLE,Allegion plc,industrials,fuzzy
+APTIV PLC,Aptiv PLC,APTV,Aptiv PLC,autos,fuzzy
+JOHNSON CTLS INTL PLC,JOHNSON & JOHNSON,JNJ,JOHNSON & JOHNSON,pharmaceuticals,fuzzy
+PENTAIR PLC,PENTAIR plc,PNR,PENTAIR plc,industrials,fuzzy
+ZOOM COMMUNICATIONS INC,,,,,bond_skip
+ZSCALERINC,,,,,unresolved
+DECKERS OUTDOOR CORP,DECKERS OUTDOOR CORP,DECK,DECKERS OUTDOOR CORP,,fuzzy
+iShares Core S&P Total US Stock Market ETF,,,,,unresolved
+iShares Core Dividend Growth ETF (DGRO),iShares Core Dividend Growth ETF,DGRO,iShares Core Dividend Growth ETF,,paren
+iShares Core MSCIEmerging Markets ETF (IEMG),iShares Core MSCIEmerging Markets ETF,IEMG,iShares Core MSCIEmerging Markets ETF,,paren
+Schwab US TIPS ETF (SCHP),Schwab US TIPS ETF,SCHP,Schwab US TIPS ETF,,paren
+"Scale AI, Inc. Stock",,,,,unresolved
+Scale AI vested stock options,,,,,unresolved
+Schwab S&P 500 Index Fund (SWPPX),Schwab S&P 500 Index Fund,SWPPX,Schwab S&P 500 Index Fund,,paren
+Vanguard Real Estate Index Fund ETF Shares,,,,real estate,unresolved
+Global Accountability Corporation,,,,,unresolved
+Trump Media & Technology Group,Trump Media & Technology Group Corp.,DJTWW,Trump Media & Technology Group Corp.,,fuzzy
+Trump Media & Technology Group Warrants,Trump Media & Technology Group Corp.,DJTWW,Trump Media & Technology Group Corp.,,fuzzy
+"Dominion Energy, Inc. (D)","Dominion Energy, Inc.",D,"Dominion Energy, Inc.",utilities,paren
+Fidelity Software and IT Services Portfolio (FSCSX),Fidelity Software and IT Services Portfolio,FSCSX,Fidelity Software and IT Services Portfolio,technology,paren
+"T Rowe Price Health Sciences Fund, Inc Class I",PRICE T ROWE GROUP INC,TROW,PRICE T ROWE GROUP INC,financial services,fuzzy
+"The PNC Financial Services Group, Inc. (PNC)","The PNC Financial Services Group, Inc.",PNC,"The PNC Financial Services Group, Inc.",banks,paren
+International Business Machines Corp. (IBM),International Business Machines Corp.,IBM,International Business Machines Corp.,technology,paren
+Trane Technologies plc (TT),Trane Technologies plc,TT,Trane Technologies plc,industrials,paren
+Laboratory Corp. of America Holdings (LH),Laboratory Corp. of America Holdings,LH,Laboratory Corp. of America Holdings,medical devices,paren
+Chubb Ltd. (CB),Chubb Ltd.,CB,Chubb Ltd.,financial services,paren
+"Mondelez International, Inc. (MDLZ)","Mondelez International, Inc.",MDLZ,"Mondelez International, Inc.",,paren
+"T-Mobile US, Inc. (TMUS)","T-Mobile US, Inc.",TMUS,"T-Mobile US, Inc.",telecommunications,paren
+Ares Capital Corporation Common Stock (ARCC),Ares Capital Corporation Common Stock,ARCC,Ares Capital Corporation Common Stock,financial services,paren
+Northrop Grumman Corp. (NOC),Northrop Grumman Corp.,NOC,Northrop Grumman Corp.,defense,paren
+"KKR & Co., Inc. (KKR)","KKR & Co., Inc.",KKR,"KKR & Co., Inc.",financial services,paren
+Blackstone Inc. Common Stock (BX),Blackstone Inc. Common Stock,BX,Blackstone Inc. Common Stock,financial services,paren
+ASML Holding NV,ASML HOLDING NV,ASMLF,ASML HOLDING NV,semiconductors,fuzzy
+"Uber Technologies, Inc. (UBER)","Uber Technologies, Inc.",UBER,"Uber Technologies, Inc.",,paren
+"Zscaler, Inc. (ZS)","Zscaler, Inc.",ZS,"Zscaler, Inc.",technology,paren
+CRISPR Therapeutics AG Common Shares (CRSP),CRISPR Therapeutics AG Common Shares,CRSP,CRISPR Therapeutics AG Common Shares,biotech,paren
+"NIKE, Inc. (NKE)","NIKE, Inc.",NKE,"NIKE, Inc.",,paren
+GE Verona,,,,,unresolved
+Fidelity Advisor Biotechnology Fund Class C,,,,,unresolved
+TMC the metals company Inc. Common Stock,TMC the metals Co Inc.,TMCWW,TMC the metals Co Inc.,mining,fuzzy
+Byrna Technologies Inc. Common Stock (BYRN),Byrna Technologies Inc. Common Stock,BYRN,Byrna Technologies Inc. Common Stock,defense,paren
+Omada Health Inc. (OMDA),Omada Health Inc.,OMDA,Omada Health Inc.,biotech,paren
+Coinbase Global Inc. Class A Common Stock,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Samsara Inc. Class A Common Stock (IOT),Samsara Inc. Class A Common Stock,IOT,Samsara Inc. Class A Common Stock,technology,paren
+Airbnb Inc. Class A Common Stock (ABNB),Airbnb Inc. Class A Common Stock,ABNB,Airbnb Inc. Class A Common Stock,,paren
+Robinhood Markets Inc. Class A Common Stock,"Robinhood Markets, Inc.",HOOD,"Robinhood Markets, Inc.",financial services,fuzzy
+Wise plc (WISE) distribution,Wise Group plc,WSE,Wise Group plc,,fuzzy
+Airbnb Inc. (ABNB) call option exercise 1,"Airbnb, Inc.",ABNB,"Airbnb, Inc.",,fuzzy
+Airbnb Inc. (ABNB) call option exercise 2,"Airbnb, Inc.",ABNB,"Airbnb, Inc.",,fuzzy
+Airbnb Inc. (ABNB) call option exercise 3,"Airbnb, Inc.",ABNB,"Airbnb, Inc.",,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 1,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 2,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 3,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 4,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 5,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+Coinbase Global Inc. (COIN) call option exercise 6,"Coinbase Global, Inc.",COIN,"Coinbase Global, Inc.",financial services,fuzzy
+ADOBE INC COM,ADOBE INC.,ADBE,ADOBE INC.,technology,fuzzy
+AKAMAI TECHNOLOGIES COM USD0.01,AKAMAI TECHNOLOGIES INC,AKAM,AKAMAI TECHNOLOGIES INC,,fuzzy
+BOOZ ALLEN HAMILTON HLDG CORP CL A,,,,,unresolved
+BEST BUY CO INC COM USD0.10,BEST BUY CO INC,BBY,BEST BUY CO INC,,fuzzy
+CITIGROUP INC,CITIGROUP INC,C-PR,CITIGROUP INC,,fuzzy
+CACI INTERNATIONAL INC,CACI INTERNATIONAL INC /DE/,CACI,CACI INTERNATIONAL INC /DE/,,fuzzy
+SALESFORCE INC COM,"Salesforce, Inc.",CRM,"Salesforce, Inc.",technology,fuzzy
+CISCO SYSTEMS INC,"CISCO SYSTEMS, INC.",CSCO,"CISCO SYSTEMS, INC.",technology,fuzzy
+DELL TECHNOLOGIES INC CL C,Dell Technologies Inc.,DELL,Dell Technologies Inc.,,fuzzy
+DISNEY WALT CO COM,Walt Disney Co,DIS,Walt Disney Co,,fuzzy
+DOCUSIGN INC COM,"DOCUSIGN, INC.",DOCU,"DOCUSIGN, INC.",,fuzzy
+FOX CORP CL B COM,Fox Corp,FOX,Fox Corp,,fuzzy
+FOX CORP CL A COM,Fox Corp,FOX,Fox Corp,,fuzzy
+GENERAL DYNAMICS CORP COM,GENERAL DYNAMICS CORP,GD,GENERAL DYNAMICS CORP,defense,fuzzy
+ALPHABET INC CAP STK CL C,Alphabet Inc.,GOOGN,Alphabet Inc.,technology,fuzzy
+ALPHABET INC CAP STK CL A,Alphabet Inc.,GOOGN,Alphabet Inc.,technology,fuzzy
+HEWLETT PACKARD ENTERPRISE CO COM,Hewlett Packard Enterprise Co,HPE-PC,Hewlett Packard Enterprise Co,,fuzzy
+HP INC COM,HP INC,HPQ,HP INC,,fuzzy
+HOST HOTELS &RESORTS INC COM,"HOST HOTELS & RESORTS, INC.",HST,"HOST HOTELS & RESORTS, INC.",,fuzzy
+INTERNATIONAL BUS MACH CORP COM,mF International Ltd,MFI,mF International Ltd,,fuzzy
+GARTNER INC COM USD0.0005,GARTNER INC,IT,GARTNER INC,technology,fuzzy
+LOCKHEED MARTIN CORP COM USD1.00,LOCKHEED MARTIN CORP,LMT,LOCKHEED MARTIN CORP,defense,fuzzy
+NORTHROP GRUMMAN CORP COM USD1,NORTHROP GRUMMAN CORP /DE/,NOC,NORTHROP GRUMMAN CORP /DE/,defense,fuzzy
+NETAPP INC,"NetApp, Inc.",NTAP,"NetApp, Inc.",,fuzzy
+OPEN TEXT CORP COM ISIN #CA6837151068,OPEN TEXT CORP,OTEX,OPEN TEXT CORP,,fuzzy
+SCIENCE APPLICATIONS INTL CORP COM,,,,,unresolved
+SAP ADR REP 1 ORD,,,,,unresolved
+SOUTHERN CO,SOUTHERN COPPER CORP/,SCCO,SOUTHERN COPPER CORP/,,fuzzy
+AT&T INC COM USD1,AT&T INC.,T-PC,AT&T INC.,,fuzzy
+THOMSON-REUTERS CORP COM NPV( POST,"Post Holdings, Inc.",POST,"Post Holdings, Inc.",,fuzzy
+TYLER TECHNOLOGIES INC,TYLER TECHNOLOGIES INC,TYL,TYLER TECHNOLOGIES INC,technology,fuzzy
+UNITED PARCEL SERVICE INC CL B,UNITED PARCEL SERVICE INC,UPS,UNITED PARCEL SERVICE INC,industrials,fuzzy
+VERIZON COMMUNICATIONS INC,,,,,bond_skip
+WORKDAY INC COM USD0.001 CL A,"Workday, Inc.",WDAY,"Workday, Inc.",technology,fuzzy
+INFORMATICA INC COM CL A,,,,,unresolved
+"Alphabet, Inc. (GOOG) (sale of stock per required",Alphabet Inc.,GOOGN,Alphabet Inc.,technology,fuzzy
+Southern Company (SO) (required sale pursuant to,SOUTHERN CO,SOJD,SOUTHERN CO,,fuzzy
+iShares MSCI Germany ETF (EWG),iShares MSCI Germany ETF,EWG,iShares MSCI Germany ETF,,paren
+iShares MSCI Thailand ETF (THD),iShares MSCI Thailand ETF,THD,iShares MSCI Thailand ETF,,paren
+Old Farm Partners,Farmland Partners Inc.,FPI,Farmland Partners Inc.,agriculture,fuzzy
+Key Square Group LP,,,,,unresolved
+Key Square Partners II LP,,,,,unresolved
+Key Square Master Fund SP,,,,,unresolved
+Skye Global Fund,,,,,unresolved
+Roxo Energy Funding IV LLC,,,,,unresolved
+Key Square Partners II LLP,,,,,unresolved
+"Totem Macro Global Alpha Select Onshore Fund,",,,,,unresolved
+Castle Hook LP,,,,,unresolved
+Old Farm Partners Master,,,,,unresolved
+Totem Management Seed,,,,,unresolved
+GreenGage Global Holdings,,,,,unresolved
+Las Vegas Sands Corp. (LVS),Las Vegas Sands Corp.,LVS,Las Vegas Sands Corp.,,paren
+argenx SE American Depositary Shares (ARGX),argenx SE American Depositary Shares,ARGX,argenx SE American Depositary Shares,biotech,paren
+American Tower Corporation (REIT) (AMT),American Tower Corporation (REIT),AMT,American Tower Corporation (REIT),real estate,paren
+Monster Beverage Corp. (MNST),Monster Beverage Corp.,MNST,Monster Beverage Corp.,food,paren
+"Hilton Worldwide Holdings, Inc. (HLT)","Hilton Worldwide Holdings, Inc.",HLT,"Hilton Worldwide Holdings, Inc.",,paren
+Shopify Inc. Class A Subordinate Voting Shares,SHOPIFY INC.,SHOP,SHOPIFY INC.,technology,fuzzy
+DraftKings Inc. Class A Common Stock (DKNG),DraftKings Inc. Class A Common Stock,DKNG,DraftKings Inc. Class A Common Stock,,paren
+Datadog Inc. Class A Common Stock (DDOG),Datadog Inc. Class A Common Stock,DDOG,Datadog Inc. Class A Common Stock,technology,paren
+DoorDash Inc. Class A Common Stock (DASH),DoorDash Inc. Class A Common Stock,DASH,DoorDash Inc. Class A Common Stock,,paren
+Vaxcyte Inc. Common Stock (PCVX),Vaxcyte Inc. Common Stock,PCVX,Vaxcyte Inc. Common Stock,biotech,paren
+Howmet Aerospace Inc. Common Stock (HWM),Howmet Aerospace Inc. Common Stock,HWM,Howmet Aerospace Inc. Common Stock,aerospace,paren
+Deere & Co. (DE),Deere & Co.,DE,Deere & Co.,agriculture,paren
+KKR Private Equity Conglomerate LLC (K-PEC),KKR & Co. Inc.,KKRS,KKR & Co. Inc.,financial services,fuzzy
+K-INFRA - Class S Hedge Fund,,,,,unresolved
+Blackstone Private Credit Fund (BCRED),Blackstone Private Credit Fund,BCRED,Blackstone Private Credit Fund,financial services,paren
+One Stop Systems Inc. Common Stock (OSS),One Stop Systems Inc. Common Stock,OSS,One Stop Systems Inc. Common Stock,,paren
+Grab Holdings Limited Class A Ordinary Shares,Grab Holdings Ltd,GRABW,Grab Holdings Ltd,,fuzzy
+Semler Scientific Inc. Common Stock (SMLR),Semler Scientific Inc. Common Stock,SMLR,Semler Scientific Inc. Common Stock,,paren
+Global X MSCI Argentina ETF (ARGT),Global X MSCI Argentina ETF,ARGT,Global X MSCI Argentina ETF,,paren
+bitmine immersion technology (BMNR),bitmine immersion technology,BMNR,bitmine immersion technology,,paren
+180 Life Sciences Corp. Common Stock (ATNF),180 Life Sciences Corp. Common Stock,ATNF,180 Life Sciences Corp. Common Stock,,paren
+ETHZilla Corp (ETHZ),ETHZilla Corp,ETHZ,ETHZilla Corp,,paren
+"MicroStrategy, Inc. (MSTR)","MicroStrategy, Inc.",MSTR,"MicroStrategy, Inc.",financial services,paren
+Amcor plc (AMCR),Amcor plc,AMCR,Amcor plc,food,paren
+"Amkor Technology, Inc. (AMKR)","Amkor Technology, Inc.",AMKR,"Amkor Technology, Inc.",semiconductors,paren
+AMERICAN BD FD OF AMERICA F2 (ABNFX),AMERICAN BD FD OF AMERICA F2,ABNFX,AMERICAN BD FD OF AMERICA F2,,paren
+AMERICAN STRATEGIC BOND F2 (ANBFX),,,,,bond_skip
+ISHARES CORE AGGRESSIVE ALLO (AOA),ISHARES CORE AGGRESSIVE ALLO,AOA,ISHARES CORE AGGRESSIVE ALLO,,paren
+"BBH Wealth Strategies, LLC - SILVER POINT",,,,,unresolved
+"BBH Wealth Strategies, LLC - CLARKSTON",,,,,unresolved
+BBH LIMITED DURATION FUND CL I,,,,,unresolved
+Abbott Laboratories,ABBOTT LABORATORIES,ABT,ABBOTT LABORATORIES,medical devices,fuzzy
+Adobe Inc,ADOBE INC.,ADBE,ADOBE INC.,technology,fuzzy
+Advanced Drainage System Inc.,"ADVANCED DRAINAGE SYSTEMS, INC.",WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",construction,fuzzy
+Alcon Inc.,ALCON INC,ALC,ALCON INC,medical devices,fuzzy
+Alphabet Inc.,Alphabet Inc.,GOOGN,Alphabet Inc.,technology,fuzzy
+Amazon.com Inc.,AMAZON COM INC,AMZN,AMAZON COM INC,technology,fuzzy
+Applied Materials Inc.,APPLIED MATERIALS INC /DE,AMAT,APPLIED MATERIALS INC /DE,semiconductors,fuzzy
+AptaraGroup Inc.,"APTARGROUP, INC.",ATR,"APTARGROUP, INC.",industrials,fuzzy
+Arista Networks Inc.,"Arista Networks, Inc.",ANET,"Arista Networks, Inc.",semiconductors,fuzzy
+Arthur J. Gallagher & Co.,Arthur J. Gallagher & Co.,AJG,Arthur J. Gallagher & Co.,financial services,fuzzy
+Automatic Data Processing Inc.,AUTOMATIC DATA PROCESSING INC,ADP,AUTOMATIC DATA PROCESSING INC,technology,fuzzy
+Berkshire Hathaway Inc.,BERKSHIRE HATHAWAY INC,BRK-A,BERKSHIRE HATHAWAY INC,,fuzzy
+Booking Holdings Inc.,Booking Holdings Inc.,BKNG,Booking Holdings Inc.,,fuzzy
+Bright Horizons Family Solutions,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,,fuzzy
+Brown & Brown Inc.,"BROWN & BROWN, INC.",BRO,"BROWN & BROWN, INC.",financial services,fuzzy
+Bruker Corp,BRUKER CORP,BRKRP,BRUKER CORP,,fuzzy
+Cadence Design Systems Inc.,CADENCE DESIGN SYSTEMS INC,CDNS,CADENCE DESIGN SYSTEMS INC,technology,fuzzy
+CBRE Group,"CBRE GROUP, INC.",CBRE,"CBRE GROUP, INC.",real estate,fuzzy
+Costco Whotesale Corp,,,,,unresolved
+Darling Ingredients Inc.,DARLING INGREDIENTS INC.,DAR,DARLING INGREDIENTS INC.,agriculture,fuzzy
+Entegris Inc,ENTEGRIS INC,ENTG,ENTEGRIS INC,semiconductors,fuzzy
+GFL Environmental,GFL Environmental Inc.,GFL,GFL Environmental Inc.,industrials,fuzzy
+Globant SA,,,,,unresolved
+Guidewire Software Inc,"Guidewire Software, Inc.",GWRE,"Guidewire Software, Inc.",technology,fuzzy
+GXO Logistics Incorporated,"GXO Logistics, Inc.",GXO,"GXO Logistics, Inc.",industrials,fuzzy
+Heico Corp,HEICO CORP,HEI-A,HEICO CORP,aerospace,fuzzy
+Icon PLC,ICON PLC,ICLR,ICON PLC,biotech,fuzzy
+KLA Corporation,KLA CORP,KLAC,KLA CORP,semiconductors,fuzzy
+Linde PLC,LINDE PLC,LIN,LINDE PLC,chemicals,fuzzy
+LPL Financial Holdings Inc,LPL Financial Holdings Inc.,LPLA,LPL Financial Holdings Inc.,financial services,fuzzy
+Mastercard Incorporated,Mastercard Inc,MA,Mastercard Inc,,fuzzy
+Microsoft Corp,MICROSOFT CORP,MSFT,MICROSOFT CORP,technology,fuzzy
+Nike Inc.,"NIKE, Inc.",NKE,"NIKE, Inc.",,fuzzy
+Oracle Corp.,ORACLE CORP,ORCL-PD,ORACLE CORP,technology,fuzzy
+Otis Worldwide Corporation,Otis Worldwide Corp,OTIS,Otis Worldwide Corp,industrials,fuzzy
+Progressive Corp Ohio,PROGRESSIVE CORP/OH/,PGR,PROGRESSIVE CORP/OH/,financial services,fuzzy
+S&P Global Inc,S&P Global Inc.,SPGI,S&P Global Inc.,financial services,fuzzy
+Shift4 Payments Inc.,"Shift4 Payments, Inc.",FOUR-PA,"Shift4 Payments, Inc.",financial services,fuzzy
+Take-Two Interactive Software,TAKE TWO INTERACTIVE SOFTWARE INC,TTWO,TAKE TWO INTERACTIVE SOFTWARE INC,technology,fuzzy
+Texas Instruments Inc,TEXAS INSTRUMENTS INC,TXN,TEXAS INSTRUMENTS INC,semiconductors,fuzzy
+Thermo Fisher Scientific Inc.,THERMO FISHER SCIENTIFIC INC.,TMO,THERMO FISHER SCIENTIFIC INC.,medical devices,fuzzy
+Toro Co,TORO CO,TTC,TORO CO,industrials,fuzzy
+ULSolutions Inc.,,,,,unresolved
+Unlted Health Group,,,,,unresolved
+Vulcan Materials Co.,Vulcan Materials CO,VMC,Vulcan Materials CO,construction,fuzzy
+Waste Management Inc.,WASTE MANAGEMENT INC,WM,WASTE MANAGEMENT INC,utilities,fuzzy
+Watsco Inc,WATSCO INC,WSO-B,WATSCO INC,construction,fuzzy
+"West Pharmaceutical Services Inc,",WEST PHARMACEUTICAL SERVICES INC,WST,WEST PHARMACEUTICAL SERVICES INC,medical devices,fuzzy
+Willscot Mobile Mini Holdings Co.,WillScot Holdings Corp,WSC,WillScot Holdings Corp,construction,fuzzy
+Wyndham Hotels & Resorts Inc,"WYNDHAM HOTELS & RESORTS, INC.",WH,"WYNDHAM HOTELS & RESORTS, INC.",,fuzzy
+Zebra Technologies Corp.,ZEBRA TECHNOLOGIES CORP,ZBRA,ZEBRA TECHNOLOGIES CORP,,fuzzy
+Zoetis lnc,Zoetis Inc.,ZTS,Zoetis Inc.,medical devices,fuzzy
+Eli Lilly & Co.,ELI LILLY & Co,LLY,ELI LILLY & Co,pharmaceuticals,fuzzy
+Keysight Technologies Inc.,"Keysight Technologies, Inc.",KEYS,"Keysight Technologies, Inc.",technology,fuzzy
+Novo Nordisk,NOVO NORDISK A S,NONOF,NOVO NORDISK A S,pharmaceuticals,fuzzy
+NVR Inc.,NVR INC,NVR,NVR INC,construction,fuzzy
+Proctor & Gamble,PROCTER & GAMBLE Co,PG,PROCTER & GAMBLE Co,food,fuzzy
+VanEck Vectors Short High-Yield Municipal Index,,,,,bond_skip
+iShares Transportation Average ETF (IYT),iShares Transportation Average ETF,IYT,iShares Transportation Average ETF,,paren
+FNMA (Fannie Mae),,,,,unresolved
+iShares 20+ Year Treasury Bond ETF (TLT),,,,,bond_skip
+"S&P 500 Future, closed",,,,,unresolved
+"S&P 500 futures option, opened",,,,,unresolved
+"S&P 500 future, opened",,,,,unresolved
+ISHARES S&P 500 INDEX FUND - IVV,,,,,unresolved
+Bitcoin,American Bitcoin Corp.,ABTC,American Bitcoin Corp.,,fuzzy
+Solana,Solana Co,HSDT,Solana Co,,fuzzy
+ethereum classic,Grayscale Ethereum Classic Trust (ETC),ETCG,Grayscale Ethereum Classic Trust (ETC),,fuzzy
+polygon,,,,,unresolved
+polkadot,Osprey Polkadot Trust,ODOT,Osprey Polkadot Trust,,fuzzy
+Quant,,,,,unresolved
+"Delta Air Lines, Inc. (DAL)","Delta Air Lines, Inc.",DAL,"Delta Air Lines, Inc.",airlines,paren
+Peloton Interactive Inc. Class A Common Stock,"PELOTON INTERACTIVE, INC.",PTON,"PELOTON INTERACTIVE, INC.",,fuzzy
+Pfizer Inc. (PFE),Pfizer Inc.,PFE,Pfizer Inc.,pharmaceuticals,paren
+iShares MSCI Japan ETF,MSCI Inc.,MSCI,MSCI Inc.,financial services,fuzzy
+Ethereum,iShares Staked Ethereum Trust ETF,ETHB,iShares Staked Ethereum Trust ETF,,fuzzy
+American Express Co (AXP),American Express Co,AXP,American Express Co,financial services,paren
+Booking Holdings Inc. (BKNG),Booking Holdings Inc.,BKNG,Booking Holdings Inc.,,paren
+Boston Scientific Corp. (BSX),Boston Scientific Corp.,BSX,Boston Scientific Corp.,medical devices,paren
+Bristol-Myers Squibb (BMY),Bristol-Myers Squibb,BMY,Bristol-Myers Squibb,pharmaceuticals,paren
+"Broadcom, Inc. (AVGO",Broadcom Inc.,AVGO,Broadcom Inc.,semiconductors,fuzzy
+"Caterpillar, Inc. (CAT)","Caterpillar, Inc.",CAT,"Caterpillar, Inc.",industrials,paren
+"Cisco Systems, Inc. (CSCO)","Cisco Systems, Inc.",CSCO,"Cisco Systems, Inc.",technology,paren
+"Citigroup, Inc. (C)","Citigroup, Inc.",C,"Citigroup, Inc.",banks,paren
+GE Aerospace Com New (GE),GE Aerospace Com New,GE,GE Aerospace Com New,aerospace,paren
+Goldman Sachs Group Inc (GS),Goldman Sachs Group Inc,GS,Goldman Sachs Group Inc,banks,paren
+"Intuitive Surgical, Inc. (ISRG)","Intuitive Surgical, Inc.",ISRG,"Intuitive Surgical, Inc.",medical devices,paren
+"Merck & Co., Inc. (MRK)","Merck & Co., Inc.",MRK,"Merck & Co., Inc.",pharmaceuticals,paren
+Palantir Technologies Inc. Class A Common Stock,Palantir Technologies Inc.,PLTR,Palantir Technologies Inc.,technology,fuzzy
+"QUALCOMM, Inc. (QCOM)","QUALCOMM, Inc.",QCOM,"QUALCOMM, Inc.",semiconductors,paren
+Raytheon Technologies Corporation Common,BK Technologies Corp,BKTI,BK Technologies Corp,,fuzzy
+"Salesforce.com, inc. (CRM)","Salesforce.com, inc.",CRM,"Salesforce.com, inc.",technology,paren
+Crypto: CRO,Crypto Co,CRCW,Crypto Co,,fuzzy
+Crypto: SOL,Crypto Co,CRCW,Crypto Co,,fuzzy
+Crypto: ETH,Crypto Co,CRCW,Crypto Co,,fuzzy
+Crypto: BTC,Crypto Co,CRCW,Crypto Co,,fuzzy
+Apple,Apple Inc.,AAPL,Apple Inc.,technology,fuzzy
+BTC ETF,,,,,unresolved
+RumbleOn Inc. Class B Common Stock (RMBL),RumbleOn Inc. Class B Common Stock,RMBL,RumbleOn Inc. Class B Common Stock,,paren
+Vanguard 500 Index Fund ETF Shares (VOO),Vanguard 500 Index Fund ETF Shares,VOO,Vanguard 500 Index Fund ETF Shares,,paren
+Vanguard Extended Market Index Fund ETF,,,,,unresolved
+Total return swap contract with JPMorgan (value not readily ascertainable),,,,,unresolved

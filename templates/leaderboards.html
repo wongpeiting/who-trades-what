@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Leaderboards — The Cabinet's Portfolio{% endblock %}
+
+{% macro initials(name) %}{% set n = name.replace(',', ' ').split() %}{{ ((n[1][0] ~ n[0][0])|upper) if n|length > 1 else (n[0][0]|upper) }}{% endmacro %}
+{% macro dispname(name) %}{% set n = name.split(',') %}{{ (n[1].strip() ~ ' ' ~ n[0].strip()) if n|length > 1 else name }}{% endmacro %}
+{% macro avatar(o) %}<span class="avatar">{% if o['photo_url'] %}<img src="{{ o['photo_url'] }}" alt="" loading="lazy">{% else %}{{ initials(o['full_name']) }}{% endif %}</span>{% endmacro %}
+{% macro fmt(v, usd) %}{% if usd %}{% if v >= 1000000000 %}${{ "%.2f"|format(v/1000000000) }}B{% elif v >= 1000000 %}${{ "%.0f"|format(v/1000000) }}M{% else %}${{ "{:,}".format(v) }}{% endif %}{% else %}{{ "{:,}".format(v) }}{% endif %}{% endmacro %}
+
+{% macro board(title, sub, data, usd=False, pres_note='') %}
+<section style="margin-bottom:2.2rem;">
+  <h3 style="margin-bottom:0.15rem;">{{ title }}</h3>
+  {% if sub %}<p style="font-size:0.85rem; color:var(--pico-muted-color); margin:0 0 0.7rem;">{{ sub }}</p>{% endif %}
+  {% if data['president'] %}
+  <div class="lb-pres" style="flex-wrap:wrap;">
+    {{ avatar(data['president']) }}
+    <div style="flex:1 1 auto;">
+      <a href="/official/{{ data['president']['official_id'] }}" style="font-weight:700; text-decoration:none;">{{ dispname(data['president']['full_name']) }}</a>
+      <span style="font-size:0.8rem; color:#7a5c00;"> · the President</span>
+      {% if pres_note %}<div style="font-size:0.76rem; color:#7a5c00; opacity:0.9;">{{ pres_note }}</div>{% endif %}
+    </div>
+    <div class="lb-val" style="font-size:1.05rem; color:#7a5c00;">{{ fmt(data['president']['v'], usd) }}</div>
+  </div>
+  <p style="font-size:0.76rem; color:var(--pico-muted-color); margin:0 0 0.5rem;">…and the Cabinet, ranked (bars scaled to the top Cabinet figure):</p>
+  {% endif %}
+  {% for r in data['cabinet'] %}
+  <div class="lb-row">
+    <span style="color:var(--pico-muted-color); font-size:0.8rem; width:1.2rem; text-align:right;">{{ loop.index }}</span>
+    {{ avatar(r) }}
+    <div style="width:190px; min-width:150px;">
+      <a href="/official/{{ r['official_id'] }}" style="text-decoration:none; font-weight:600;">{{ dispname(r['full_name']) }}</a>
+      <div style="font-size:0.74rem; color:var(--pico-muted-color); line-height:1.1;">{{ r['agency'] }}</div>
+    </div>
+    <div class="lb-bar-wrap"><div class="lb-bar" style="width:{{ (r['v'] / data['cabmax'] * 100)|round(1) }}%;"></div></div>
+    <div class="lb-val">{{ fmt(r['v'], usd) }}</div>
+  </div>
+  {% endfor %}
+</section>
+{% endmacro %}
+
+{% block content %}
+<h1 style="margin-bottom:0.3rem; letter-spacing:-0.02em;">Leaderboards</h1>
+<p class="subheading" style="margin-top:0;">
+  Who disclosed the most transactions and the biggest holdings, and who files their disclosures late?
+</p>
+
+{# fairness framing #}
+<div class="filter-bar" style="background:#fff7e6; border-color:#ffe1a8; padding:0.7rem 1rem; margin-bottom:1.4rem;">
+  <b>These numbers measure disclosure, not trading behaviour.</b> Coverage is uneven. Most Cabinet
+  officials have not yet filed their <b>annual</b> reports, which are due around mid-2026, so their
+  totals come almost entirely from <b>periodic 278-T reports</b>. Only three officials have filed a 2026
+  annual, and President Trump's is by far the largest. The transaction-count board below therefore ranks
+  everyone on the periodic reports alone, the one basis they share, with Trump's annual shown separately.
+  A low number usually means an official has not yet fully disclosed, not that they do not trade.
+</div>
+
+{{ board("Most disclosed transactions", "", active, pres_note=("+" ~ "{:,}".format(trump_annual) ~ " more from his filed 2026 annual, by far the largest of the three filed so far. The other two hold 41 and 4 transactions.")) }}
+{{ board("Biggest disclosed holdings", "Filings report holdings as value ranges, not exact figures, so this total adds the top of each range and should be read as an upper-bound ceiling rather than a true valuation. Most Cabinet holdings come from pre-confirmation nominee filings that may since have been divested, while Trump's come from his filed annual.", holdings, usd=True) }}
+{{ board("Most late disclosures", "Each number is how many of an official's trades were reported more than 45 days after the trade, past the statutory limit. It captures only trades that were eventually disclosed, so an official who never filed a trade does not appear here and a low count is not proof of compliance.", late) }}
+{% endblock %}

@@ -1,0 +1,698 @@
+ticker,awarding_agency,total_award_amount,n_awards
+A,Department of Defense,35460341.63,10
+A,Department of Homeland Security,2785559.35,1
+A,Department of Justice,10748313.8,4
+AAGIY,Department of State,10246690.48,4
+AAPL,Department of Justice,1415.51,1
+ABBV,Department of Health and Human Services,147878.15,3
+ABBV,Department of Veterans Affairs,749168.45,12
+ABT,Department of Defense,2583526164.3,11
+ABT,Department of Health and Human Services,496884610.01,3
+ACN,Department of Agriculture,344154089.71,1
+ACN,Department of Defense,1847190038.68,3
+ACN,Department of Education,4157250952.19,4
+ACN,Department of Energy,401733218.89,1
+ACN,Department of Health and Human Services,1625811199.63,2
+ACN,Department of Homeland Security,727406155.82,2
+ACN,Department of Veterans Affairs,875330654.04,2
+ADBE,Department of Defense,4164064.0,3
+ADBE,Department of Energy,101602.0,1
+ADBE,Department of the Interior,200758.19,3
+ADBE,National Gallery of Art,172168.99,1
+ADI,Department of Defense,4769763.6,15
+ADP,Department of Veterans Affairs,13000.0,1
+ADP,Smithsonian Institution,15360.0,1
+ADSK,Department of Defense,3076053.5,9
+ADSK,Department of Justice,16600.0,1
+ADSK,Department of State,11340.0,1
+ADSK,Department of the Interior,65580.0,4
+AEP,Department of Defense,3415398.0,1
+AEP,Department of Labor,4292163.33,1
+AEP,General Services Administration,22255910.41,7
+AES,Department of State,29692866.0,1
+AIG,Department of Defense,368426082.44,7
+AIG,Department of State,949369984.92,7
+AJG,Department of Homeland Security,46358.63,1
+AJG,Department of Labor,306446.87,3
+AJG,Department of Transportation,6801315.74,5
+ALG,Department of Defense,272896480.57,6
+ALK,Department of Defense,22177202.23,15
+ALL,Department of Defense,21741371.44,8
+ALL,Department of Health and Human Services,4082400.0,1
+ALL,Department of Homeland Security,3804248.17,1
+ALL,Department of Veterans Affairs,1609200.0,1
+ALL,Department of the Interior,1577369.16,1
+ALL,Department of the Treasury,2989789.38,1
+ALL-PB,Department of Defense,21741371.44,8
+ALL-PB,Department of Health and Human Services,4082400.0,1
+ALL-PB,Department of Homeland Security,3804248.17,1
+ALL-PB,Department of Veterans Affairs,1609200.0,1
+ALL-PB,Department of the Interior,1577369.16,1
+ALL-PB,Department of the Treasury,2989789.38,1
+ALLE,Department of Defense,362384.81,3
+ALLE,Department of Veterans Affairs,1567450.15,12
+ALLY,Department of Defense,26362.08,1
+AMAT,Department of Defense,696000.0,1
+AMAT,Department of Energy,5000.0,1
+AMAT,Department of Transportation,69068.41,1
+AMAT,Department of the Interior,879906.0,1
+AMCR,Department of Defense,6056363.0,1
+AMCR,Department of Veterans Affairs,132934191.37,4
+AMD,Department of Defense,8379615.0,1
+AME,Department of Defense,12782297.0,7
+AMGN,Department of Health and Human Services,1158465826.16,8
+AMGN,Department of Veterans Affairs,1606450.07,6
+AMZN,Department of Agriculture,3825.48,1
+AMZN,Department of Health and Human Services,22684.53,3
+AMZN,Department of State,72162.88,10
+AMZN,Federal Election Commission,3089.37,1
+ANET,Department of Commerce,23150.48,1
+ANET,Department of Defense,97377.0,1
+ANET,Smithsonian Institution,35897.1,5
+AON,Department of Homeland Security,11177391.96,3
+AON,Department of Justice,3343084.11,1
+AON,Department of the Treasury,2700000.0,1
+AON,Pension Benefit Guaranty Corporation,3389407.0,1
+ASMLF,Department of Commerce,11963607.83,15
+ATH,Department of Defense,364328603.4,7
+ATH,Social Security Administration,25944145.12,1
+ATO,Department of Agriculture,4976880.74,1
+ATO,Department of Defense,59271724.27,7
+ATO,Department of Energy,20599712.44,2
+ATO,Department of Veterans Affairs,7188177.47,3
+ATO,National Aeronautics and Space Administration,6315483.85,2
+ATR,Department of Health and Human Services,2258582.3,3
+AVGO,Department of Defense,500.0,1
+AWK,Department of Defense,498798349.0,7
+AWK,Department of Justice,12138670.17,7
+AWK,Environmental Protection Agency,4985593.0,1
+AXP,Department of Commerce,1200070.0,1
+AXP,Department of Housing and Urban Development,2527771.0,3
+AXP,Department of Veterans Affairs,9276259.46,10
+AXP,Executive Office of the President,1076316.58,1
+AZTA,Department of Health and Human Services,13221824.09,4
+AZTA,Department of Veterans Affairs,38073305.66,11
+BA,Department of Defense,165009432046.17,13
+BA,National Aeronautics and Space Administration,32951098366.54,2
+BAC,Department of Defense,82187504.33,12
+BAC,Department of Veterans Affairs,50945167.85,3
+BAESY,Department of Defense,11714953565.79,15
+BAH,Department of Veterans Affairs,5584339552.57,6
+BAH,General Services Administration,8159205232.05,9
+BC-PC,Agency for International Development,9910844.0,1
+BC-PC,Department of Defense,73731759.26,10
+BC-PC,Department of Health and Human Services,5173101.21,1
+BC-PC,Department of Homeland Security,4341182.0,1
+BC-PC,Department of Housing and Urban Development,3807479.25,1
+BDX,Department of Defense,111789115.0,4
+BDX,Department of Health and Human Services,57775090.56,5
+BDX,Department of Homeland Security,2424300.11,1
+BDX,Department of Veterans Affairs,95763591.92,5
+BFAM,Department of Defense,42282604.59,10
+BFAM,Securities and Exchange Commission,7146601.25,5
+BGC,Department of Defense,1958830.42,1
+BIO-B,Department of Defense,11105620.49,11
+BIO-B,Department of Health and Human Services,3986445.86,2
+BIO-B,Department of Homeland Security,855315.0,1
+BIO-B,Department of Veterans Affairs,882322.4,1
+BK,Department of Homeland Security,2211223.66,1
+BK,Department of Housing and Urban Development,86766577.0,1
+BK,Department of Veterans Affairs,42691346.35,12
+BK,General Services Administration,97962566.4,1
+BKNG,Department of Defense,265100.33,2
+BKNG,Department of State,285625.0,1
+BKTI,Department of Defense,487361.22,6
+BKTI,Department of Veterans Affairs,115171.68,2
+BKTI,Department of the Interior,147604.22,1
+BKTI,Department of the Treasury,114199.26,2
+BLDR,Department of Defense,7550.0,1
+BLDR,Department of Homeland Security,103463.91,4
+BLDR,Department of the Interior,36655.6,2
+BLK,Department of Defense,767000.0,1
+BLK,Department of Veterans Affairs,2879836.0,5
+BLK,Pension Benefit Guaranty Corporation,127992903.64,9
+BMY,Department of Veterans Affairs,6208842.73,15
+BNTGY,Department of Defense,1227726.79,13
+BNTGY,Department of the Interior,2252783.4,2
+BR,Securities and Exchange Commission,1093620.0,2
+BRKRP,Department of Commerce,9750800.0,2
+BRKRP,Department of Defense,45886329.29,8
+BRKRP,Department of Health and Human Services,10588000.0,3
+BRKRP,Department of Homeland Security,5977942.0,1
+BRKRP,National Aeronautics and Space Administration,2886343.18,1
+BRO,Department of Agriculture,900.0,2
+BRO,Department of Defense,6500.0,2
+BRO,Department of Homeland Security,20618.63,4
+BRO,Department of Justice,220064.99,3
+BSX,Department of Defense,6180750.0,2
+BSX,Department of Veterans Affairs,20540917.6,10
+BSY,Department of Defense,75076070.75,15
+BX,Department of Defense,6015025.44,1
+BX,Department of Homeland Security,128284642.96,11
+BX,Pension Benefit Guaranty Corporation,8775991.23,1
+CAT,Department of Defense,876921164.59,15
+CB,Department of Agriculture,18459.03,1
+CB,Department of Commerce,9725.0,1
+CB,Department of Defense,210067.94,2
+CB,Department of Veterans Affairs,107876.54,4
+CBRE,Agency for International Development,2492341.63,1
+CBRE,Department of Agriculture,7090000.0,2
+CBRE,Department of Veterans Affairs,3176002.3,1
+CBRE,General Services Administration,24227096.54,3
+CBRE,Millennium Challenge Corporation,3284380.48,1
+CDNS,Department of Defense,31546070.0,15
+CDW,Department of Commerce,561166063.35,1
+CDW,Department of Defense,56339030.36,1
+CDW,Department of Health and Human Services,128340951.68,2
+CDW,Department of Justice,288108150.67,5
+CDW,Department of State,619620961.11,4
+CDW,Department of Transportation,88989848.0,1
+CELG-RI,Department of Veterans Affairs,319806.06,15
+CF,Department of Defense,98671452.53,15
+CG,Department of Defense,12502244.2,15
+CHRW,Department of Health and Human Services,700000.0,1
+CHRW,Department of Homeland Security,31418.0,1
+CHRW,Department of Justice,13853.4,3
+CHRW,Department of Veterans Affairs,716.63,1
+CHRW,National Transportation Safety Board,8875.0,1
+CI,Department of Defense,8984486.03,5
+CI,Department of State,533833.34,5
+CIA,Department of Defense,73998274.97,6
+CL,Department of Defense,106157163.85,15
+CMCSA,Consumer Product Safety Commission,1011000.0,1
+CMCSA,Department of Defense,5622490.0,6
+CMCSA,Department of Health and Human Services,1495111.1,2
+CMCSA,Department of Homeland Security,1866005.19,1
+CMCSA,Department of Justice,1143702.08,1
+CMCSA,Nuclear Regulatory Commission,773785.37,1
+CMCSA,Smithsonian Institution,1713880.0,2
+CME,Department of Defense,3627180.73,5
+CMI,Department of Defense,486103.77,3
+CMI,Department of Health and Human Services,736272.72,1
+CMI,Department of Homeland Security,163783.41,2
+CMI,Department of Justice,57766.67,1
+CMI,Department of State,255481.11,4
+CMI,Department of Veterans Affairs,262216.54,4
+CNP,Department of Defense,10826.42,1
+CNP,Department of Justice,962686.2,12
+CNP,General Services Administration,7698.61,2
+COIN,Department of Justice,4416680.0,1
+COP,Department of Defense,1516822013.76,8
+COP,Department of the Interior,42786.79,5
+COST,Department of Agriculture,16591.27,2
+COST,Department of Commerce,12174.93,1
+COST,Department of Defense,132171.15,8
+COST,Department of Homeland Security,29932.25,2
+COST,Department of Justice,8824.47,1
+COST,Department of State,8499.96,1
+CRL,Department of Defense,13706881.7,1
+CRL,Department of Health and Human Services,451697891.47,14
+CRM,Agency for International Development,48836.1,2
+CRM,Department of Agriculture,14363.7,1
+CRM,Department of Defense,31200.0,1
+CRM,Department of Education,4250.0,1
+CRM,Department of State,1680.0,1
+CRWD,Department of Justice,152500.0,2
+CRWD,Department of State,43200.0,2
+CSCO,Department of Defense,1468685817.06,15
+CSGP,Department of Defense,126332.88,1
+CSGP,Department of Homeland Security,218699.53,1
+CSGP,Department of the Treasury,3451802.16,6
+CSGP,General Services Administration,3367332.83,7
+CTAS,Department of Defense,258195.15,1
+CTAS,Department of Veterans Affairs,6317127.29,11
+CTAS,Department of the Interior,1227176.13,3
+CVX,Department of Defense,2287753532.07,15
+D,Department of Defense,34021151.86,5
+D,Department of Justice,14320779.66,1
+D,Department of State,6545012.99,1
+D,Department of Transportation,1520908.0,1
+D,Department of Veterans Affairs,1701586.0,1
+DAL,Department of Defense,41922707.25,14
+DAR,Department of Agriculture,4898425.0,15
+DDOG,Department of Health and Human Services,27000.0,2
+DDOG,National Aeronautics and Space Administration,0.0,1
+DE,Department of Defense,335028174.04,15
+DHR,Department of Defense,25429017.59,1
+DOCS,Department of Health and Human Services,468584.0,9
+DOCS,Department of Veterans Affairs,396786.25,6
+DOW,Department of Defense,11466720.0,1
+DOW,Department of Energy,44281882.5,1
+DT,Department of Commerce,17329449.05,1
+DT,Department of Health and Human Services,459642.6,1
+DT,Social Security Administration,14278442.06,13
+DTE,Department of Veterans Affairs,29437962.92,13
+DTE,General Services Administration,9969270.4,2
+DUK,Department of Commerce,13333908.29,1
+DUK,Department of Defense,640178499.23,10
+DUK,Environmental Protection Agency,105357743.51,2
+DUK,General Services Administration,6720000.0,1
+DVLT,Department of Veterans Affairs,20000.0,1
+EBBGF,Department of Defense,975779.03,1
+EFX,Department of Agriculture,38000000.0,1
+EFX,Department of Health and Human Services,83503100.73,1
+EFX,Office of Personnel Management,27059651.27,1
+EFX,Social Security Administration,245515417.26,11
+ENB,Department of Defense,975779.03,1
+ENSG,Department of Defense,83464457.26,3
+ENTG,Department of Commerce,59971.22,3
+ENTG,Department of Defense,28184.5,2
+ENTG,Department of Health and Human Services,38323.0,1
+EQH,Department of Defense,13909817.28,13
+EQH,Department of Energy,2898279.36,1
+EQH,Department of Health and Human Services,1537441.0,1
+EQR,Department of Defense,108522.0,3
+EQR,Department of Health and Human Services,11207.76,1
+EQR,Department of Justice,24977.0,1
+EQR,Department of Veterans Affairs,1096025.0,1
+EQR,Department of the Interior,95914.0,7
+EQR,General Services Administration,125629.0,2
+EQT,Department of Energy,689757.07,3
+EQT,Department of Health and Human Services,2194922.26,6
+EQT,Department of Veterans Affairs,473859.73,2
+ETN,Department of Defense,108100306.9,8
+ETN,Department of Transportation,59181281.07,3
+ETN,Department of Veterans Affairs,19401536.45,1
+ETN,General Services Administration,16099754.4,1
+ETR,Department of Defense,218395481.03,6
+ETR,Department of Justice,18875000.0,4
+ETR,Department of Transportation,7723728.62,1
+ETR,Department of Veterans Affairs,5461678.0,1
+ETR,General Services Administration,31949354.48,3
+EVR,Department of Homeland Security,59598.89,2
+EXPD,Department of Health and Human Services,42334.0,3
+EXPO,Department of Defense,95988725.29,13
+EXPO,Department of State,21088393.78,2
+FANUY,Department of Commerce,115030.0,1
+FANUY,Department of Defense,2142914.7,11
+FANUY,General Services Administration,114181.6,1
+FANUY,National Aeronautics and Space Administration,130163.8,2
+FAST,Department of Defense,98815977.35,15
+FCX,Department of the Interior,79400.0,1
+FICO,Department of Education,4067774.9,7
+FISV,Department of Agriculture,25926118.21,13
+FISV,Department of Commerce,1270066.0,1
+FISV,Department of Education,960300.96,1
+FITB,Department of Agriculture,12402.0,2
+FITB,Department of Defense,36760.0,2
+FITB,Department of Health and Human Services,3500.34,1
+FITB,Department of Homeland Security,19510.48,2
+FITB,Department of Transportation,6077.74,1
+FITB,Department of Veterans Affairs,20842.0,3
+FITB,Department of the Treasury,6294.25,2
+FITB,General Services Administration,20511.34,2
+FSLR,Department of Defense,500.0,1
+FTNT,Department of Defense,7480.0,1
+FUPBY,Department of Defense,792648.56,7
+FUPBY,Department of Homeland Security,220266.0,2
+FUPBY,Department of Transportation,1595000.0,3
+FUPBY,Social Security Administration,159350.0,2
+GD,Department of Defense,2900851790.88,2
+GD,Department of State,1585600444.54,1
+GE,Department of Defense,107224747.16,15
+GEHC,Department of Defense,148436069.28,4
+GEHC,Department of Veterans Affairs,53560225.89,11
+GEV,Department of Defense,43615369.65,13
+GEV,Department of the Interior,1065752.62,2
+GFL,Department of Agriculture,5690.0,1
+GFL,Department of Defense,9000.0,1
+GFL,Department of Homeland Security,14569.66,4
+GFL,Department of the Interior,35018.95,3
+GS,Pension Benefit Guaranty Corporation,58136445.62,3
+GS-PD,Pension Benefit Guaranty Corporation,58136445.62,3
+HAYW,Department of Defense,3048005.0,2
+HAYW,Department of Homeland Security,894089.9,1
+HAYW,Department of Transportation,164427.84,1
+HAYW,Department of Veterans Affairs,1292040.95,7
+HAYW,Department of the Interior,412050.0,2
+HAYW,National Aeronautics and Space Administration,158637.5,1
+HD,Department of Defense,1725484.77,14
+HD,General Services Administration,115686.98,1
+HEINY,Department of Defense,17853.0,2
+HLI,Department of Energy,2535845.41,2
+HLI,Securities and Exchange Commission,1290629.75,5
+HLNCF,Department of Health and Human Services,66674.89,2
+HLNCF,Department of Veterans Affairs,389100.74,1
+HLT,Department of Defense,137144.0,1
+HLT,Department of Veterans Affairs,338249.69,2
+HNGKY,Department of State,3020.0,1
+HON,Department of Defense,193525226.76,15
+HSDT,Department of Defense,1003565.66,4
+HSDT,Department of Homeland Security,19200.0,1
+HSDT,Department of Justice,21464.0,1
+HSDT,Department of Veterans Affairs,96763.42,3
+HUBS,Department of Defense,28800.0,1
+HUM,Department of Defense,106418213508.75,9
+HWM,Department of Defense,7734158.0,12
+IBM,Department of Defense,1605844733.28,4
+IBM,Department of Health and Human Services,252171750.2,1
+IBM,Department of Homeland Security,1486156026.48,4
+IBM,Department of Veterans Affairs,1421279392.32,3
+IBM,Department of the Treasury,235783325.88,1
+IBM,General Services Administration,226727755.71,1
+IBM,Social Security Administration,525446095.96,1
+ICLR,Department of Defense,70410655.48,2
+ICLR,Department of Health and Human Services,364307582.0,2
+ICLR,National Aeronautics and Space Administration,33373727.0,1
+IDXX,Department of Agriculture,17095.11,2
+IDXX,Department of Defense,15030.85,1
+IDXX,Department of Health and Human Services,247918.6,9
+IDXX,Department of the Interior,14762.65,2
+IDXX,Environmental Protection Agency,8504.72,1
+IFNNY,Department of Defense,77827.86,3
+INSP,Department of Defense,2018314.19,11
+INSP,Department of Veterans Affairs,569969.39,4
+IOT,Department of Homeland Security,12709.71,1
+IOT,Department of Justice,20534.3,2
+IR,Department of Agriculture,8870.0,1
+IR,Department of Defense,36661.6,4
+IR,Department of Homeland Security,3162.0,1
+IR,Department of Veterans Affairs,6698.98,6
+IR,Social Security Administration,9072.31,3
+ISRG,Department of Defense,14067600.0,3
+ISRG,Department of Veterans Affairs,169981820.18,12
+IT,Department of Defense,139150866.33,7
+IT,Department of Health and Human Services,117465497.24,6
+IT,Department of Veterans Affairs,74504535.57,2
+JAZZ,Department of Veterans Affairs,7699190.67,15
+JCI,Department of State,284919.22,6
+JNJ,Department of Defense,152864586.87,12
+JPM,Department of Health and Human Services,17053941.97,3
+JPM,Department of Justice,12629300.0,3
+JPM,General Services Administration,4374138.76,2
+JPM,Pension Benefit Guaranty Corporation,7586581.27,2
+JPM-PM,Department of Health and Human Services,17053941.97,3
+JPM-PM,Department of Housing and Urban Development,2432219.0,1
+JPM-PM,Department of Justice,12629300.0,3
+JPM-PM,General Services Administration,2187069.38,1
+JPM-PM,Pension Benefit Guaranty Corporation,7586581.27,2
+KEYS,Department of Commerce,5264623.01,1
+KEYS,Department of Defense,100746781.08,13
+KEYS,General Services Administration,28948149.18,1
+KMI,Department of Defense,193490741.05,4
+KMI,Department of Justice,2361.14,2
+KMI,Department of State,19970.3,2
+KMI,Department of the Interior,51054.4,1
+KMTUY,Department of Defense,6649612.42,15
+KO,Department of Defense,36783337.05,8
+KR,Department of Agriculture,6778.5,2
+KR,Department of Defense,13454.0,3
+KR,Department of Veterans Affairs,13000.0,2
+KWR,Department of Defense,2478151.0,7
+LBRT,General Services Administration,3033.22,1
+LECO,Department of Defense,5835654.49,13
+LECO,Department of Transportation,852900.0,1
+LECO,General Services Administration,375095.29,1
+LGRDY,Department of State,58886.0,1
+LGRDY,Department of Veterans Affairs,79655.0,1
+LHX,Department of Commerce,2627613344.86,2
+LHX,Department of Defense,7313108637.25,9
+LHX,Department of Transportation,1294123163.55,1
+LHX,National Aeronautics and Space Administration,2222816478.0,3
+LIN,National Aeronautics and Space Administration,150999537.12,5
+LMT,Department of Defense,203494838623.47,12
+LMT,Department of Energy,68709877401.41,2
+LMT,National Aeronautics and Space Administration,15555973334.93,1
+LRCX,National Aeronautics and Space Administration,23974.0,3
+LW,Department of Agriculture,2333463.71,6
+LYFT,Department of Energy,39957.15,1
+LYFT,Department of State,30000.0,1
+LYFT,Department of Transportation,3558.47,2
+LYFT,Department of Veterans Affairs,48923.94,5
+LYFT,Department of the Interior,104624.31,2
+LYFT,General Services Administration,12500.0,1
+MCD,Environmental Protection Agency,27250.0,2
+MDT,Department of Veterans Affairs,443533720.68,15
+MIELY,Department of Defense,12078061.33,11
+MIELY,Department of Transportation,1213315.5,3
+MKL,Department of Defense,91697.65,14
+MLM,Department of Agriculture,483254.65,1
+MLM,Department of Defense,1435081.8,11
+MLM,Department of the Interior,114148.52,3
+MO,Environmental Protection Agency,42800.0,1
+MOD,Department of Defense,15596389.79,9
+MRK,Department of Defense,2205000834.0,1
+MRK,Department of Health and Human Services,13703450049.67,14
+MS,Department of Defense,27155782.73,12
+MS,Department of Energy,12065778.0,1
+MSFT,Department of Agriculture,75959064.11,1
+MSFT,Department of Defense,1525111653.07,14
+MSI,Department of Defense,409799668.45,6
+MSI,Department of Homeland Security,290085892.63,7
+MSI,Department of Justice,122168374.49,2
+MSTR,Court Services and Offender Supervision Agency,935000.0,1
+MSTR,Department of Defense,3196270.23,4
+MSTR,Department of Education,735814.0,1
+MSTR,Department of Health and Human Services,2100829.82,1
+MSTR,Department of Housing and Urban Development,663139.0,1
+MSTR,Department of Justice,5469678.0,7
+MU,Department of Defense,3088898.9,7
+MU,Department of Health and Human Services,6868.72,1
+MU,Department of State,15368.89,1
+MU,Department of the Treasury,25104.21,2
+MU,Environmental Protection Agency,7200.0,1
+MU,Federal Trade Commission,13355.42,1
+MU,National Gallery of Art,6988.99,1
+MU,Smithsonian Institution,9600.06,1
+NDAQ,Department of State,22655.88,1
+NDSN,Department of Commerce,93816.0,1
+NDSN,Department of Defense,16666993.41,11
+NDSN,Department of Justice,285945.93,1
+NDSN,Department of the Treasury,299937.0,1
+NEM,Department of Defense,16092.12,1
+NHNKY,Department of Defense,1763460.32,2
+NHNKY,Department of Health and Human Services,2118205.54,2
+NHNKY,Department of Veterans Affairs,13071173.45,11
+NKE,Department of Defense,246580.0,1
+NKE,Department of the Interior,144845.17,5
+NMRK,Department of Defense,60690.0,1
+NMRK,Department of Energy,729663.0,3
+NMRK,Department of Justice,1389681.0,1
+NMRK,Department of State,235296.0,3
+NMRK,General Services Administration,199572.2,4
+NMRK,Smithsonian Institution,176138.68,2
+NOV,Department of Commerce,17920.98,2
+NOV,Department of Defense,16204.6,1
+NOV,Department of Energy,59341.02,4
+NOV,Department of Homeland Security,33580.0,2
+NOV,Department of the Interior,194539.19,6
+NOW,Agency for International Development,4190.0,1
+NOW,Department of Defense,195000.0,2
+NOW,Department of State,15567.42,2
+NOW,Railroad Retirement Board,197798.67,8
+NOW,Smithsonian Institution,3740885.26,2
+NSRGY,Department of Defense,241482101.4,15
+NTR,Department of Defense,5062188.82,7
+NTR,Department of the Interior,2622073.96,3
+NVDA,Department of Health and Human Services,8999.0,1
+NVDA,Department of Justice,1200.0,1
+NVS,Department of Health and Human Services,1468512474.75,15
+OKE,Department of Defense,230286.0,1
+OKE,Department of Justice,189400.96,6
+OKE,Department of the Interior,505770.67,5
+OKE,General Services Administration,178517.61,2
+OMDA,Department of Veterans Affairs,153150.0,2
+ORCL,Department of Defense,338145990.14,1
+ORCL,Department of Veterans Affairs,6811236670.25,14
+ORCL-PD,Department of Defense,338145990.14,1
+ORCL-PD,Department of Veterans Affairs,6811236670.25,14
+ORI,Department of the Interior,7284.0,2
+ORI,Department of the Treasury,57802.0,11
+ORLY,Department of Agriculture,80370.48,6
+ORLY,Department of Justice,63579.01,4
+ORLY,Department of Veterans Affairs,10220.0,1
+ORLY,Department of the Interior,25834.71,3
+OSS,Department of Defense,541028.84,9
+OSS,Department of the Treasury,40312.0,1
+OSS,National Aeronautics and Space Administration,998782.0,5
+OTIS,Department of State,36087.08,1
+OTTR,Department of the Interior,2913255.89,4
+OTTR,General Services Administration,1873150.0,2
+PEG,Department of Defense,614416.05,1
+PEG,Department of Justice,2867133.08,5
+PEG,Department of Veterans Affairs,902920.0,2
+PEG,General Services Administration,10629890.06,7
+PEP,Department of Defense,1289281.73,13
+PFE,Agency for International Development,4239971980.0,2
+PFE,Department of Defense,27698851445.15,3
+PFE,Department of Health and Human Services,8692934212.35,10
+PG,Department of Defense,1115253298.71,15
+PGR,Department of Defense,130723929.09,8
+PGR,Department of Education,287688787.5,3
+PGR,Department of Veterans Affairs,31495709.32,3
+PGR,Department of the Treasury,12245821.43,1
+PH,Department of Defense,556979165.87,15
+PLDGP,General Services Administration,9730321.05,15
+PLTR,Department of Agriculture,94687811.42,1
+PLTR,Department of Defense,1843170585.09,10
+PLTR,Department of Energy,90967788.61,1
+PLTR,Department of Homeland Security,236975423.91,2
+PLTR,Department of Veterans Affairs,93288095.85,1
+PNC,Agency for International Development,20294200.08,2
+PNC,Department of Energy,7204953.1,7
+PNC,Department of Health and Human Services,468709.0,1
+PNC,Department of Housing and Urban Development,1539999.99,2
+PNC,Overseas Private Investment Corporation,2690150.18,1
+PNC,U.S. International Development Finance Corporation,10782745.61,2
+PNR,Department of Defense,3529039.99,9
+PNR,Department of the Interior,295017.08,2
+POOL,Department of Defense,34122546.4,7
+POOL,National Aeronautics and Space Administration,7349694.0,1
+PPG,Department of Defense,59993722.52,15
+PSTG,Smithsonian Institution,31344.0,1
+PTON,Department of Defense,15305.0,1
+PTON,Department of Justice,1056.0,2
+QCOM,Department of Defense,28939712.81,9
+QCOM,Department of Energy,534969.78,1
+QCOM,Department of Homeland Security,3853448.89,2
+RBGLY,Department of Defense,86652995.73,15
+RCEL,Department of Defense,871700.0,5
+RCEL,Department of Health and Human Services,66301163.0,2
+REGN,Department of Defense,5565000000.0,1
+REGN,Department of Health and Human Services,981283253.98,4
+REGN,Department of Veterans Affairs,642323.76,2
+RJET,Department of Defense,1411829.0,10
+RMBL,Department of Agriculture,1012936.54,4
+RMBL,Department of Defense,3959.06,1
+RMBL,Department of the Interior,40817.38,2
+RRX,Department of Defense,954155.0,2
+RRX,Department of State,37394.77,1
+RTNTF,Department of Defense,29814318.0,3
+SAP,National Aeronautics and Space Administration,50674021.66,1
+SBUX,Department of Defense,380893.28,15
+SGSOY,Department of Defense,382264350.54,14
+SHEL,Department of Defense,457246880.16,1
+SHEL,Department of Energy,498020034.59,1
+SHW,Department of Defense,18247652.57,15
+SMLR,Department of Defense,15075.38,1
+SMLR,Department of Veterans Affairs,120636.75,2
+SNOW,Department of Transportation,236898.56,6
+SNY,Department of Health and Human Services,6340624709.3,15
+SOGP,Department of Commerce,17417738.01,1
+SOGP,Department of Defense,826050574.55,11
+SOGP,Department of Homeland Security,54065087.31,2
+SPGI,Department of Defense,4384383.63,2
+SPGI,Department of Energy,4265591.0,2
+SPGI,Department of Justice,2573644.08,1
+SPGI,Department of Labor,2091000.0,1
+SPGI,Department of the Interior,2095043.0,1
+SPGI,Department of the Treasury,36322051.68,5
+SPGI,Export-Import Bank of the United States,2293499.0,1
+SPGI,General Services Administration,2335530.0,1
+SPGI,Securities and Exchange Commission,2283636.47,1
+STE,Department of Defense,6408925.0,2
+STE,Department of Veterans Affairs,45398235.58,13
+SZKMY,Department of Agriculture,28538.47,1
+SZKMY,Department of Commerce,31453.19,1
+SZKMY,Department of Defense,146676.91,3
+SZKMY,Department of Homeland Security,198301.69,7
+SZKMY,Department of State,269910.0,1
+SZKMY,Department of the Interior,63728.97,2
+T,Department of Defense,534894865.44,5
+T,Department of Health and Human Services,99295380.01,1
+T,Department of State,212124853.63,3
+T,Department of Veterans Affairs,120204178.85,1
+T,Department of the Treasury,301628171.25,5
+TDG,Department of Defense,3256504.0,1
+TDY,Department of Defense,933178940.52,10
+TDY,Department of Energy,63236669.51,1
+TDY,National Aeronautics and Space Administration,1233916766.35,4
+TEAM,Department of Defense,89003.0,6
+TEAM,Department of Health and Human Services,21282.0,2
+TEAM,Department of State,11550.0,1
+TEAM,Department of the Interior,16000.0,1
+TEAM,Environmental Protection Agency,21580.0,2
+TEAM,National Aeronautics and Space Administration,12000.0,1
+TEAM,National Science Foundation,34935.0,2
+TMO,Department of Defense,51283403.74,3
+TMO,Department of Homeland Security,40301458.0,2
+TMUS,Department of Agriculture,2929495.46,1
+TMUS,Department of Defense,23638977.27,7
+TMUS,Department of Labor,2606387.02,1
+TMUS,Department of State,3200000.0,1
+TMUS,Department of Veterans Affairs,103038792.8,2
+TMUS,Department of the Treasury,26228162.99,1
+TMUS,Environmental Protection Agency,6326776.54,1
+TMUS,Federal Trade Commission,2641822.6,1
+TMUSL,Department of Agriculture,2929495.46,1
+TMUSL,Department of Defense,23638977.27,7
+TMUSL,Department of Labor,2606387.02,1
+TMUSL,Department of State,3200000.0,1
+TMUSL,Department of Veterans Affairs,103038792.8,2
+TMUSL,Department of the Treasury,26228162.99,1
+TMUSL,Environmental Protection Agency,6326776.54,1
+TMUSL,Federal Trade Commission,2641822.6,1
+TRMB,Department of Defense,84072591.83,12
+TRMB,General Services Administration,7888185.6,1
+TRU,Department of Defense,97800.0,1
+TRU,Department of Homeland Security,405080.0,2
+TRU,Department of Justice,915216.75,2
+TRU,Department of Transportation,92981.52,1
+TRU,Small Business Administration,150000.0,1
+TRV,Department of Defense,24687786.48,2
+TRV,Department of Health and Human Services,40516.73,1
+TRV,Department of Veterans Affairs,206964.0,1
+TSLA,Department of Transportation,10373.07,1
+TT,Department of State,1166109.54,8
+TWST,Department of Agriculture,60860.55,1
+TWST,Department of Defense,4536221.0,1
+TWST,Department of Health and Human Services,6644295.19,10
+TWST,Department of Justice,97120.0,1
+TWST,Department of Veterans Affairs,214140.0,2
+TXN,Department of Defense,739516421.49,9
+TYL,Department of Agriculture,530139.97,1
+TYL,Department of Defense,422073.87,3
+TYL,Department of Veterans Affairs,0.0,1
+TYL,Department of the Interior,11424.0,2
+TYL,Department of the Treasury,14818.0,2
+TYL,National Aeronautics and Space Administration,22776.53,1
+TYL,Railroad Retirement Board,43957.0,1
+TYL,Securities and Exchange Commission,521853.96,1
+UNH,Department of Defense,13145560374.49,1
+UNP,Department of Defense,564973.42,3
+UNP,Department of Transportation,602047.42,9
+UPS,Department of Defense,51579402.6,2
+UPS,Department of Veterans Affairs,218766506.27,6
+UPS,Department of the Treasury,52713081.05,1
+UPS,General Services Administration,84263632.0,1
+VLO,Department of Defense,5553016199.52,15
+VMC,Department of Agriculture,98393.31,1
+VMC,Department of Defense,4711589.32,9
+VMC,Department of the Interior,292287.72,2
+WAB,Department of Defense,53586.88,2
+WAB,Department of Transportation,917816.0,3
+WCC,Department of Defense,507864.49,7
+WCN,Department of Defense,6925755.31,4
+WCN,Department of Justice,1057841.67,2
+WCN,Department of Veterans Affairs,1598123.79,2
+WCN,General Services Administration,667934.46,1
+WDAY,Office of Personnel Management,0.0,1
+WFC,Department of Defense,3535023.18,1
+WFC,Department of Veterans Affairs,1561972.5,1
+WFC,General Services Administration,1441977.91,9
+WFC,Securities and Exchange Commission,743324.78,3
+WM,Department of Defense,42940484.56,12
+WMS,Department of Agriculture,30613.9,2
+WMS,Department of Defense,47138.55,3
+WMS,Department of Homeland Security,100431.27,2
+WMS,Department of the Interior,138972.08,8
+WST,Department of Agriculture,10194.91,1
+WST,Department of Defense,128519.83,2
+WST,Department of Health and Human Services,22215.44,1
+WTW,Department of State,4000138.12,3
+WTW,Department of Transportation,635353.4,1
+WTW,Department of the Interior,345339.7,1
+WTW,Department of the Treasury,6750421.1,7
+WTW,General Services Administration,2023852.1,2
+WTW,Pension Benefit Guaranty Corporation,7308214.5,1
+WY,Department of Defense,229312.0,2
+WY,Department of Justice,1313882.0,12
+WY,Department of Transportation,120000.0,1
+XOM,Department of Defense,2977519402.45,15
+ZBRA,Department of Defense,329319.5,5
+ZBRA,Department of State,47726.34,1
+ZBRA,Department of Veterans Affairs,46297.4,1
+ZBRA,Department of the Interior,71691.2,1
+ZBRA,General Services Administration,772997.18,1
+ZS,Department of Defense,200617.06,1
+ZTS,Department of Agriculture,21341027.4,15

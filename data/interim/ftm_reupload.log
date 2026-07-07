@@ -1,0 +1,5 @@
+/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+target: collection 28 -> Executive Trades (writeable=True)
+entities to upload: 25796 {'Person': 34, 'PublicBody': 27, 'Membership': 33, 'Security': 2356, 'Ownership': 23346}
+upload complete.

@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% block title %}Methodology — Who Trades What{% endblock %}
+
+{% block content %}
+<div class="methodology-section">
+<h1>Methodology</h1>
+
+<div style="display:flex; gap:2.5rem; align-items:flex-start; flex-wrap:wrap;">
+
+  {# ── 3/4: the methodology write-up ── #}
+  <div style="flex:3 1 340px; min-width:0;">
+
+<style>
+  .mq { border:1px solid #93a883; border-radius:8px; margin:0 0 0.8rem; overflow:hidden; background:#fffdf8; }
+  .mq > summary { display:block; cursor:pointer; font-weight:700; background:#aec2a0; color:#1c3314; padding:0.65rem 1rem; font-size:0.92rem; list-style:none; }
+  .mq > summary::-webkit-details-marker { display:none; }
+  .mq > summary::marker { content:''; }
+  .mq > summary::after { content:'+'; float:right; font-weight:700; background:none !important; background-image:none !important; width:auto; height:auto; transform:none; margin:0; }
+  .mq[open] > summary::after { content:'\2013'; }
+  .mq > div { padding:0.85rem 1.1rem 1rem; font-size:0.9rem; line-height:1.55; }
+  .mq > div > :first-child { margin-top:0; }
+  .mq > div > :last-child { margin-bottom:0; }
+</style>
+
+<p style="font-size:1rem; line-height:1.6; margin:0 0 1rem;">
+  This database brings together the financial disclosures of President Trump and 35 senior administration
+  officials into a single, searchable dataset of more than 40,000 reported holdings and transactions.
+</p>
+<p style="font-size:1rem; line-height:1.6; margin:0 0 1.4rem;">
+  Covering filings from Jan. 20, 2025, through a July 5, 2026 snapshot, it links each disclosure to market
+  prices, federal contract awards and dated agency actions. That makes it possible to ask whether an
+  official's trades beat the market, whether they traded in companies their own agency pays under contract,
+  whether a trade came close to a decision that agency made, and whether it was reported on time.
+</p>
+
+<details class="mq">
+  <summary>How were the filings turned into searchable data?</summary>
+  <div>
+    <p>
+      Disclosures at the heart of this database are public, but locked inside thousands of pages of
+      government PDFs &mdash; the most revealing of them scanned by hand into images that make it hard for
+      computers to parse. Making them searchable took two tools working in tandem: optical character
+      recognition (OCR) to lift text straight off the page, and a large language model to read the scans and
+      garbled tables where OCR returned poor results.
+    </p>
+    <figure style="margin:0.6rem 0 1rem; max-width:680px;">
+      <img src="{{ url_for('static', filename='img/ocr_bond_descriptions.png') }}"
+           alt="A slice of a scanned filing showing corporate-bond lines such as 'NETFLIX INC REG S DUE 11/15/2029 05.375%' with issuer, coupon rate and maturity date crammed into one string."
+           style="display:block; max-width:min(100%, 680px); height:auto; border:1px solid #93a883; border-radius:6px;">
+      <figcaption style="font-size:0.8rem; color:var(--pico-muted-color); margin-top:0.05rem; line-height:1.45;">
+<em>Excerpt from one of Donald Trump's 278-T filings.</em>
+      </figcaption>
+    </figure>
+    <p>
+      <code>natural-pdf</code> handled the bulk of the extraction. It lifts embedded text straight off the page
+      where the PDF carries a real text layer, and falls back to OCR (via <code>easyocr</code>) on the scanned
+      and blurry filings. OCR output is noisy &mdash; garbled words, amounts split by stray spaces, dates that
+      don't parse cleanly &mdash; so a set of normalizers repairs the known failure modes before any row is
+      loaded. Dates required more care in particular, as a misread one would throw off both the late-filing
+      and market-timing calculations that depend on it. The parser reads both four- and two-digit years, and
+      every one of the 30,253 transaction dates resolves to a real date.
+    </p>
+    <p>
+      The President's eight 2026 periodic 278-Ts were the exception. Their scans were too degraded for OCR to
+      recover cleanly, so those pages were handed to a vision-language model instead &mdash; a fan-out that read
+      each page range the way a person would and returned structured rows, recovering close to 7,000 trades
+      that had otherwise been unreadable. Because a model is a statistical reader, that transcription was
+      validated rather than trusted blind, as detailed under <em>How was the data checked</em> below.
+    </p>
+  </div>
+</details>
+
+<details class="mq">
+  <summary>How were securities matched to tickers?</summary>
+  <div>
+    <p>
+      The table shows the security description as filed, but under the hood each one is matched to a stock
+      ticker, because the ticker is the key the market-return, contract and agency-action analyses join on.
+      Names are matched against SEC EDGAR
+      with <code>rapidfuzz</code>, and a match requires a distinctive, non-generic shared word. This ensures
+      that a common term like "Bancorp" or "International" cannot collapse many companies onto one ticker.
+    </p>
+    <p>
+      About 87% of trades resolve. The rest &mdash; municipal bonds, private funds and other instruments that
+      have no exchange ticker &mdash; carry none, which is why the market-return analysis covers equities only.
+    </p>
+  </div>
+</details>
+
+<details class="mq">
+  <summary>Where does the data come from?</summary>
+  <div>
+    <p>
+      The filings are public records. Senior executive-branch officials must file them under the Ethics in
+      Government Act of 1978; the U.S. Office of Government Ethics publishes them, and they are public
+      domain (17 U.S.C. §105). Two forms make up the core:
+    </p>
+    <ul>
+      <li><strong>OGE Form 278-T</strong> — a periodic report of each securities trade over $1,000, due within 45 days (required since the 2012 STOCK Act).</li>
+      <li><strong>OGE Form 278e</strong> — an annual, or nominee, report of everything held and earned. President Trump's 2026 annual is a 927-page 278e covering his transactions, holdings and income.</li>
+    </ul>
+    <p>
+      Everything else is public reference data, used only to add context to what the officials disclosed:
+      <strong><a href="https://www.usaspending.gov" target="_blank" rel="noopener">USASpending.gov</a></strong> for federal contract awards, <strong><a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">SEC EDGAR</a></strong> for company
+      tickers, the <strong><a href="https://www.federalregister.gov" target="_blank" rel="noopener">Federal Register</a></strong> for dated agency actions, and daily market prices from
+      <strong><a href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a></strong> for returns. For the executives who previously served in Congress, the information around their prior office comes from the
+      <strong><a href="https://github.com/unitedstates/congress-legislators" target="_blank" rel="noopener">unitedstates/congress-legislators</a></strong> project.
+    </p>
+  </div>
+</details>
+
+<details class="mq">
+  <summary>What's included, and what isn't?</summary>
+  <div>
+    <p>
+      The database covers President Trump's second administration: the disclosures he and 35 of his senior
+      officials &mdash; 34 Senate-confirmed Cabinet and agency heads, plus one nominee &mdash; have filed
+      since the term began on Jan. 20, 2025. Anyone for whom a disclosure exists is included, captured in a
+      snapshot taken on July 5, 2026. In all, the filings run to 41,719 disclosed lines: 30,253 transactions
+      and 11,466 holdings, gathered into one searchable table.
+    </p>
+    <p>
+      The disclosure forms exempt several asset classes &mdash; among them the underlying holdings of
+      excepted investment funds, mutual funds, Treasury securities, the Thrift Savings Plan and real property
+      &mdash; so this database does not cover that information.
+    </p>
+  </div>
+</details>
+
+<details class="mq">
+  <summary>How was the data checked?</summary>
+  <div>
+    <p>
+      Every one of the 41,719 rows links back to the original filing PDF, so any figure can be traced to the
+      page it came from. Those pages were also spot-checked: a language model pulled random rows and read them
+      back against the source PDF, comparing the security, date, transaction type and amount line by line. In
+      the most recent sample every verifiable row matched its filing &mdash; including the vision-transcribed
+      trades, where the model had to tell near-duplicate lines apart, such as "3M CO" against a separate
+      "3M COMPANY" entry.
+    </p>
+    <p>
+      The vision-model transcription was validated against a hand transcription of a small subset of rows,
+      and every transcribed row is tagged <code>extracted_by=vision_model</code>
+      so it can be re-audited.
+    </p>
+    <p>
+      87% of trades were matched to a ticker. This was done conservatively, with an ambiguous name left
+      blank rather than force-matched to prevent wrong ticker matches from quietly corrupting downstream
+      figures, including executives' market-return and contract analyses.
+    </p>
+  </div>
+</details>
+
+<details class="mq">
+  <summary>What are some known limitations?</summary>
+  <div>
+    <p>
+      The dollar figures are approximate by design. Filers report amounts as ranges rather than exact sums,
+      apart from a few "net proceeds" income lines, and the forms exempt whole asset classes &mdash; the
+      underlying holdings of excepted investment funds, mutual funds, Treasuries, the Thrift Savings Plan and
+      real property &mdash; so the totals here understate each official's true wealth. Most holdings also come
+      from nominee, pre-confirmation filings, and those portfolios may since have been divested as a condition
+      of confirmation.
+    </p>
+    <p>
+      The flags in this database are best treated as leads to pursue, not conclusions to draw. A well-timed trade, or one placed near an agency action, is a
+      starting point for reporting, not proof of wrongdoing. A trade may have been directed by a broker or
+      adviser, the filer may not have chosen the date, and an agency action may have no bearing on the company
+      traded.
+    </p>
+    <p>
+      The "industry they regulate" flag involves a judgment call. It is applied only to
+      appointed officials with a defined portfolio, not
+      to the President: he nominally oversees every industry, so flagging all of his roughly 28,000 trades
+      would tag everything and reveal nothing. His potential conflicts surface through the other flags instead, such
+      as tariff-pause trades, and trades in companies the Executive Office of the President pays under
+      contract.
+    </p>
+  </div>
+</details>
+
+  </div>
+
+  {# ── 1/4: sticky sidebar — download + reproducibility ── #}
+  <aside style="flex:1 1 210px; min-width:200px; position:sticky; top:72px;">
+    <div class="filter-bar" style="padding:1rem; margin-bottom:1.25rem;">
+      <a href="/download/full.csv" role="button" style="width:100%; margin:0 0 0.6rem;">Download all 41,719 lines (CSV)</a>
+      <p style="font-size:0.82rem; color:var(--pico-muted-color); margin:0; line-height:1.4;">
+        See the <a href="/download">data dictionary</a> for every column, or use the
+        <a href="/">search page's</a> Export button for a filtered subset.
+      </p>
+    </div>
+    <p style="font-size:0.8rem; color:var(--pico-muted-color); margin:0 0 1.25rem; line-height:1.4;">
+      Project by <a href="https://wongpeiting.github.io" target="_blank" rel="noopener">Wong Pei Ting</a>
+      for <em>Data &amp; Databases</em>&rsquo;26.
+    </p>
+    <div class="filter-bar" style="padding:1rem; border:2px solid #93a883;">
+      <h3 style="font-size:1rem; margin:0 0 0.4rem;">Reach out</h3>
+      <p style="font-size:0.85rem; line-height:1.5; margin:0;">
+        This database may contain errors from OCR, transcription
+        or name-matching, so every figure links to its source filing and users are strongly encouraged to
+        verify against the original before relying on it. If you spot a mistake, it would be lovely if you
+        can flag it by emailing <a href="mailto:pw2635@columbia.edu">pw2635@columbia.edu</a>.
+      </p>
+    </div>
+  </aside>
+
+</div>
+</div>
+{% endblock %}

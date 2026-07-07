@@ -1,0 +1,181 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+127.0.0.1 - - [04/Jul/2026 21:46:17] "GET /?query=Lockheed HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 21:46:17] "GET /?query=Melania HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 22:08:09] "GET / HTTP/1.1" 200 -
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step25_ftm_full.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+127.0.0.1 - - [05/Jul/2026 16:21:51] "GET /?query=Simon HTTP/1.1" 200 -
+127.0.0.1 - - [05/Jul/2026 16:22:15] "GET /?query=Arena HTTP/1.1" 200 -
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/gen_transcribe.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step28_load_transcribed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step28_load_transcribed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step28_load_transcribed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step28_load_transcribed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step28_load_transcribed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/test_helpers.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/helpers.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step31_reresolve_fixed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step31_reresolve_fixed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step31_reresolve_fixed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step31_reresolve_fixed.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step30_price_returns.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step30_price_returns.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step30_price_returns.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+127.0.0.1 - - [05/Jul/2026 23:13:49] "GET /timing HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wongpeiting/Desktop/CU/python-work/shares/app.py", line 431, in timing
+    top = db.execute(
+          ^^^^^^^^^^^
+sqlite3.OperationalError: no such column: t.value_bracket
+127.0.0.1 - - [05/Jul/2026 23:13:49] "GET /timing HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wongpeiting/Desktop/CU/python-work/shares/app.py", line 431, in timing
+    top = db.execute(
+          ^^^^^^^^^^^
+sqlite3.OperationalError: no such column: t.value_bracket
+127.0.0.1 - - [05/Jul/2026 23:13:49] "GET /timing HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/wongpeiting/Desktop/CU/python-work/shares/app.py", line 431, in timing
+    top = db.execute(
+          ^^^^^^^^^^^
+sqlite3.OperationalError: no such column: t.value_bracket
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step33_agency_actions.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step33_agency_actions.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/step33_agency_actions.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+ * Detected change in '/Users/wongpeiting/Desktop/CU/python-work/shares/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 364-262-959
+/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-7hwx3qyw'}
+  warnings.warn(
+/Users/wongpeiting/.pyenv/versions/3.13.9/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-pbweknop'}
+  warnings.warn(

@@ -1,0 +1,35 @@
+official_id,full_name,matched_name,party,state,prior_office,birthday,gender,bioguide_id,wikipedia,match_confidence
+1,"Bailey, Sara",,,,,,,,,80.0
+2,"Bedford, Bryan",,,,,,,,,84.6
+3,"Bessent, Scott",,,,,,,,,74.1
+4,"Bisignano, Frank J",,,,,,,,,72.7
+5,"Blanche, Todd",,,,,,,,,73.7
+6,"Bondi, Pam",,,,,,,,,66.7
+7,"Burgum, Douglas J",,,,,,,,,80.0
+8,"Chavez-DeRemer, Lori",Lori Chavez-DeRemer,Republican,OR,"U.S. Representative (OR-5), 2023–2025",1968-04-07,F,C001135,Lori Chavez-DeRemer,100.0
+9,"Dixon, Stacey",,,,,,,,,69.6
+10,"Duffy, Sean",Sean Duffy,Republican,WI,"U.S. Representative (WI-7), 2011–2019",1971-10-03,M,D000614,Sean Duffy,100.0
+11,"Edgar, Troy D",,,,,,,,,76.2
+12,"Faulkender, Michael W",,,,,,,,,83.3
+13,"Gabbard, Tulsi",Tulsi Gabbard,Democrat,HI,"U.S. Representative (HI-2), 2013–2021",1981-04-12,F,G000571,Tulsi Gabbard,100.0
+14,"Hegseth, Pete",,,,,,,,,72.0
+15,"Isaacman, Jared",,,,,,,,,75.0
+16,"Kennedy, Robert F",,,,,,,,,100.0
+17,"Kratsios, Michael J",,,,,,,,,80.0
+18,"Kupor, Scott A",,,,,,,,,80.0
+19,"Landau, Christopher",,,,,,,,,84.6
+20,"Lawrence, Paul R",,,,,,,,,85.7
+21,"Lutnick, Howard",,,,,,,,,75.0
+22,"MacGregor, Katharine",,,,,,,,,75.7
+23,"McMahon, Linda E",,,,,,,,,76.9
+24,"McMaster, Sean",,,,,,,,,83.3
+25,"Miran, Stephen I",,,,,,,,,88.9
+26,"Mody, Arjun",,,,,,,,,72.7
+27,"Noem, Kristi",Kristi Noem,Republican,SD,"U.S. Representative (SD), 2011–2019",1971-11-30,F,N000184,Kristi Noem,100.0
+28,"Phelan, John",,,,,,,,,81.8
+29,"Sonderling, Keith",,,,,,,,,69.2
+30,"Trump, Donald J.",Donald J. Trump,Republican,,,1946-06-14,M,,Donald Trump,100.0
+31,"Turner, Eric Scott",,,,,,,,,78.3
+32,"Vaden, Stephen A",,,,,,,,,83.3
+33,"Wright, Christopher A",,,,,,,,,84.6
+34,"Zeldin, Lee",Lee M. Zeldin,Republican,NY,"U.S. Representative (NY-1), 2015–2023",1980-01-30,M,Z000017,Lee Zeldin,100.0

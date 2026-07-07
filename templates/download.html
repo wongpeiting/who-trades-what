@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Download Data — Who Trades What{% endblock %}
+
+{% block content %}
+<h1>Download the Data</h1>
+<p class="subheading">Bulk download of all 41,719 disclosure line items as a flat CSV, plus the data dictionary.</p>
+
+<section>
+  <h2>Full dataset</h2>
+  <p>
+    One row per disclosed line item — transactions, holdings, and income entries — for the President, 34 Senate-confirmed officials, and one nominee.
+    Snapshot as of July 5, 2026.
+  </p>
+  <a href="/download/full.csv" role="button">Download disclosure_line_items_full.csv (~12 MB)</a>
+  <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--pico-muted-color);">
+    Or use <a href="/export">the search page's Export CSV button</a> to download a filtered subset.
+  </p>
+</section>
+
+<section>
+  <h2>Data dictionary</h2>
+  <p>Every column in <code>disclosure_line_items</code>, with definitions:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Column</th>
+        <th>Type</th>
+        <th>Definition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>item_id</code></td><td>integer</td><td>Unique row identifier.</td></tr>
+      <tr><td><code>official_id</code></td><td>integer</td><td>Foreign key to the <code>officials</code> table.</td></tr>
+      <tr><td><code>official_name</code></td><td>text</td><td>Official's full name, normalised (Last, First).</td></tr>
+      <tr><td><code>title</code></td><td>text</td><td>Official title as it appears on the filing cover page.</td></tr>
+      <tr><td><code>party</code></td><td>text</td><td>Political party affiliation (Republican / Democrat / Independent).</td></tr>
+      <tr><td><code>agency</code></td><td>text</td><td>Department or agency the official leads.</td></tr>
+      <tr><td><code>source_file</code></td><td>text</td><td>Filename of the PDF filing this row was extracted from.</td></tr>
+      <tr><td><code>form_type</code></td><td>text</td><td>OGE form type: <code>278-T</code> (periodic transaction report) or <code>278e</code> (annual/nominee).</td></tr>
+      <tr><td><code>part</code></td><td>text</td><td>Section of the form (e.g. Part 5 = holdings, Part 7 = transactions, Part 2 = income).</td></tr>
+      <tr><td><code>item_kind</code></td><td>text</td><td><code>transaction</code> or <code>holding</code>.</td></tr>
+      <tr><td><code>owner</code></td><td>text</td><td>Self / Spouse / Joint — from 278e Part 5. Null on 278-T transactions (the form carries no owner column).</td></tr>
+      <tr><td><code>raw_description</code></td><td>text</td><td>Security or asset description exactly as it appears on the form (may include tickers, company names, asset class notes).</td></tr>
+      <tr><td><code>ticker</code></td><td>text</td><td>Exchange ticker — from the filer's parenthetical (e.g. "(EWJ)") or a distinctive-name match to SEC EDGAR. Null for municipal/corporate bonds and private funds, which are left unresolved rather than force-matched.</td></tr>
+      <tr><td><code>sector</code></td><td>text</td><td>GICS sector of the security, where resolved.</td></tr>
+      <tr><td><code>txn_type</code></td><td>text</td><td>Transaction type: Purchase, Sale, Exchange, or null for holdings.</td></tr>
+      <tr><td><code>txn_date</code></td><td>date</td><td>Transaction date (YYYY-MM-DD). Null for holdings.</td></tr>
+      <tr><td><code>value_min</code></td><td>integer</td><td>Lower bound of the reported value bracket, in USD.</td></tr>
+      <tr><td><code>value_max</code></td><td>integer</td><td>Upper bound of the reported value bracket, in USD.</td></tr>
+      <tr><td><code>value_bracket</code></td><td>text</td><td>Human-readable value range as printed on the form (e.g. "$15,001 – $50,000").</td></tr>
+      <tr><td><code>income_type</code></td><td>text</td><td>Income category (e.g. dividends, capital gains) — populated only for income rows.</td></tr>
+      <tr><td><code>income_amount</code></td><td>text</td><td>Reported income amount or range — populated only for income rows.</td></tr>
+      <tr><td><code>eif</code></td><td>boolean</td><td>1 if the asset is held in an Excepted Investment Fund (underlying holdings not reportable).</td></tr>
+      <tr><td><code>is_preconfirmation</code></td><td>boolean</td><td>1 if the holding comes from a nominee (pre-confirmation) 278e; portfolio may have been divested.</td></tr>
+      <tr><td><code>disclosure_lag_days</code></td><td>integer</td><td>Days between transaction date and filing date. Statutory limit is 30–45 days. Null for annual-form transactions where the lag is unverifiable.</td></tr>
+      <tr><td><code>before_tariff_pause</code></td><td>boolean</td><td>1 if the transaction date is 2025-04-08 — the day before Trump paused tariffs — and was disclosed late.</td></tr>
+      <tr><td><code>agency_pays_company</code></td><td>boolean</td><td>1 if the official's agency has any USASpending contract with the company being traded.</td></tr>
+      <tr><td><code>agency_core_contractor</code></td><td>boolean</td><td>1 if the agency's total contract awards to the company are ≥$100 million — a "material" contractor relationship.</td></tr>
+      <tr><td><code>regulates_own_sector</code></td><td>boolean</td><td>1 if the security's GICS sector falls within the agency's regulatory remit (a documented judgment call; see Methodology).</td></tr>
+      <tr><td><code>near_agency_action</code></td><td>boolean</td><td>1 if the transaction date falls within seven days of a dated action by the official's own agency &mdash; a Federal Register rule or notice, or a tariff action. A reporting lead, not proof the action bears on the company traded.</td></tr>
+      <tr><td><code>source_url</code></td><td>text</td><td>Link to the source filing PDF — a public OGE URL where one exists, otherwise the filing served locally at <code>/source</code>.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Officials table</h2>
+  <p>
+    The <code>officials</code> table (36 rows) links <code>official_id</code> to full name, title, party, agency,
+    appointment type, prior office, and external identifiers (bioguide_id, wikipedia). It is not included in
+    the bulk download above but is available via the <a href="/official/30">official profile pages</a>.
+  </p>
+</section>
+{% endblock %}

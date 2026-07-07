@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Did their trades beat the market? — The Cabinet's Portfolio{% endblock %}
+
+{% block content %}
+<h1 style="margin-bottom:0.3rem; letter-spacing:-0.02em;">Did their trades beat the market?</h1>
+<p class="subheading" style="margin-top:0;">
+  Were these trades unusually well timed? For every stock and ETF trade we can price, we compare its
+  return against the S&amp;P 500 over the next 30 and 90 days, plus a short five-day window where trading
+  on a coming event would show up. Buying just before a stock rises counts as good timing, and so does
+  selling just before it falls and dodging the loss.
+</p>
+
+<details style="border:1px solid #93a883; border-radius:8px; margin:0.4rem 0 1.25rem; font-size:0.92rem; overflow:hidden;">
+  <summary style="cursor:pointer; font-weight:700; background:#aec2a0; color:#1c3314; padding:0.6rem 1rem;">How to read this</summary>
+  <div style="padding:0.6rem 1rem 0.7rem;">
+    <p style="margin:0.3rem 0;">This screen covers only the stocks and ETFs we could match to a ticker, so the municipal and corporate bonds that make up most of the President's 2026 trading fall outside of this analysis. Because filings report each trade as a dollar range rather than an exact figure, trades cannot be weighted by size.</p>
+    <p style="margin:0.6rem 0 0.2rem;">For each trade we take the price from the first market close on or after the disclosed transaction date and subtract the S&amp;P 500's move over the same window, so the trade is judged against the broader market rather than against the market's own swings. A purchase beats the market when the stock outruns the index; a sale beats it when the stock lags, meaning the filer sold ahead of a relative slide.</p>
+  </div>
+</details>
+
+{% if not ready %}
+<div class="filter-bar"><p style="margin:0;">The returns table hasn't been built yet. Run
+<code>python step30_price_returns.py</code> to populate it.</p></div>
+{% else %}
+
+<div class="stat-strip" style="margin:1.5rem 0;">
+  <div class="stat"><div class="num">{{ "{:,}".format(overall['n']) }}</div><div class="lbl">priced trades scored</div></div>
+  <div class="stat"><div class="num">{{ "%.1f"|format(overall['beat5']*100) }}%</div><div class="lbl">beat the market (5 days)</div></div>
+  <div class="stat"><div class="num">{{ "%.1f"|format(overall['beat30']*100) }}%</div><div class="lbl">beat the market (30 days)</div></div>
+  <div class="stat"><div class="num">{{ "%.1f"|format(overall['beat90']*100) }}%</div><div class="lbl">beat the market (90 days)</div></div>
+</div>
+
+<p style="font-size:0.92rem; color:var(--pico-muted-color);">
+  In aggregate, there is no sign that these officials consistently beat the market, but there are some
+  outliers:
+</p>
+
+<h3 style="margin-top:2rem;">By official <small style="font-weight:400; color:var(--pico-muted-color);">— mean 90-day market-adjusted timing, officials with ≥20 priced trades</small></h3>
+<div style="overflow-x:auto;">
+<table>
+  <thead><tr><th>Official</th><th style="text-align:right;">Priced trades</th><th style="text-align:right;">Beat market</th><th style="text-align:right;">Mean 90d vs S&amp;P</th></tr></thead>
+  <tbody>
+  {% for r in leaders %}
+    <tr>
+      <td style="white-space:nowrap;">{% if r['official_id'] %}<a href="/official/{{ r['official_id'] }}">{{ r['official'] }}</a>{% else %}{{ r['official'] }}{% endif %}</td>
+      <td style="text-align:right;">{{ r['n'] }}</td>
+      <td style="text-align:right;">{{ "%.0f"|format(r['beat90']*100) }}%</td>
+      <td style="text-align:right; font-weight:600; color:{{ '#0a7d33' if r['mean90']>0 else '#b00' }};">{{ "%+.2f"|format(r['mean90']*100) }}%</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h3 style="margin-top:2rem;">Biggest market-beating single trades</h3>
+<div style="overflow-x:auto;">
+<table>
+  <thead><tr><th>Date</th><th>Official</th><th>Kind</th><th>Ticker</th><th>Security</th><th>Value</th><th style="text-align:right;">90d vs S&amp;P</th><th>Source</th></tr></thead>
+  <tbody>
+  {% for r in top %}
+    <tr>
+      <td style="white-space:nowrap;">{{ r['txn_date'] }}</td>
+      <td style="white-space:nowrap;">{{ r['official'] }}</td>
+      <td>{{ r['txn_type'] }}</td>
+      <td><b>{{ r['ticker'] }}</b></td>
+      <td class="truncate" title="{{ r['raw_description'] }}" style="max-width:260px;">{{ r['raw_description'] }}</td>
+      <td style="font-size:0.82rem; white-space:nowrap;">{{ r['value_bracket'] or '—' }}</td>
+      <td style="text-align:right; font-weight:700; color:#0a7d33;">{{ "%+.0f"|format(r['timed_90']*100) }}%</td>
+      <td>{% if r['source_pdf_url'] %}<a href="/source/{{ r['source_pdf_url']|urlencode }}" target="_blank" rel="noopener" style="font-size:0.78rem; text-decoration:none;" title="source PDF">PDF</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% endif %}
+{% endblock %}

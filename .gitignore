@@ -1,0 +1,24 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+
+# --- sqlite temp files + DB backups ---
+data/*.db-shm
+data/*.db-wal
+data/*.bak*
+
+# --- pipeline outputs the web app does not serve at runtime ---
+data/ftm/
+data/prices/
+data/transcribed/
+
+# --- dev / scratch ---
+*-workspace/
+evals/
+docs/
+.DS_Store
+
+# --- pipeline / build scripts ---
+pipeline/

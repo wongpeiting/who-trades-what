@@ -1,0 +1,342 @@
+[
+ {
+  "official_id": 1,
+  "full_name": "Bailey, Sara",
+  "agency": "Office of National Drug Control Policy",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Director, Office of National Drug Control Policy"
+ },
+ {
+  "official_id": 2,
+  "full_name": "Bedford, Bryan",
+  "agency": "Department of Transportation (FAA)",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Administrator, Federal Aviation Administration, Department of Transportation"
+ },
+ {
+  "official_id": 3,
+  "full_name": "Bessent, Scott",
+  "agency": "Department of the Treasury",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of the Treasury"
+ },
+ {
+  "official_id": 4,
+  "full_name": "Bisignano, Frank J",
+  "agency": "Social Security Administration",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Commissioner, Social Security Administration"
+ },
+ {
+  "official_id": 5,
+  "full_name": "Blanche, Todd",
+  "agency": "Department of Justice",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Attorney General, Department of Justice"
+ },
+ {
+  "official_id": 6,
+  "full_name": "Bondi, Pam",
+  "agency": "Department of Justice",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Attorney General, United States Department of Justice, Department of Justice"
+ },
+ {
+  "official_id": 7,
+  "full_name": "Burgum, Douglas J",
+  "agency": "Department of the Interior",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of the Interior"
+ },
+ {
+  "official_id": 8,
+  "full_name": "Chavez-DeRemer, Lori",
+  "agency": "Department of Labor",
+  "is_president": 0,
+  "party": "Republican",
+  "state": "OR",
+  "prior_office": "U.S. Representative (OR-5), 2023\u20132025",
+  "title": "Secretary of Labor, Department of Labor"
+ },
+ {
+  "official_id": 9,
+  "full_name": "Dixon, Stacey",
+  "agency": null,
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Principal Deputy Director of National Intelligence, Office of the Director of National Intelligence"
+ },
+ {
+  "official_id": 10,
+  "full_name": "Duffy, Sean",
+  "agency": "Department of Transportation",
+  "is_president": 0,
+  "party": "Republican",
+  "state": "WI",
+  "prior_office": "U.S. Representative (WI-7), 2011\u20132019",
+  "title": "Secretary, Department of Transportation"
+ },
+ {
+  "official_id": 11,
+  "full_name": "Edgar, Troy D",
+  "agency": "Department of Homeland Security",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary, Department of Homeland Security"
+ },
+ {
+  "official_id": 12,
+  "full_name": "Faulkender, Michael W",
+  "agency": "Department of the Treasury",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary, Department of the Treasury"
+ },
+ {
+  "official_id": 13,
+  "full_name": "Gabbard, Tulsi",
+  "agency": "Office of the Director of National Intelligence",
+  "is_president": 0,
+  "party": "Republican",
+  "state": "HI",
+  "prior_office": "U.S. Representative (HI-2), 2013\u20132021",
+  "title": "DNI, Office of the Director of National Intelligence"
+ },
+ {
+  "official_id": 14,
+  "full_name": "Hegseth, Pete",
+  "agency": "Department of Defense",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary of Defense, DoD - Department of Defense"
+ },
+ {
+  "official_id": 15,
+  "full_name": "Isaacman, Jared",
+  "agency": "NASA",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Administrator, National Aeronautics & Space Administration"
+ },
+ {
+  "official_id": 16,
+  "full_name": "Kennedy, Robert F",
+  "agency": "Department of Health and Human Services",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of Health & Human Services"
+ },
+ {
+  "official_id": 17,
+  "full_name": "Kratsios, Michael J",
+  "agency": "Office of Science and Technology Policy",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Director, Office of Science and Technology Policy"
+ },
+ {
+  "official_id": 18,
+  "full_name": "Kupor, Scott A",
+  "agency": "Office of Personnel Management",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Director, Office of Personnel Management"
+ },
+ {
+  "official_id": 19,
+  "full_name": "Landau, Christopher",
+  "agency": "Department of State",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary of State, Department of State"
+ },
+ {
+  "official_id": 20,
+  "full_name": "Lawrence, Paul R",
+  "agency": "Department of Veterans Affairs",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary of Veterans Affairs, Department of Veterans Affairs"
+ },
+ {
+  "official_id": 21,
+  "full_name": "Lutnick, Howard",
+  "agency": "Department of Commerce",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of Commerce"
+ },
+ {
+  "official_id": 22,
+  "full_name": "MacGregor, Katharine",
+  "agency": "Department of the Interior",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary, Department of the Interior"
+ },
+ {
+  "official_id": 23,
+  "full_name": "McMahon, Linda E",
+  "agency": "Department of Education",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of Education"
+ },
+ {
+  "official_id": 24,
+  "full_name": "McMaster, Sean",
+  "agency": "Department of Transportation (FHWA)",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "FHWA Administrator, Department of Transportation"
+ },
+ {
+  "official_id": 25,
+  "full_name": "Miran, Stephen I",
+  "agency": "Council of Economic Advisers",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Chairman, Council of Economic Advisers"
+ },
+ {
+  "official_id": 26,
+  "full_name": "Mody, Arjun",
+  "agency": "Social Security Administration",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Commissioner, Social Security Administration"
+ },
+ {
+  "official_id": 27,
+  "full_name": "Noem, Kristi",
+  "agency": "Department of Homeland Security",
+  "is_president": 0,
+  "party": "Republican",
+  "state": "SD",
+  "prior_office": "U.S. Representative (SD), 2011\u20132019",
+  "title": "Secretary, Department of Homeland Security"
+ },
+ {
+  "official_id": 28,
+  "full_name": "Phelan, John",
+  "agency": "Department of Defense (Navy)",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "SECNAV, DoD - Department of the Navy"
+ },
+ {
+  "official_id": 29,
+  "full_name": "Sonderling, Keith",
+  "agency": "Department of Labor",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Deputy Secretary of Labor, Department of Labor"
+ },
+ {
+  "official_id": 30,
+  "full_name": "Trump, Donald J.",
+  "agency": "Executive Office of the President",
+  "is_president": 1,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "President of the United States"
+ },
+ {
+  "official_id": 31,
+  "full_name": "Turner, Eric Scott",
+  "agency": "Department of Housing and Urban Development",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of Housing and Urban Development"
+ },
+ {
+  "official_id": 32,
+  "full_name": "Vaden, Stephen A",
+  "agency": "Department of Agriculture",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "USDA Deputy Secretary, Department of Agriculture"
+ },
+ {
+  "official_id": 33,
+  "full_name": "Wright, Christopher A",
+  "agency": "Department of Energy",
+  "is_president": 0,
+  "party": "Republican",
+  "state": null,
+  "prior_office": null,
+  "title": "Secretary, Department of Energy"
+ },
+ {
+  "official_id": 34,
+  "full_name": "Zeldin, Lee",
+  "agency": "Environmental Protection Agency",
+  "is_president": 0,
+  "party": "Republican",
+  "state": "NY",
+  "prior_office": "U.S. Representative (NY-1), 2015\u20132023",
+  "title": "Administrator, Environmental Protection Agency"
+ }
+]

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Who Trades What{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=PT+Serif:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Green accent + warm cream. Must match Pico's own light-scheme selector specificity
+       (:root:not([data-theme=dark])) or Pico's default blue --pico-primary wins. */
+    :root:not([data-theme=dark]), [data-theme=light] {
+      --pico-primary: #58694a;
+      --pico-primary-hover: #45543a;
+      --pico-primary-focus: rgba(88, 105, 74, 0.28);
+      --pico-primary-background: #58694a;
+      --pico-primary-hover-background: #45543a;
+      --pico-primary-underline: rgba(88, 105, 74, 0.4);
+      --pico-primary-inverse: #ffffff;
+      --pico-background-color: #faf6ef;
+      --pico-color: #1c1c1a;
+    }
+    /* Pico sets link color via its own vars; pin them to the green too. */
+    :root:not([data-theme=dark]), [data-theme=light] {
+      --pico-primary-hover-underline: rgba(88, 105, 74, 0.6);
+    }
+    a { --pico-color: #58694a; }
+    .site-header { position: sticky; top: 0; z-index: 1000; background: #aec2a0; border-bottom: 1px solid #93a883; padding: 0; margin: 0 0 1.25rem; }
+    .site-header .container { padding-top: 0.65rem; padding-bottom: 0.65rem; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
+    nav .site-title { font-family: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 1.3rem; letter-spacing: -0.02em; color: #1c1c1a !important; text-decoration: none; line-height: 1; padding: 0; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; align-items: center; }
+    nav ul li a { text-decoration: none; color: #1c3314; }
+    nav ul li a:hover, nav ul li a.active { color: #0a1707; font-weight: 600; }
+    .info-tip { position: relative; display: inline-block; cursor: help; color: var(--pico-muted-color); font-weight: 400; }
+    .info-tip .info-pop { display: none; position: absolute; right: 0; top: 1.5em; z-index: 60; width: 250px; background: #fff; border: 1px solid var(--pico-muted-border-color); border-radius: 6px; padding: 0.5rem 0.7rem; font-size: 0.78rem; font-weight: 400; color: var(--pico-color); line-height: 1.4; box-shadow: 0 4px 14px rgba(0,0,0,0.15); white-space: normal; text-align: left; }
+    .info-tip .info-i { display: inline-flex; align-items: center; justify-content: center; width: 1.15em; height: 1.15em; border: 1.3px solid currentColor; border-radius: 50%; font-size: 0.7em; font-style: italic; font-weight: 700; line-height: 1; vertical-align: middle; }
+    .info-tip:hover .info-pop, .info-tip:focus .info-pop, .info-tip:focus-within .info-pop { display: block; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 0.1em 0.4em; border-radius: 4px; white-space: nowrap; margin-left: 3px; }
+    .badge-contractor { background: #fdecc8; color: #7a5c00; }
+    .badge-late { background: #fce4e4; color: #8b0000; }
+    .badge-tariff { background: #e8f4fd; color: #004a7c; }
+    .badge-action { background: #e7e0f7; color: #5b21a6; }
+    td.truncate { min-width: 300px; max-width: 560px; white-space: normal; overflow-wrap: break-word; line-height: 1.35; }
+    .pagination { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .filter-bar { background: var(--pico-card-background-color, #f8f9fa); border: 1px solid var(--pico-muted-border-color); border-radius: 8px; padding: 0.15rem 0.85rem; margin-bottom: 1.25rem; }
+    .filter-bar details { margin: 0; }
+    .filter-bar details summary { font-weight: 600; font-size: 0.9rem; cursor: pointer; user-select: none; margin: 0; padding: 0.4rem 0; }
+    .filter-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem 1rem; margin-top: 0.75rem; }
+    .filter-grid label { font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.2rem; }
+    .filter-grid select, .filter-grid input { margin-bottom: 0; font-size: 0.9rem; }
+    .example-searches { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0.5rem 0 1.5rem; }
+    .example-searches a { font-size: 0.9rem; }
+    table { font-size: 0.88rem; }
+    thead th { white-space: nowrap; }
+    .subheading { color: var(--pico-muted-color); font-size: 1rem; margin-top: -0.5rem; margin-bottom: 1.5rem; }
+    .stat-strip { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .stat-strip .stat { text-align: center; }
+    .stat-strip .stat .num { font-size: 1.6rem; font-weight: 700; color: var(--pico-primary); }
+    .stat-strip .stat .lbl { font-size: 0.8rem; color: var(--pico-muted-color); }
+    footer { margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid var(--pico-muted-border-color); font-size: 0.72rem; color: var(--pico-muted-color); line-height: 1.5; }
+    footer strong { color: var(--pico-color); font-weight: 600; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: #d7dde6; color: #4a5568; display: inline-flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; overflow: hidden; flex: 0 0 auto; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .lb-row { display: flex; align-items: center; gap: 0.6rem; padding: 0.35rem 0; }
+    .lb-bar-wrap { flex: 1 1 auto; min-width: 60px; }
+    .lb-bar { height: 9px; border-radius: 5px; background: var(--pico-primary); }
+    .lb-val { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+    .lb-pres { background: #fff7e6; border: 1px solid #ffe1a8; border-radius: 8px; padding: 0.6rem 0.9rem; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 0.8rem; }
+    .landing-card { display: block; padding: 0.9rem 1rem; border: 1px solid var(--pico-muted-border-color); border-radius: 10px; text-decoration: none; background: var(--pico-card-background-color, #fff); transition: border-color .15s, transform .15s; }
+    .landing-card:hover { border-color: var(--pico-primary); transform: translateY(-2px); }
+    .landing-card .lc-title { font-weight: 700; color: var(--pico-color); margin-bottom: 0.2rem; }
+    .landing-card .lc-desc { font-size: 0.84rem; color: var(--pico-muted-color); line-height: 1.35; }
+    /* Guided "where to start" gallery — flat cells on a hairline grid, generous spacing. */
+    .find-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 1px; background: var(--pico-muted-border-color); border: 1px solid var(--pico-muted-border-color); border-radius: 10px; overflow: hidden; margin-bottom: 1.75rem; }
+    .find-card { display: block; padding: 1.15rem 1.25rem; text-decoration: none; background: #fff; transition: background .12s; }
+    .find-card:hover { background: #f7f9fb; }
+    .find-card .fc-kicker { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pico-primary); margin-bottom: 0.4rem; }
+    .find-card .fc-title { font-size: 1rem; font-weight: 700; color: var(--pico-color); line-height: 1.25; margin-bottom: 0.35rem; }
+    .find-card .fc-hook { font-size: 0.86rem; color: var(--pico-muted-color); line-height: 1.45; }
+    .find-card .fc-cite { display: block; font-size: 0.73rem; color: var(--pico-muted-color); opacity: 0.85; margin-top: 0.55rem; }
+    /* Two clickable numeric jump-ins straight to a filtered subset of rows. */
+    .jump-stats { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0 0 1.4rem; }
+    .jump-stats a { display: flex; align-items: baseline; gap: 0.55rem; text-decoration: none; border: 1px solid var(--pico-muted-border-color); border-radius: 8px; padding: 0.55rem 0.95rem; background: #fff; transition: border-color .12s, background .12s; }
+    .jump-stats a:hover { border-color: var(--pico-primary); background: #f7f9fb; }
+    .jump-stats .js-num { font-size: 1.4rem; font-weight: 700; color: var(--pico-primary); font-variant-numeric: tabular-nums; }
+    .jump-stats .js-lbl { font-size: 0.82rem; color: var(--pico-muted-color); line-height: 1.2; }
+    .official-meta { display: flex; flex-wrap: wrap; gap: 0.6rem 2.5rem; }
+    .official-meta dt { font-size: 0.8rem; color: var(--pico-muted-color); margin: 0; }
+    .official-meta dd { font-weight: 600; margin: 0 0 0.5rem; }
+    .methodology-section { }
+    .count-widget { background: var(--pico-card-background-color, #f8f9fa); border: 1px solid var(--pico-muted-border-color); border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    .count-widget h4 { margin: 0 0 0.5rem; font-size: 1rem; }
+    .count-display { font-size: 2rem; font-weight: 700; color: var(--pico-primary); }
+    .count-widget .cw-grid { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-end; margin-top: 0.75rem; }
+    .count-widget select, .count-widget input { margin-bottom: 0; font-size: 0.9rem; width: auto; min-width: 160px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+    <nav>
+      <a class="site-title" href="/">Who Trades What</a>
+      <ul>
+        <li><a href="/" {% if request.endpoint == 'index' %}class="active"{% endif %}>Search</a></li>
+        <li><a href="/conflicts" {% if request.endpoint == 'conflicts' %}class="active"{% endif %}>Potential conflicts</a></li>
+        <li><a href="/leaderboards" {% if request.endpoint == 'leaderboards' %}class="active"{% endif %}>Leaderboards</a></li>
+        <li><a href="/timing" {% if request.endpoint == 'timing' %}class="active"{% endif %}>Beat the market?</a></li>
+        <li><a href="/methodology" {% if request.endpoint == 'methodology' or request.endpoint == 'download' %}class="active"{% endif %}>Methodology</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+</body>
+</html>

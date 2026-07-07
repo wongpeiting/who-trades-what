@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Conflicts — The Cabinet's Portfolio{% endblock %}
+
+{% macro money(v) %}{% if v and v >= 1000000000 %}${{ "%.1f"|format(v/1000000000) }}B{% elif v and v >= 1000000 %}${{ "%.0f"|format(v/1000000) }}M{% elif v %}${{ "{:,}".format(v|int) }}{% else %}—{% endif %}{% endmacro %}
+
+{% block content %}
+<h1 style="margin-bottom:0.3rem; letter-spacing:-0.02em;">Potential conflicts of interest</h1>
+<div style="display:flex; gap:0.6rem; margin:1rem 0 1.6rem; flex-wrap:wrap; align-items:center;">
+  <span style="font-size:0.9rem; color:var(--pico-muted-color); font-weight:600; margin-right:0.15rem;">Skip to</span>
+  <a href="#contracts" role="button" class="outline" style="padding:0.4rem 1rem;">Trading what their agency funds</a>
+  <a href="#actions" role="button" class="outline" style="padding:0.4rem 1rem;">Traded near an agency action</a>
+  <a href="#network" role="button" class="outline" style="padding:0.4rem 1rem;">Connecting the dots</a>
+</div>
+
+{# ─────────────────────────── SECTION 1: CONTRACT CONFLICTS ─────────────────────────── #}
+<h2 id="contracts" style="scroll-margin-top:110px;">Trading what their agency funds</h2>
+<p style=" color:var(--pico-muted-color); font-size:0.92rem; margin-top:0.2rem;">
+  When an official who helps steer an agency's spending also trades the stock of a company that agency
+  pays, their private finances and their public duties point the same way. A contract decision meant
+  to serve the public can also lift the official's own holdings, and no one can prove which motive was
+  at work. That is the conflict these trades expose, listed with how much the official's own agency
+  has paid each company.
+</p>
+
+<div class="stat-strip" style="margin:1rem 0;">
+  <div class="stat"><div class="num">{{ n_total }}</div><div class="lbl">trades in an agency<br>contractor</div></div>
+  <div class="stat"><div class="num">{{ n_core }}</div><div class="lbl">where the agency pays<br>the company ≥ $100M</div></div>
+</div>
+
+<p style="font-size:0.85rem; color:var(--pico-muted-color); margin:0 0 0.6rem;">
+  Rows marked <span class="badge badge-contractor">≥$100M</span> are where the official's own agency
+  has awarded that company at least $100 million in federal contracts. At that scale the agency is a
+  major customer, so an official's stake in the company carries real weight. The list is sorted by
+  contract size.
+</p>
+
+<div style="overflow-x:auto;">
+<table>
+  <thead><tr>
+    <th>Official</th><th>Agency</th><th>Company traded</th><th>Trade date</th><th>Trade amount</th>
+    <th style="text-align:right;">Agency pays this company <span class="info-tip" tabindex="0" aria-label="About this figure"><span class="info-i">i</span><span class="info-pop">The dollar figure is the agency's total USASpending award history to the company, not tied to the timing of this trade.</span></span></th><th>Source</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr {% if loop.index > 10 %}class="cx-more" style="display:none"{% endif %}>
+      <td style="white-space:nowrap;"><a href="/official/{{ r['official_id'] }}">{{ r['official_name'] }}</a></td>
+      <td style="font-size:0.8rem; color:var(--pico-muted-color); max-width:150px;">{{ r['agency'] }}</td>
+      <td>
+        <span style="font-size:0.85rem;">{{ r['raw_description'] }}</span>
+        {% if r['agency_core_contractor'] == 1 %}<span class="badge badge-contractor">≥$100M</span>{% endif %}
+      </td>
+      <td style="white-space:nowrap;">{{ r['txn_date'] or '—' }}</td>
+      <td style="font-size:0.82rem; white-space:nowrap;">{{ r['value_bracket'] or '—' }}</td>
+      <td style="text-align:right; font-weight:600; white-space:nowrap;">{{ money(r['award_total']) }}</td>
+      <td>
+        {% set su = r['source_url'] %}{% set sf = r['source_file'] %}
+        {% if su and su.startswith('http') and ' ' not in su %}<a href="{{ su }}" target="_blank" rel="noopener" style="text-decoration:none; font-size:0.78rem;" title="source PDF">PDF</a>
+        {% elif sf %}<a href="/source/{{ sf|urlencode }}" target="_blank" rel="noopener" style="text-decoration:none; font-size:0.78rem;" title="source PDF">PDF</a>{% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% if rows|length > 10 %}<button type="button" class="outline" onclick="document.querySelectorAll('.cx-more').forEach(function(e){e.style.display='table-row'});this.remove()" style="font-size:0.85rem; padding:0.4rem 1rem; margin-top:0.7rem;">Show all {{ rows|length }} →</button>{% endif %}
+{# ─────────────────────────── SECTION 2: TRADED NEAR AN ACTION ─────────────────────────── #}
+<h2 id="actions" style="margin-top:2.6rem; scroll-margin-top:110px;">Traded near an agency action</h2>
+<p style=" color:var(--pico-muted-color); font-size:0.92rem; margin-top:0.2rem;">
+  An agency's actions, its rules, approvals and orders, can move the stocks it touches. So when an
+  official trades a company just as their own agency acts on that industry, the timing raises questions:
+  did they trade on what they knew was coming, or did an action they helped shape move a stock they held?
+</p>
+<p style="color:var(--pico-muted-color); font-size:0.92rem; margin-top:0.5rem;">
+  This screen flags every trade within seven days of a dated action by the official's own agency: Federal
+  Register rules for Cabinet departments, and for the President his own tariff orders, all filed since
+  Jan. 20, 2025. <b>Note:</b> The action may have nothing to do with the company traded.
+</p>
+
+{% if tl_total %}
+<div class="stat-strip" style="margin:1rem 0;">
+  <div class="stat"><div class="num">{{ "{:,}".format(tl_total) }}</div><div class="lbl">trades within ±7 days<br>of an own-agency action</div></div>
+  <div class="stat"><div class="num">{{ tl_by_official|length }}</div><div class="lbl">officials with<br>at least one</div></div>
+</div>
+
+<h3 style="margin-top:1.2rem; font-size:1.05rem;">By official</h3>
+<div style="overflow-x:auto;">
+<table>
+  <thead><tr><th>Official</th><th>Agency</th><th style="text-align:right;">Flagged trades</th></tr></thead>
+  <tbody>
+  {% for r in tl_by_official %}
+    <tr {% if loop.index > 5 %}class="bo-more" style="display:none"{% endif %}>
+      <td style="white-space:nowrap;"><a href="/official/{{ r['official_id'] }}">{{ r['full_name'] }}</a></td>
+      <td style="font-size:0.82rem; color:var(--pico-muted-color);">{{ r['agency'] }}</td>
+      <td style="text-align:right; font-weight:600;"><a href="/?flag=near_action&official={{ r['full_name']|urlencode }}" title="See these flagged trades">{{ r['n'] }}</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% if tl_by_official|length > 5 %}<button type="button" class="outline" onclick="document.querySelectorAll('.bo-more').forEach(function(e){e.style.display='table-row'});this.remove()" style="font-size:0.85rem; padding:0.4rem 1rem; margin-top:0.7rem;">Show all {{ tl_by_official|length }} →</button>{% endif %}
+
+<h3 style="margin-top:1.6rem; font-size:1.05rem;">Each trade, and the action it fell near</h3>
+<p style="font-size:0.85rem; color:var(--pico-muted-color); margin:0.2rem 0 0.6rem;">
+  A count on its own says little. This table makes each case concrete: one trade per row, set beside the
+  specific action the official's own agency took within seven days of it, and linked to that action in the
+  Federal Register so you can read what it was.
+</p>
+<div style="overflow-x:auto;">
+<table>
+  <thead><tr><th>Trade date</th><th>Official</th><th>Kind</th><th>Security</th><th>Nearby agency action <span style="font-weight:400; color:var(--pico-muted-color); font-size:0.75rem;">(links to Federal Register)</span></th><th>Trade filing</th></tr></thead>
+  <tbody>
+  {% for r in tl_leads %}
+    <tr {% if loop.index > 5 %}class="ax-more" style="display:none"{% endif %}>
+      <td style="white-space:nowrap;">{{ r['txn_date'] }}</td>
+      <td style="white-space:nowrap;"><a href="/official/{{ r['official_id'] }}">{{ r['full_name'] }}</a></td>
+      <td>{{ r['txn_type'] }}</td>
+      <td class="truncate" title="{{ r['raw_description'] }}" style="max-width:210px;">{{ r['raw_description'] }}</td>
+      <td style="font-size:0.82rem; max-width:300px;">
+        <span style="color:var(--pico-muted-color);">{{ r['nearest_action_date'] }}</span>
+        {% if r['nearest_action_url'] %}<a href="{{ r['nearest_action_url'] }}" target="_blank" rel="noopener">{{ r['nearest_action_title'] }}</a>{% else %}{{ r['nearest_action_title'] }}{% endif %}
+      </td>
+      <td>{% if r['source_pdf_url'] %}<a href="/source/{{ r['source_pdf_url']|urlencode }}" target="_blank" rel="noopener" style="font-size:0.78rem; text-decoration:none;" title="source PDF">PDF</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% if tl_leads|length > 10 %}<button type="button" class="outline" onclick="document.querySelectorAll('.ax-more').forEach(function(e){e.style.display='table-row'});this.remove()" style="font-size:0.85rem; padding:0.4rem 1rem; margin-top:0.7rem;">Show all {{ tl_leads|length }} →</button>{% endif %}
+{% else %}
+<div class="filter-bar"><p style="margin:0;">The action timeline hasn't been built yet. Run <code>python step33_agency_actions.py</code>.</p></div>
+{% endif %}
+
+{# ─────────────────────────── SECTION 3: CONFLICT NETWORK MAP ─────────────────────────── #}
+<h2 id="network" style="margin-top:2.6rem; scroll-margin-top:110px;">Connecting the dots</h2>
+<p style=" color:var(--pico-muted-color); font-size:0.92rem; margin-top:0.2rem;">
+  Here are the same contract conflicts, mapped. Each closed loop
+  is one conflict: an <b style="background:#1a2b4a; color:#fff; padding:0.05em 0.35em; border-radius:3px;">official</b> heads an <b style="background:#c0392b; color:#fff; padding:0.05em 0.35em; border-radius:3px;">agency</b>
+  that pays a <b style="background:#8a6d00; color:#fff; padding:0.05em 0.35em; border-radius:3px;">company</b> whose stock the official also traded. The thick red
+  links mark agencies that pay a company at least $100 million. Drag a node to move it, scroll to zoom,
+  and hover for detail.
+</p>
+<div style="display:flex; gap:1.2rem; align-items:center; flex-wrap:wrap; font-size:0.82rem; margin:0.5rem 0 0.6rem;">
+  <span><span style="display:inline-block;width:11px;height:11px;background:#1a2b4a;border-radius:50%;"></span> official</span>
+  <span><span style="display:inline-block;width:11px;height:11px;background:#c0392b;"></span> agency</span>
+  <span><span style="display:inline-block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #d4a017;"></span> company traded</span>
+  <span style="color:#c0392b;">━━ pays ≥ $100M</span>
+</div>
+<div id="net" style="height:80vh; min-height:680px; border:1px solid var(--pico-muted-border-color); border-radius:10px; background:#fbfbfa;"></div>
+
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script>
+fetch('/api/network').then(r => r.json()).then(d => {
+  const nodes = new vis.DataSet(d.nodes), edges = new vis.DataSet(d.edges);
+  const net = new vis.Network(document.getElementById('net'), { nodes, edges }, {
+    nodes: { font: { size: 14 }, borderWidth: 1 },
+    groups: {
+      official: { color: { background: '#1a2b4a', border: '#0d1526' }, font: { color: '#1a2b4a', bold: true }, shape: 'dot', size: 20 },
+      agency:   { color: { background: '#c0392b', border: '#8b0000' }, font: { color: '#8b0000' }, shape: 'square', size: 16 },
+      company:  { color: { background: '#f0c419', border: '#a07d00' }, font: { color: '#6b5300' }, shape: 'triangle', size: 15 }
+    },
+    edges: { font: { size: 10, color: '#888', strokeWidth: 3 }, smooth: { type: 'continuous' }, arrows: { to: { enabled: true, scaleFactor: 0.4 } }, color: { color: '#ccc' } },
+    physics: { barnesHut: { gravitationalConstant: -7000, centralGravity: 0.25, springLength: 120, springConstant: 0.035, damping: 0.5, avoidOverlap: 0.6 }, stabilization: { iterations: 340 } },
+    interaction: { hover: true, tooltipDelay: 120 }
+  });
+  net.once('stabilizationIterationsDone', function () { net.fit({ animation: false }); net.moveTo({ scale: net.getScale() * 2.6 }); });
+}).catch(e => { console.error('network load failed', e); });
+</script>
+{% endblock %}
