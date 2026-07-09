@@ -44,7 +44,7 @@
     <div class="fc-title">Traded next to an official action</div>
     <div class="fc-hook">Over 3,000 trades fall within a week of a dated action by the trader's own agency.</div>
   </a>
-  <a class="find-card" href="/?query=World+Liberty">
+  <a class="find-card" href="/?flag=crypto">
     <div class="fc-title">Trump's crypto income</div>
     <div class="fc-hook">World Liberty Financial token sales and wallet income total roughly $592 million in exact figures on the President's annual filing, alongside his $TRUMP meme-coin royalties.</div>
   </a>
@@ -63,6 +63,7 @@
 {% elif flag == 'tariff_pause' %}{% set ns.title = 'Pre–tariff-pause trades' %}{% set ns.desc = 'The President’s 327 stock purchases on April 8, 2025 — the day before he paused his own tariffs.' %}
 {% elif flag == 'regulates_sector' %}{% set ns.title = 'Traded in an industry they regulate' %}{% set ns.desc = 'Appointed officials trading in an industry their own agency oversees.' %}
 {% elif flag == 'near_action' %}{% set ns.title = 'Traded near an agency action' %}{% set ns.desc = 'Trades within seven days of a dated action by the official’s own agency.' %}
+{% elif flag == 'crypto' %}{% set ns.title = 'Trump’s crypto income' %}{% set ns.desc = 'The President’s World Liberty Financial token sales and cryptocurrency-wallet lines, totalling $592,442,316 in exact figures on his annual filing.' %}
 {% endif %}
 {% if query %}{% set ns.title = 'Results for “' ~ query ~ '”' %}{% endif %}
 {% if official and not query %}{% set ns.title = official %}{% if not ns.desc %}{% set ns.desc = 'Every disclosed trade, holding, and income line for this official.' %}{% endif %}{% endif %}
@@ -98,6 +99,7 @@
         <option value="tariff_pause" {% if flag=='tariff_pause' %}selected{% endif %}>Pre–tariff-pause (Apr 8)</option>
         <option value="regulates_sector" {% if flag=='regulates_sector' %}selected{% endif %}>Industry they regulate</option>
         <option value="near_action" {% if flag=='near_action' %}selected{% endif %}>Traded near an agency action</option>
+        <option value="crypto" {% if flag=='crypto' %}selected{% endif %}>Trump’s crypto income</option>
       </select>
     </div>
     {% if query or kind or official or agency or txn_type or flag or amount_min %}

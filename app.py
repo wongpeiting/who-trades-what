@@ -94,6 +94,15 @@ def build_query(query, kind, official, agency, txn_type, flag, amount_min):
         conditions.append("regulates_own_sector = 1")
     elif flag == "near_action":
         conditions.append("near_agency_action = 1")
+    elif flag == "crypto":
+        # Curated collection: the President's World Liberty / crypto-wallet lines, which are
+        # named inconsistently (token sales, coin-named cold wallets, WLF Holdco equity) so no
+        # single keyword catches them. Sums to $592,442,316.
+        conditions.append(
+            "(raw_description LIKE '%Cryptocurrency Wallet%' "
+            "OR raw_description LIKE '%Token Sales%' "
+            "OR raw_description LIKE '%WLF Holdco%')"
+        )
 
     if amount_min:
         try:
