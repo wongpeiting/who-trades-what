@@ -56,7 +56,7 @@
       <tr><td><code>disclosure_lag_days</code></td><td>integer</td><td>Days between transaction date and filing date. Statutory limit is 30–45 days. Null for annual-form transactions where the lag is unverifiable.</td></tr>
       <tr><td><code>before_tariff_pause</code></td><td>boolean</td><td>1 if the transaction date is 2025-04-08 — the day before Trump paused tariffs — and was disclosed late.</td></tr>
       <tr><td><code>agency_pays_company</code></td><td>boolean</td><td>1 if the official's agency has any USASpending contract with the company being traded.</td></tr>
-      <tr><td><code>agency_core_contractor</code></td><td>boolean</td><td>1 if the agency's total contract awards to the company are ≥$100 million — a "material" contractor relationship.</td></tr>
+      <tr><td><code>agency_core_contractor</code></td><td>boolean</td><td>1 if the agency's recorded contract awards to the company are ≥$100 million — a "material" contractor relationship.</td></tr>
       <tr><td><code>regulates_own_sector</code></td><td>boolean</td><td>1 if the security's GICS sector falls within the agency's regulatory remit (a documented judgment call; see Methodology).</td></tr>
       <tr><td><code>near_agency_action</code></td><td>boolean</td><td>1 if the transaction date falls within seven days of a dated action by the official's own agency &mdash; a Federal Register rule or notice, or a tariff action. A reporting lead, not proof the action bears on the company traded.</td></tr>
       <tr><td><code>source_url</code></td><td>text</td><td>Link to the source filing PDF — a public OGE URL where one exists, otherwise the filing served locally at <code>/source</code>.</td></tr>
